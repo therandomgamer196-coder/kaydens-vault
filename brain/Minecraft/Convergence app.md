@@ -41,6 +41,7 @@ A local Windows app that merges 2 to 4 Minecraft Java modpacks into one pack tha
 - **Fixed on the way:** jars that support both Fabric and Forge were treated as Forge-only.
 - **Not proven yet:** CurseForge-pack sources, Forge and NeoForge targets, cross-loader merges, 3 to 4 large packs, importing the zip into CurseForge.
 - **Clean slate:** the workspace and the test zip were emptied to the Recycle Bin. The old "Convergence" test profiles are hidden from the Installed list.
+- **2026-10-07 check:** `python app.py` returned HTTP 200 from the local status endpoint, and the page rendered in the browser pane. A Forge 1.20.1 CurseForge + Modrinth test build was not started because approval to fetch mod files is required.
 
 ## Limits to remember
 

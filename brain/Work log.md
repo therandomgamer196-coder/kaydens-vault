@@ -13,6 +13,7 @@ Dated summary of work on Jarvis, the dashboard, and this vault. Details live in 
   - picks the version, repairs dependencies, test-boots, exports a CurseForge zip
   - proven on a two-pack Fabric merge (107 mods, main menu on boot 2, 132 s)
   - workspace emptied; handoff files and a VS Code starter prompt are in the folder
+  - 2026-10-07: confirmed the local server responds HTTP 200 and the UI renders in the browser pane; the Forge 1.20.1 CurseForge + Modrinth test build remains pending approval before any mod files are fetched
   - → [[Convergence app]]
 
 - **Jarvis hybrid brain + brain on GitHub:**
