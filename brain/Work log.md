@@ -122,3 +122,4 @@ Dated summary of work on Jarvis, the dashboard, and this vault. Details live in 
 
 - **Laptop health check (2026-10-04, 3:20 AM):** score 48/100. Fan noise = Defender full scan (MsMpEng ~85% CPU) + High performance power plan. C: only 6% free (Steam 116 GB). 19 startup apps. Read-only; recommendations listed. Dashboard simplified to plain English and a Recent activity section added (Trading OS v12). → [[Laptop health check 2026-10-04]]
 - 2026-10-07 9:06 AM ET: Weekly laptop check 64/100 (was 48). C: 5.2% free, 19 startup apps, Jarvis startup entry still enabled. Read-only. [[Laptop health check 2026-10-07]]
+- 2026-10-07 ET: External drive (F:, Toshiba USB) fix with Kayden's approval: USB selective suspend off (AC+DC), hard disk turn-off 30s -> never (AC) / 20 min (battery). chkdsk F: /scan found no problems, 0 bad sectors; 35s read test 111 MB/s, 0 errors. Revert: Control Panel > Power Options > Change advanced settings. [[Laptop health check 2026-10-07]]
