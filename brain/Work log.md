@@ -6,6 +6,22 @@ tags: [log]
 
 Dated summary of work on Jarvis, the dashboard, and this vault. Details live in the linked notes. Newest first.
 
+## 2026-10-07
+
+- **Convergence app:** the modpack merger is now its own app in `Documents\Convergence` with a desktop shortcut.
+  - search Modrinth, installed CurseForge profiles or a CurseForge link; merge 2 to 4 packs
+  - picks the version, repairs dependencies, test-boots, exports a CurseForge zip
+  - proven on a two-pack Fabric merge (107 mods, main menu on boot 2, 132 s)
+  - workspace emptied; handoff files and a VS Code starter prompt are in the folder
+  - → [[Convergence app]]
+
+- **Jarvis hybrid brain + brain on GitHub:**
+  - free Groq/Cerebras for everyday questions, Opus on "think hard"
+  - free web search
+  - vault git sync every 5 min
+  - waiting on keys and the GitHub repo
+  - → [[Jarvis Setup Checklist]], [[Agentic OS change log]]
+
 ## 2026-10-06
 
 - **Jarvis upgrades:**

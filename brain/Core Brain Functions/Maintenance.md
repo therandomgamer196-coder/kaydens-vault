@@ -24,7 +24,7 @@ Default order: built-in **Microphone Array** → wired headset → any other mic
 - `stop-jarvis.cmd` — stops both (stays off until sign-in or restart).
 - `install-autostart.cmd` / `uninstall-autostart.cmd` — sign-in autostart on/off.
 - `start-jarvis.cmd` — bridge only (the bridge starts the watchdog within ~60 s).
-- `tests\run_tests.py` — 266 checks in 8 suites for bridge + watchdog with faked audio; safe while Jarvis runs: `.venv\Scripts\python.exe tests\run_tests.py`.
+- `tests\run_tests.py` — 292 checks in 10 suites for bridge + watchdog with faked audio; safe while Jarvis runs: `.venv\Scripts\python.exe tests\run_tests.py`.
 
 ## Health check
 
@@ -47,6 +47,11 @@ Only one bridge can own the mic: `jarvis_bridge.lock` + `msvcrt.locking`. A seco
 - **2026-10-06 outage (Sep 24 → Oct 6):** the Jarvis startup entry was disabled in Task Manager (StartupApproved `03`), so nothing started after a reboot and the wallpaper showed "Bridge unavailable". Turned back on (`02`). If he's offline after a reboot, check this first: Task Manager → Startup apps → **Jarvis** = Enabled.
 - **2026-10-06, language model offline after reboots:** the Ollama (Startup folder) and Lively startup entries were disabled. Both are re-enabled, and `llm_guard` now restarts Ollama and reloads the model every 60 s if needed. Check `/status` → `llm`.
 - **Secrets:** `Jarvis\secrets\anthropic.env` holds the Anthropic API key. It's never served by the bridge and never written to notes. Env: `JARVIS_LLM_PROVIDERS` (default `claude,ollama`), `JARVIS_CLAUDE_MODEL`, `JARVIS_CLAUDE_EFFORT`, `JARVIS_OLLAMA_KEEP_ALIVE` (default `-1`), `JARVIS_NO_LLM_GUARD=1` to turn the guard off.
+- **Keys and brains (2026-10-07):**
+  - Keys live in `secrets\keys.env`.
+  - `/status` → `free_brains` lists the working free brains, `claude` says whether Opus is ready, and `llm` shows the local model.
+  - `/status` → `vault_sync` shows the GitHub sync ("synced" or what's wrong).
+  - Env: `JARVIS_GROQ_MODEL`, `JARVIS_CEREBRAS_MODEL`, `JARVIS_FREE_REASONING` (low), `JARVIS_VAULT_SYNC_SECONDS` (300), `JARVIS_NO_VAULT_SYNC=1`.
 - **Fixed 2026-10-06:** TV chatter taken as commands (weak wakes 0.35–0.5). See [[Agentic OS change log#2026-10-06]]. New log kind: `-> chatter`, `session N ended: chatter`. Env: `JARVIS_STRONG_WAKE_SCORE` (0.6), `JARVIS_MAX_COMMAND_WORDS` (30).
 - Conversation log lines in `logs\wake_debug.log`: `wake word heard`, `heard '…' -> command/stop/closer/noise`, `barge-in by voice/wake phrase`, `turn timings {…}`, `ignored … of steady noise`, `session N ended: idle/stop/closer`.
 

@@ -8,6 +8,7 @@ Kayden's Minecraft setup and the projects Claude has done on it. Each topic has 
 
 - [[Arnis worlds]]: real-world maps of Ephrata built with Arnis, the snapshot crash fix and the normal-terrain rebuild
 - [[Convergence modpack]]: ATM10, Stellara, Beyond Depth and DeceasedCraft merged into one CurseForge pack, with its control page
+- [[Convergence app]]: the desktop app that merges 2 to 4 modpacks by itself (search, build, test boot, export), in `Documents\Convergence`
 - [[Controller and Game Boost]]: Kayden's Xbox Controller (Bedrock layout on Controllable, for the Elite Series 2) and the desktop Game Boost shortcut
 
 ## Setup

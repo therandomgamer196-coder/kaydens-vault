@@ -7,6 +7,25 @@ tags: [agentic-os, changelog]
 > [!important] Rule
 > Every change to Jarvis, the Jarvis OS dashboard or the Jarvis visuals gets an entry here: the date, what changed, its parameters, the files touched, and how to undo it. Newest first. Changes to the Punch In wallpaper go in [[Dashboard change log]]. Jarvis changes from before 2026-09-25 are still in that log.
 
+## 2026-10-07
+
+**Hybrid brain (free everyday, Opus on "think hard") + brain synced to GitHub (9:25 AM)**
+- **Free fast brains** (new `jarvis_freebrain.py`): Groq `openai/gpt-oss-120b`, then Cerebras `gpt-oss-120b`, both on low reasoning for speed. They have the same tools as the Opus brain, plus free web tools.
+- **Routing** (`provider_order` in `jarvis_bridge.py`):
+  - everyday: Groq, then Cerebras, then local llama3.2
+  - "think hard", "research", "deep dive", "in depth", "take your time" or "use Opus": Opus 5.5 first
+  - `JARVIS_CLAUDE_EVERYDAY=1` puts Opus first for everything, and `JARVIS_LLM_PROVIDERS` sets a fixed order
+- **Free web tools** (new `jarvis_web.py`): DuckDuckGo search (with Wikipedia as backup) and page reading. Anything resolving to this PC or the home network is refused (SSRF guard, redirects checked too).
+- **Keys:** one file, `secrets\keys.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`, `ANTHROPIC_API_KEY`), read on every question. `anthropic.env` is still read too.
+- **Brain sync** (new `jarvis_vaultsync.py`):
+  - The vault is now a git repo: the first commit has 168 files, the remote is `github.com/therandomgamer196-coder/kaydens-vault`, and there's a `.gitignore`.
+  - Every 5 min the bridge commits, pulls (rebase + autostash) and pushes, without ever showing a sign-in prompt. A conflict is rolled back and shown in `/status` → `vault_sync`.
+  - The one-time sign-in is done with `connect-brain-to-github.cmd`.
+- `/status` new fields: `free_brains`, `vault_sync`, `vault_sync_at`.
+- **Checks:** all 10 suites pass (292 checks; new `test_freebrain.py` 16 and `test_vaultsync.py` 10). A live DuckDuckGo search and page read worked on the laptop. Restarted 9:23 AM: ready, model loaded. Vault sync is waiting on the GitHub sign-in, as expected.
+- **Waiting on Kayden:** [[Jarvis Setup Checklist]] steps 1–5.
+- **Undo:** `backups\jarvis_bridge.py.2026-10-07-pre-hybrid` and `backups\jarvis_agent.py.2026-10-07-pre-hybrid`, then restart. Sync off: `JARVIS_NO_VAULT_SYNC=1`.
+
 ## 2026-10-06
 
 **Opus 5.5 brain, live vault access, own notes, always-loaded local model, orb v2 (3:50 PM)**
