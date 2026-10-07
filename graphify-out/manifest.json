@@ -1,0 +1,104 @@
+{
+  "brain/About Kayden.md": {
+    "mtime": 1790098119.8488126,
+    "seen": 1790107136.7625077,
+    "ast_hash": "4c94d246160a8cbff4dffbd66270984f",
+    "semantic_hash": "4c94d246160a8cbff4dffbd66270984f"
+  },
+  "brain/Core Brain Functions/Claude Code setup.md": {
+    "mtime": 1790106411.6542046,
+    "seen": 1790107136.7625077,
+    "ast_hash": "252bbc95549d23cc40e019275edc392b",
+    "semantic_hash": "252bbc95549d23cc40e019275edc392b"
+  },
+  "brain/Core Brain Functions/Dashboard context.md": {
+    "mtime": 1790098120.5424025,
+    "seen": 1790107136.7625077,
+    "ast_hash": "1f0d02dfe721b5dcd9bf5b20873fd670",
+    "semantic_hash": "1f0d02dfe721b5dcd9bf5b20873fd670"
+  },
+  "brain/Core Brain Functions/Main information directory.md": {
+    "mtime": 1790105381.7450986,
+    "seen": 1790107136.7625077,
+    "ast_hash": "4f09dfa4620e5157549272c1bc87f169",
+    "semantic_hash": "4f09dfa4620e5157549272c1bc87f169"
+  },
+  "brain/Core Brain Functions/Maintenance.md": {
+    "mtime": 1790105381.6650386,
+    "seen": 1790107136.7625077,
+    "ast_hash": "435fdcc1c2cff435aca09e5e62e2cc28",
+    "semantic_hash": "435fdcc1c2cff435aca09e5e62e2cc28"
+  },
+  "brain/Core Brain Functions/Recommended next integrations.md": {
+    "mtime": 1790098122.0681996,
+    "seen": 1790107136.7625077,
+    "ast_hash": "738206ad4ac1e7ec50bccfcaa45cac46",
+    "semantic_hash": "738206ad4ac1e7ec50bccfcaa45cac46"
+  },
+  "brain/Core Brain Functions/Research references.md": {
+    "mtime": 1790098122.4087572,
+    "seen": 1790107136.7625077,
+    "ast_hash": "62f16eaf27c2115b6687b4334e35fb38",
+    "semantic_hash": "62f16eaf27c2115b6687b4334e35fb38"
+  },
+  "brain/Core Brain Functions/Safety rules.md": {
+    "mtime": 1790098121.3388963,
+    "seen": 1790107136.7625077,
+    "ast_hash": "a58a6e20ba67806d0c641dbac7467c90",
+    "semantic_hash": "a58a6e20ba67806d0c641dbac7467c90"
+  },
+  "brain/Core Brain Functions/Voice and privacy.md": {
+    "mtime": 1790105305.560717,
+    "seen": 1790107136.7625077,
+    "ast_hash": "157af35aafbf2c777b09e0fd8bd65d1e",
+    "semantic_hash": "157af35aafbf2c777b09e0fd8bd65d1e"
+  },
+  "brain/Jarvis Brain.md": {
+    "mtime": 1790105990.5260446,
+    "seen": 1790107136.7625077,
+    "ast_hash": "2eab1988fd11dfde9e2cecf83f6592c1",
+    "semantic_hash": "2eab1988fd11dfde9e2cecf83f6592c1"
+  },
+  "brain/Punch In Dashboard/Dashboard UI and parameters.md": {
+    "mtime": 1790105305.309198,
+    "seen": 1790107136.7625077,
+    "ast_hash": "456f99d4d8afd06cc666c71a0706f6bd",
+    "semantic_hash": "456f99d4d8afd06cc666c71a0706f6bd"
+  },
+  "brain/Punch In Dashboard/Dashboard change log.md": {
+    "mtime": 1790105305.3534071,
+    "seen": 1790107136.7625077,
+    "ast_hash": "7bc21c03d6fb4c1280c3e36a922b160b",
+    "semantic_hash": "7bc21c03d6fb4c1280c3e36a922b160b"
+  },
+  "brain/Punch In Dashboard/Dashboard data schema.md": {
+    "mtime": 1790105305.3368611,
+    "seen": 1790107136.7625077,
+    "ast_hash": "a80708a9f4ccc3ce1c317f1d3f9a7e8c",
+    "semantic_hash": "a80708a9f4ccc3ce1c317f1d3f9a7e8c"
+  },
+  "brain/Punch In Dashboard/Dashboard snapshot.md": {
+    "mtime": 1790105305.4428935,
+    "seen": 1790107136.7625077,
+    "ast_hash": "098c81622c815a7b87ac524025331258",
+    "semantic_hash": "098c81622c815a7b87ac524025331258"
+  },
+  "brain/Punch In Dashboard/Dashboard sync.md": {
+    "mtime": 1790105305.2760904,
+    "seen": 1790107136.7625077,
+    "ast_hash": "80dd5d4b898ba12098a179dfb3fffbb1",
+    "semantic_hash": "80dd5d4b898ba12098a179dfb3fffbb1"
+  },
+  "brain/Punch In Dashboard/Punch In Dashboard.md": {
+    "mtime": 1790105305.2591972,
+    "seen": 1790107136.7625077,
+    "ast_hash": "2134814023cbda9c2186da08da9772bb",
+    "semantic_hash": "2134814023cbda9c2186da08da9772bb"
+  },
+  "brain/Work log.md": {
+    "mtime": 1790106411.7008665,
+    "seen": 1790107136.7625077,
+    "ast_hash": "a22b2e26b4a3b2cb0269e06518f4c0db",
+    "semantic_hash": "a22b2e26b4a3b2cb0269e06518f4c0db"
+  }
+}

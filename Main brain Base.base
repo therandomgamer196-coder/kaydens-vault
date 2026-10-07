@@ -1,0 +1,60 @@
+filters:
+  or:
+    - file.inFolder("brain")
+    - file.inFolder("Brain Map")
+
+formulas:
+  area: 'if(file.inFolder("brain/Trading OS"), "Trading OS", if(file.inFolder("brain/Punch In Dashboard"), "Punch In Dashboard", if(file.inFolder("brain/Core Brain Functions"), "Core Brain Functions", if(file.inFolder("Brain Map/Neurons"), "Neuron", if(file.inFolder("Brain Map/Lobes"), "Lobe", if(file.inFolder("brain"), "Brain root", "Brain Map"))))))'
+  days_since_edit: '(now() - file.mtime).days'
+  link_count: 'file.links.length'
+  backlink_count: 'file.backlinks.length'
+
+properties:
+  formula.area:
+    displayName: Area
+  formula.days_since_edit:
+    displayName: "Days since edit"
+  formula.link_count:
+    displayName: "Links out"
+  formula.backlink_count:
+    displayName: "Links in"
+
+views:
+  - type: table
+    name: "Brain notes"
+    filters:
+      and:
+        - file.inFolder("brain")
+        - 'file.ext == "md"'
+    groupBy:
+      property: formula.area
+      direction: ASC
+    order:
+      - file.name
+      - tags
+      - formula.backlink_count
+      - formula.link_count
+      - formula.days_since_edit
+  - type: table
+    name: "Neurons by lobe"
+    filters:
+      and:
+        - file.inFolder("Brain Map/Neurons")
+    groupBy:
+      property: lobe
+      direction: ASC
+    order:
+      - file.name
+      - kind
+      - connections
+      - source
+  - type: table
+    name: "Lobes"
+    filters:
+      and:
+        - file.inFolder("Brain Map/Lobes")
+    order:
+      - file.name
+      - region
+      - neurons
+      - cohesion

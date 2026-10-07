@@ -1,0 +1,107 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Brain Map/Lobes\" OR file:\"Brain Map\"",
+      "color": {
+        "a": 1,
+        "rgb": 16765286
+      }
+    },
+    {
+      "query": "path:brain/",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "tag:#lobe/future-integrations-research",
+      "color": {
+        "a": 1,
+        "rgb": 12616956
+      }
+    },
+    {
+      "query": "tag:#lobe/jarvis-core-system",
+      "color": {
+        "a": 1,
+        "rgb": 16742936
+      }
+    },
+    {
+      "query": "tag:#lobe/reliability-maintenance",
+      "color": {
+        "a": 1,
+        "rgb": 2282478
+      }
+    },
+    {
+      "query": "tag:#lobe/safety-voice-privacy",
+      "color": {
+        "a": 1,
+        "rgb": 16007006
+      }
+    },
+    {
+      "query": "tag:#lobe/kayden-jobs",
+      "color": {
+        "a": 1,
+        "rgb": 16436245
+      }
+    },
+    {
+      "query": "tag:#lobe/dashboard-data-sync",
+      "color": {
+        "a": 1,
+        "rgb": 3462041
+      }
+    },
+    {
+      "query": "tag:#lobe/dashboard-display-files",
+      "color": {
+        "a": 1,
+        "rgb": 6333946
+      }
+    },
+    {
+      "query": "tag:#lobe/claude-code-tooling",
+      "color": {
+        "a": 1,
+        "rgb": 15235577
+      }
+    },
+    {
+      "query": "tag:#lobe/logs-change-tracking",
+      "color": {
+        "a": 1,
+        "rgb": 10741301
+      }
+    },
+    {
+      "query": "tag:#lobe/dashboard-ui-widgets",
+      "color": {
+        "a": 1,
+        "rgb": 8490232
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1.18498909996886,
+  "lineSizeMultiplier": 1.35590158829025,
+  "collapse-forces": false,
+  "centerStrength": 0.600124571784491,
+  "repelStrength": 12.3673070661022,
+  "linkStrength": 0.445655559015883,
+  "linkDistance": 315,
+  "scale": 0.36288736930120613,
+  "close": true
+}

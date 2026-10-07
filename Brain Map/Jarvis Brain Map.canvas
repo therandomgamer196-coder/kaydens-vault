@@ -1,0 +1,1079 @@
+{
+ "nodes": [
+  {
+   "id": "lobe-0",
+   "type": "group",
+   "x": -820,
+   "y": 0,
+   "width": 690,
+   "height": 890,
+   "label": "Future Integrations & Research \u00b7 Left frontal lobe",
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_recommended_next_integrations",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Recommended next integrations.md",
+   "x": -790,
+   "y": 60,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_research_references",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Research references.md",
+   "x": -460,
+   "y": 60,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_safety_rules_explicit_confirmation",
+   "type": "file",
+   "file": "Brain Map/Neurons/Explicit confirmation for risky tools.md",
+   "x": -790,
+   "y": 160,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_voice_and_privacy_hey_jarvis_wake_word",
+   "type": "file",
+   "file": "Brain Map/Neurons/Hey Jarvis wake word.md",
+   "x": -460,
+   "y": 160,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_research_references_home_assistant_voice_docs",
+   "type": "file",
+   "file": "Brain Map/Neurons/Home Assistant Assist Satellite and local voice docs.md",
+   "x": -790,
+   "y": 260,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_recommended_next_integrations_home_assistant_integration",
+   "type": "file",
+   "file": "Brain Map/Neurons/Home Assistant integration.md",
+   "x": -460,
+   "y": 260,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_recommended_next_integrations_local_audit_timeline",
+   "type": "file",
+   "file": "Brain Map/Neurons/Local audit timeline.md",
+   "x": -790,
+   "y": 360,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_research_references_ms_graph_docs",
+   "type": "file",
+   "file": "Brain Map/Neurons/Microsoft Graph calendar and mail docs.md",
+   "x": -460,
+   "y": 360,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_recommended_next_integrations_microsoft_graph_integration",
+   "type": "file",
+   "file": "Brain Map/Neurons/Microsoft Graph calendar-mail integration.md",
+   "x": -790,
+   "y": 460,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_research_references_ms_ui_automation_docs",
+   "type": "file",
+   "file": "Brain Map/Neurons/Microsoft UI Automation docs.md",
+   "x": -460,
+   "y": 460,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_recommended_next_integrations_windows_notifications",
+   "type": "file",
+   "file": "Brain Map/Neurons/Native Windows notifications.md",
+   "x": -790,
+   "y": 560,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_research_references_openwakeword",
+   "type": "file",
+   "file": "Brain Map/Neurons/openWakeWord.md",
+   "x": -460,
+   "y": 560,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_recommended_next_integrations_push_to_talk_hotkey",
+   "type": "file",
+   "file": "Brain Map/Neurons/Push-to-talk hotkey.md",
+   "x": -790,
+   "y": 660,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_main_information_directory_setup_ps1",
+   "type": "file",
+   "file": "Brain Map/Neurons/setup.ps1 install.md",
+   "x": -460,
+   "y": 660,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "n-brain_core_brain_functions_research_references_windows_app_notifications_docs",
+   "type": "file",
+   "file": "Brain Map/Neurons/Windows app notifications docs.md",
+   "x": -790,
+   "y": 760,
+   "width": 300,
+   "height": 70,
+   "color": "#c084fc"
+  },
+  {
+   "id": "lobe-7",
+   "type": "group",
+   "x": 130,
+   "y": 0,
+   "width": 690,
+   "height": 390,
+   "label": "Claude Code Tooling \u00b7 Right frontal lobe",
+   "color": "#e879f9"
+  },
+  {
+   "id": "n-brain_core_brain_functions_claude_code_setup",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Claude Code setup.md",
+   "x": 160,
+   "y": 60,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_claude_code_setup_claude_code",
+   "type": "file",
+   "file": "Brain Map/Neurons/Claude Code.md",
+   "x": 490,
+   "y": 60,
+   "width": 300,
+   "height": 70,
+   "color": "#e879f9"
+  },
+  {
+   "id": "n-brain_core_brain_functions_claude_code_setup_graphify",
+   "type": "file",
+   "file": "Brain Map/Neurons/Graphify.md",
+   "x": 160,
+   "y": 160,
+   "width": 300,
+   "height": 70,
+   "color": "#e879f9"
+  },
+  {
+   "id": "n-brain_core_brain_functions_claude_code_setup_obsidian_skills_plugin",
+   "type": "file",
+   "file": "Brain Map/Neurons/Obsidian skills plugin.md",
+   "x": 490,
+   "y": 160,
+   "width": 300,
+   "height": 70,
+   "color": "#e879f9"
+  },
+  {
+   "id": "n-brain_core_brain_functions_claude_code_setup_project_claude_md",
+   "type": "file",
+   "file": "Brain Map/Neurons/Project CLAUDE.md.md",
+   "x": 160,
+   "y": 260,
+   "width": 300,
+   "height": 70,
+   "color": "#e879f9"
+  },
+  {
+   "id": "lobe-1",
+   "type": "group",
+   "x": -820,
+   "y": 1050,
+   "width": 690,
+   "height": 690,
+   "label": "Jarvis Core System \u00b7 Left parietal lobe",
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_core_brain_functions_dashboard_context",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Dashboard context.md",
+   "x": -790,
+   "y": 1110,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_jarvis_brain",
+   "type": "file",
+   "file": "brain/Jarvis Brain.md",
+   "x": -460,
+   "y": 1110,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_main_information_directory",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Main information directory.md",
+   "x": -790,
+   "y": 1210,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_dashboard_context_command_centre_interface",
+   "type": "file",
+   "file": "Brain Map/Neurons/Command-centre interface.md",
+   "x": -460,
+   "y": 1210,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_core_brain_functions_dashboard_context_dashboard_mcp_server",
+   "type": "file",
+   "file": "Brain Map/Neurons/dashboard_mcp_server.py.md",
+   "x": -790,
+   "y": 1310,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_about_kayden_hp_victus_laptop",
+   "type": "file",
+   "file": "Brain Map/Neurons/HP Victus laptop.md",
+   "x": -460,
+   "y": 1310,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_jarvis_brain_jarvis",
+   "type": "file",
+   "file": "Brain Map/Neurons/Jarvis.md",
+   "x": -790,
+   "y": 1410,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_core_brain_functions_main_information_directory_jarvis_bridge",
+   "type": "file",
+   "file": "Brain Map/Neurons/Jarvis bridge.md",
+   "x": -460,
+   "y": 1410,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_core_brain_functions_main_information_directory_mcp_activity_log",
+   "type": "file",
+   "file": "Brain Map/Neurons/mcp-activity.jsonl log.md",
+   "x": -790,
+   "y": 1510,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_core_brain_functions_main_information_directory_ollama",
+   "type": "file",
+   "file": "Brain Map/Neurons/Ollama local model.md",
+   "x": -460,
+   "y": 1510,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_core_brain_functions_dashboard_context_dashboard_context_post",
+   "type": "file",
+   "file": "Brain Map/Neurons/POST dashboard-context.md",
+   "x": -790,
+   "y": 1610,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "n-brain_core_brain_functions_main_information_directory_restart_jarvis_cmd",
+   "type": "file",
+   "file": "Brain Map/Neurons/restart-jarvis.cmd.md",
+   "x": -460,
+   "y": 1610,
+   "width": 300,
+   "height": 70,
+   "color": "#ff7a18"
+  },
+  {
+   "id": "lobe-9",
+   "type": "group",
+   "x": 130,
+   "y": 1050,
+   "width": 690,
+   "height": 290,
+   "label": "Dashboard UI Widgets \u00b7 Right parietal lobe",
+   "color": "#818cf8"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_ui_and_parameters",
+   "type": "file",
+   "file": "brain/Punch In Dashboard/Dashboard UI and parameters.md",
+   "x": 160,
+   "y": 1110,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_ui_and_parameters_jarvis_orb",
+   "type": "file",
+   "file": "Brain Map/Neurons/Jarvis orb.md",
+   "x": 490,
+   "y": 1110,
+   "width": 300,
+   "height": 70,
+   "color": "#818cf8"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_ui_and_parameters_open_meteo_weather",
+   "type": "file",
+   "file": "Brain Map/Neurons/Open-Meteo live weather.md",
+   "x": 160,
+   "y": 1210,
+   "width": 300,
+   "height": 70,
+   "color": "#818cf8"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_ui_and_parameters_up_next_panel",
+   "type": "file",
+   "file": "Brain Map/Neurons/Up next panel.md",
+   "x": 490,
+   "y": 1210,
+   "width": 300,
+   "height": 70,
+   "color": "#818cf8"
+  },
+  {
+   "id": "lobe-3",
+   "type": "group",
+   "x": -820,
+   "y": 1900,
+   "width": 690,
+   "height": 690,
+   "label": "Safety & Voice Privacy \u00b7 Left temporal lobe",
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_safety_rules",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Safety rules.md",
+   "x": -790,
+   "y": 1960,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_voice_and_privacy",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Voice and privacy.md",
+   "x": -460,
+   "y": 1960,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_safety_rules_allowlisted_commands",
+   "type": "file",
+   "file": "Brain Map/Neurons/Allowlisted commands.md",
+   "x": -790,
+   "y": 2060,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_voice_and_privacy_command_routing",
+   "type": "file",
+   "file": "Brain Map/Neurons/Command routing.md",
+   "x": -460,
+   "y": 2060,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_voice_and_privacy_edge_neural_tts",
+   "type": "file",
+   "file": "Brain Map/Neurons/Edge neural TTS (en-GB-RyanNeural).md",
+   "x": -790,
+   "y": 2160,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_voice_and_privacy_faster_whisper",
+   "type": "file",
+   "file": "Brain Map/Neurons/faster-whisper transcription.md",
+   "x": -460,
+   "y": 2160,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_safety_rules_no_secrets_in_obsidian",
+   "type": "file",
+   "file": "Brain Map/Neurons/No secrets in Obsidian.md",
+   "x": -790,
+   "y": 2260,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_research_references_owasp_prompt_injection",
+   "type": "file",
+   "file": "Brain Map/Neurons/OWASP prompt injection (LLM01).md",
+   "x": -460,
+   "y": 2260,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_safety_rules_safe_sites",
+   "type": "file",
+   "file": "Brain Map/Neurons/Safe sites.md",
+   "x": -790,
+   "y": 2360,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_safety_rules_untrusted_data_rule",
+   "type": "file",
+   "file": "Brain Map/Neurons/Untrusted data rule.md",
+   "x": -460,
+   "y": 2360,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "n-brain_core_brain_functions_voice_and_privacy_vault_mirroring_limits",
+   "type": "file",
+   "file": "Brain Map/Neurons/Vault mirroring limits.md",
+   "x": -790,
+   "y": 2460,
+   "width": 300,
+   "height": 70,
+   "color": "#f43f5e"
+  },
+  {
+   "id": "lobe-4",
+   "type": "group",
+   "x": 130,
+   "y": 1900,
+   "width": 690,
+   "height": 390,
+   "label": "Kayden & Jobs \u00b7 Right temporal lobe",
+   "color": "#facc15"
+  },
+  {
+   "id": "n-brain_about_kayden",
+   "type": "file",
+   "file": "brain/About Kayden.md",
+   "x": 160,
+   "y": 1960,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_about_kayden_bucket_system",
+   "type": "file",
+   "file": "Brain Map/Neurons/Bucket System.md",
+   "x": 490,
+   "y": 1960,
+   "width": 300,
+   "height": 70,
+   "color": "#facc15"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_ui_and_parameters_est_pay_7_days",
+   "type": "file",
+   "file": "Brain Map/Neurons/Est. pay 7 days stat.md",
+   "x": 160,
+   "y": 2060,
+   "width": 300,
+   "height": 70,
+   "color": "#facc15"
+  },
+  {
+   "id": "n-brain_about_kayden_greenfield_restaurant_and_bar",
+   "type": "file",
+   "file": "Brain Map/Neurons/Greenfield Restaurant and Bar job.md",
+   "x": 490,
+   "y": 2060,
+   "width": 300,
+   "height": 70,
+   "color": "#facc15"
+  },
+  {
+   "id": "n-brain_about_kayden_kayden",
+   "type": "file",
+   "file": "Brain Map/Neurons/Kayden.md",
+   "x": 160,
+   "y": 2160,
+   "width": 300,
+   "height": 70,
+   "color": "#facc15"
+  },
+  {
+   "id": "n-brain_about_kayden_papa_john_s",
+   "type": "file",
+   "file": "Brain Map/Neurons/Papa John's job.md",
+   "x": 490,
+   "y": 2160,
+   "width": 300,
+   "height": 70,
+   "color": "#facc15"
+  },
+  {
+   "id": "lobe-6",
+   "type": "group",
+   "x": -820,
+   "y": 2750,
+   "width": 690,
+   "height": 390,
+   "label": "Dashboard Display Files \u00b7 Left occipital lobe",
+   "color": "#60a5fa"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_punch_in_dashboard",
+   "type": "file",
+   "file": "brain/Punch In Dashboard/Punch In Dashboard.md",
+   "x": -790,
+   "y": 2810,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_punch_in_dashboard_dashboard_artifact",
+   "type": "file",
+   "file": "Brain Map/Neurons/Dashboard artifact (test copy).md",
+   "x": -460,
+   "y": 2810,
+   "width": 300,
+   "height": 70,
+   "color": "#60a5fa"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_punch_in_dashboard_lively_wallpaper",
+   "type": "file",
+   "file": "Brain Map/Neurons/Lively wallpaper (Dashboard Version 19).md",
+   "x": -790,
+   "y": 2910,
+   "width": 300,
+   "height": 70,
+   "color": "#60a5fa"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_punch_in_dashboard_punch_in_data_js",
+   "type": "file",
+   "file": "Brain Map/Neurons/punch-in-data.js.md",
+   "x": -460,
+   "y": 2910,
+   "width": 300,
+   "height": 70,
+   "color": "#60a5fa"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_punch_in_dashboard_punch_in_version_js",
+   "type": "file",
+   "file": "Brain Map/Neurons/punch-in-version.js.md",
+   "x": -790,
+   "y": 3010,
+   "width": 300,
+   "height": 70,
+   "color": "#60a5fa"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_punch_in_dashboard_punch_in_wallpaper_html",
+   "type": "file",
+   "file": "Brain Map/Neurons/punch-in-wallpaper.html.md",
+   "x": -460,
+   "y": 3010,
+   "width": 300,
+   "height": 70,
+   "color": "#60a5fa"
+  },
+  {
+   "id": "lobe-5",
+   "type": "group",
+   "x": 130,
+   "y": 2750,
+   "width": 690,
+   "height": 390,
+   "label": "Dashboard Data Sync \u00b7 Right occipital lobe",
+   "color": "#34d399"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_data_schema",
+   "type": "file",
+   "file": "brain/Punch In Dashboard/Dashboard data schema.md",
+   "x": 160,
+   "y": 2810,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_snapshot",
+   "type": "file",
+   "file": "brain/Punch In Dashboard/Dashboard snapshot.md",
+   "x": 490,
+   "y": 2810,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_sync",
+   "type": "file",
+   "file": "brain/Punch In Dashboard/Dashboard sync.md",
+   "x": 160,
+   "y": 2910,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_sync_punch_in_daily_sync",
+   "type": "file",
+   "file": "Brain Map/Neurons/Punch In daily sync (7 AM).md",
+   "x": 490,
+   "y": 2910,
+   "width": 300,
+   "height": 70,
+   "color": "#34d399"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_data_schema_punch_in_data_object",
+   "type": "file",
+   "file": "Brain Map/Neurons/PUNCH_IN_DATA object.md",
+   "x": 160,
+   "y": 3010,
+   "width": 300,
+   "height": 70,
+   "color": "#34d399"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_sync_refresh_punch_in_dashboard_task",
+   "type": "file",
+   "file": "Brain Map/Neurons/Refresh Punch In dashboard (paused).md",
+   "x": 490,
+   "y": 3010,
+   "width": 300,
+   "height": 70,
+   "color": "#34d399"
+  },
+  {
+   "id": "lobe-2",
+   "type": "group",
+   "x": -820,
+   "y": 3300,
+   "width": 690,
+   "height": 690,
+   "label": "Reliability & Maintenance \u00b7 Brainstem",
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance",
+   "type": "file",
+   "file": "brain/Core Brain Functions/Maintenance.md",
+   "x": -790,
+   "y": 3360,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_health_endpoint",
+   "type": "file",
+   "file": "Brain Map/Neurons/health and status endpoints.md",
+   "x": -460,
+   "y": 3360,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_outage_2026_09_22",
+   "type": "file",
+   "file": "Brain Map/Neurons/2026-09-22 outage.md",
+   "x": -790,
+   "y": 3460,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_voice_and_privacy_audio_validation_rule",
+   "type": "file",
+   "file": "Brain Map/Neurons/Audio validation rule.md",
+   "x": -460,
+   "y": 3460,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_bridge_guard",
+   "type": "file",
+   "file": "Brain Map/Neurons/Bridge guard.md",
+   "x": -790,
+   "y": 3560,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_jarvis_watchdog",
+   "type": "file",
+   "file": "Brain Map/Neurons/Jarvis watchdog.md",
+   "x": -460,
+   "y": 3560,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_mic_self_healing",
+   "type": "file",
+   "file": "Brain Map/Neurons/Mic self-healing.md",
+   "x": -790,
+   "y": 3660,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_microphone_choice_order",
+   "type": "file",
+   "file": "Brain Map/Neurons/Microphone choice order.md",
+   "x": -460,
+   "y": 3660,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_autostart",
+   "type": "file",
+   "file": "Brain Map/Neurons/Sign-in autostart.md",
+   "x": -790,
+   "y": 3760,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_single_instance_lock",
+   "type": "file",
+   "file": "Brain Map/Neurons/Single-instance lock.md",
+   "x": -460,
+   "y": 3760,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_speaking_stuck_issue",
+   "type": "file",
+   "file": "Brain Map/Neurons/Stuck 'speaking' known issue.md",
+   "x": -790,
+   "y": 3860,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "n-brain_core_brain_functions_maintenance_run_tests",
+   "type": "file",
+   "file": "Brain Map/Neurons/tests-run_tests.py.md",
+   "x": -460,
+   "y": 3860,
+   "width": 300,
+   "height": 70,
+   "color": "#22d3ee"
+  },
+  {
+   "id": "lobe-8",
+   "type": "group",
+   "x": 130,
+   "y": 3300,
+   "width": 690,
+   "height": 390,
+   "label": "Logs & Change Tracking \u00b7 Cerebellum",
+   "color": "#a3e635"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_change_log",
+   "type": "file",
+   "file": "brain/Punch In Dashboard/Dashboard change log.md",
+   "x": 160,
+   "y": 3360,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_work_log",
+   "type": "file",
+   "file": "brain/Work log.md",
+   "x": 490,
+   "y": 3360,
+   "width": 300,
+   "height": 70
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_change_log_change_log_rule",
+   "type": "file",
+   "file": "Brain Map/Neurons/Change log rule.md",
+   "x": 160,
+   "y": 3460,
+   "width": 300,
+   "height": 70,
+   "color": "#a3e635"
+  },
+  {
+   "id": "n-brain_jarvis_brain_one_topic_one_file",
+   "type": "file",
+   "file": "Brain Map/Neurons/One topic per file design.md",
+   "x": 490,
+   "y": 3460,
+   "width": 300,
+   "height": 70,
+   "color": "#a3e635"
+  },
+  {
+   "id": "n-brain_punch_in_dashboard_dashboard_change_log_stale_wallpaper_data_fix",
+   "type": "file",
+   "file": "Brain Map/Neurons/Stale wallpaper data fix.md",
+   "x": 160,
+   "y": 3560,
+   "width": 300,
+   "height": 70,
+   "color": "#a3e635"
+  },
+  {
+   "id": "hub-index",
+   "type": "file",
+   "file": "brain/Jarvis Brain.md",
+   "x": -120,
+   "y": 1875,
+   "width": 240,
+   "height": 120,
+   "color": "#ffffff"
+  },
+  {
+   "id": "hub-map",
+   "type": "file",
+   "file": "Brain Map/Brain Map.md",
+   "x": -120,
+   "y": 2045,
+   "width": 240,
+   "height": 120,
+   "color": "#ffd166"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-hub-0",
+   "fromNode": "hub-index",
+   "fromSide": "left",
+   "toNode": "lobe-0",
+   "toSide": "right",
+   "color": "#c084fc"
+  },
+  {
+   "id": "e-hub-7",
+   "fromNode": "hub-index",
+   "fromSide": "right",
+   "toNode": "lobe-7",
+   "toSide": "left",
+   "color": "#e879f9"
+  },
+  {
+   "id": "e-hub-1",
+   "fromNode": "hub-index",
+   "fromSide": "left",
+   "toNode": "lobe-1",
+   "toSide": "right",
+   "color": "#ff7a18"
+  },
+  {
+   "id": "e-hub-9",
+   "fromNode": "hub-index",
+   "fromSide": "right",
+   "toNode": "lobe-9",
+   "toSide": "left",
+   "color": "#818cf8"
+  },
+  {
+   "id": "e-hub-3",
+   "fromNode": "hub-index",
+   "fromSide": "left",
+   "toNode": "lobe-3",
+   "toSide": "right",
+   "color": "#f43f5e"
+  },
+  {
+   "id": "e-hub-4",
+   "fromNode": "hub-index",
+   "fromSide": "right",
+   "toNode": "lobe-4",
+   "toSide": "left",
+   "color": "#facc15"
+  },
+  {
+   "id": "e-hub-6",
+   "fromNode": "hub-index",
+   "fromSide": "left",
+   "toNode": "lobe-6",
+   "toSide": "right",
+   "color": "#60a5fa"
+  },
+  {
+   "id": "e-hub-5",
+   "fromNode": "hub-index",
+   "fromSide": "right",
+   "toNode": "lobe-5",
+   "toSide": "left",
+   "color": "#34d399"
+  },
+  {
+   "id": "e-hub-2",
+   "fromNode": "hub-index",
+   "fromSide": "left",
+   "toNode": "lobe-2",
+   "toSide": "right",
+   "color": "#22d3ee"
+  },
+  {
+   "id": "e-hub-8",
+   "fromNode": "hub-index",
+   "fromSide": "right",
+   "toNode": "lobe-8",
+   "toSide": "left",
+   "color": "#a3e635"
+  },
+  {
+   "id": "e-1-6",
+   "fromNode": "lobe-1",
+   "toNode": "lobe-6",
+   "label": "3 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-1-4",
+   "fromNode": "lobe-1",
+   "toNode": "lobe-4",
+   "label": "3 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-1-0",
+   "fromNode": "lobe-1",
+   "toNode": "lobe-0",
+   "label": "4 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-1-2",
+   "fromNode": "lobe-1",
+   "toNode": "lobe-2",
+   "label": "4 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-1-3",
+   "fromNode": "lobe-1",
+   "toNode": "lobe-3",
+   "label": "4 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-6-8",
+   "fromNode": "lobe-6",
+   "toNode": "lobe-8",
+   "label": "3 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-6-5",
+   "fromNode": "lobe-6",
+   "toNode": "lobe-5",
+   "label": "6 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-0-3",
+   "fromNode": "lobe-0",
+   "toNode": "lobe-3",
+   "label": "3 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-2-8",
+   "fromNode": "lobe-2",
+   "toNode": "lobe-8",
+   "label": "3 links",
+   "color": "#94a3b8"
+  },
+  {
+   "id": "e-5-8",
+   "fromNode": "lobe-5",
+   "toNode": "lobe-8",
+   "label": "4 links",
+   "color": "#94a3b8"
+  }
+ ]
+}
