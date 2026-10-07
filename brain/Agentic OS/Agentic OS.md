@@ -14,7 +14,7 @@ This is the project that turns Jarvis into Kayden's own agentic operating system
 ## Dashboard
 
 > [!tip] Brain and cloud (2026-10-06)
-> Jarvis now thinks with Claude Opus 5.5 once his API key is in (see [[Jarvis Cloud Setup]]). He searches this vault live, keeps his own notes in [[Jarvis Notes]], and works through [[Jarvis Inbox]].
+> Jarvis now thinks with Claude Opus 5.5 once his API key is in (see [[Jarvis Cloud Setup]]). He searches this vault live, keeps his own notes in [[Jarvis Notes]], and works through [[Jarvis Inbox]]. Setup progress: [[Jarvis Setup Checklist]].
 
 
 The screens of the Agentic OS, all labelled **dashboard**:

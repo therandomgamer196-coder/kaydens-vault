@@ -7,6 +7,9 @@ status: waiting-on-kayden
 
 # Jarvis Cloud Setup
 
+> [!todo] Current plan
+> The cheaper hybrid plan is being set up now. Follow [[Jarvis Setup Checklist]].
+
 How Jarvis gets a smarter brain (Claude Opus 5.5) and works around the clock in the cloud. Part of [[Agentic OS]]. Changes are logged in [[Agentic OS change log]].
 
 > [!info] What runs where
