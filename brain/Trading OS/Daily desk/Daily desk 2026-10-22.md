@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-22
 updated: 2026-10-22
-summary: Quiet overnight - no real trades; Lab closed 4 paper trades (3 winners), missed one run at 3:30 AM (permission check) and still can't push to the brain; 3D brain builder still missing.
+summary: Quiet morning - no real trades; crypto setups skipped (fees, missed window); Lab gen 1072 with 5 paper trades open and 3 research notes; Lab still can't push to the brain; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]"]
 ---
 
 # Daily desk 2026-10-22
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 08:42 ET
+
+**Real trades (••3001)**
+- No real entries or exits since 5:42 AM ET. Real crypto: 0 open, $17.00 crypto buying power (7:54 AM check); no board paper setup to copy.
+- Open: USO 4h trend, 0.108906 sh @ 160.14, stop 156.93, first target 163.34 (bot/state as of 3:51 PM ET 10-21; the stock bot's first run today is 9:50 AM). Realized since 2026-09-30: −$0.24.
+
+**Board** (refreshed 10-21 9:25 PM): decent list = MSFT prior-day-low sweep. Nothing new.
+
+**Paper crypto**: 0 paper trades open. 5:45 AM: 1h RSI oversold on SOL, ADA, LTC, LINK, AVAX, WIF and SUI. 6:15 AM: two sweep+FVG setups, both skipped: SOL (1.03R after fees, fees too heavy) and ADA (1.78R after fees, but the ask was 0.67% above entry, window missed). ADA top-ranked at 7:46 AM, 4h trend down.
+
+**5-minute scout**: 47 markets, 4 proven setups (ASST, NTSK, MSTR, PLTR), none firing. RKLB alert added at 5:49 AM, removed at 6:49 AM (no longer proven); 4 Robinhood alerts in place; Auto OFF.
+
+**Lab (Ultron)**: generation 1072, 5 champions pass out-of-sample, 5 paper trades open (APLD, GM, MARA, NU, SMTC), no new trades or closes. Forward record still 5 trades, +0.95% per trade (far too few; the gate is 30+). 5 flaws flagged (was 6). No proposals.
+
+**Research** (idea only)
+- [U20261022T0629] Lucky-cluster flaw: 4,329 RSI(2) dip-buys on 55 stocks made +0.84%/trade, but the 5 best of 697 signal days made 52% of the profit (+0.41%/trade without them); 30 trades in a row usually cover only about 5 days. Sources: [mlfinpy sampling](https://mlfinpy.readthedocs.io/en/latest/Sampling.html), [Deflated Sharpe ratio](https://en.wikipedia.org/wiki/Deflated_Sharpe_ratio).
+- [U20261022T0733] Stops: on 5,278 dip trades, an hourly-checked 1×ATR stop lost more than 1.2R on 13.7% of trades (3.1% with a resting stop) but still earned more on average; a 2×ATR stop cut that to 3.6%. Sources: [Kaminski & Lo, MIT](https://dspace.mit.edu/entities/publication/bb69ca4b-0cdc-487f-831d-63b2e84fafee), [quant-investing](https://www.quant-investing.com/blog/truths-about-stop-losses-that-nobody-wants-to-believe).
+- [U20261022T0832] Overnight vs day: on 2,762 RSI(2) dips the first night did no better than a random night (+0.13% vs +0.16%); the edge sat in the next day plus the second night. Sources: [Lou, Polk & Skouras (LSE)](https://eprints.lse.ac.uk/87481/), [CXO Advisory](https://www.cxoadvisory.com/calendar-effects/momentum-happens-at-night/).
+
+**Problems seen**
+- Brain sync: the Lab's 6:33, 7:33 and 8:32 AM runs could not push to the vault (add_repo not available to the task, push 403), so these three research notes and their Ideas lines are only in the page database.
+- 3D brain: still not rebuilt; `graphify-out/build_brain_data.py` is still missing from the vault (see [[Handoff to Claude]]).
+- No scheduled-task, rule or config changes since 5:42 AM.
+
+Not financial advice.
 
 ## 05:42 ET
 
