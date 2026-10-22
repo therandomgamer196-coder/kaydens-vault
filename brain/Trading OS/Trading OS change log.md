@@ -2,13 +2,35 @@
 tags: [trading, changelog]
 aliases: [Trading OS changes]
 created: 2026-10-01
-updated: 2026-10-04
+updated: 2026-10-21
 summary: Dated record of every change to the Trading OS page, the auto-trader, the crypto monitor and their scheduled tasks. Newest first.
 ---
 
 # Trading OS change log
 
 Part of [[Trading OS]]. Newest first. Times are Eastern.
+
+## 2026-10-21
+
+- **[9:02 PM] Diagnostics** (Kayden: "run a test ... and run diagnostics"). Read-only.
+  - **Healthy:** all live tasks ran on time; the ledger matches Robinhood (••3001: USO 0.108906 @ 160.14, $17.00 cash, $34.50 total); 5m scout Auto is OFF; circuit breaker not tripped.
+  - **Real-money record since 2026-09-30:** 5 closed trades, 1 winner, −$0.24.
+  - **Problems found:** the Probability board was stale (bar date 2026-10-02; nightly task disabled since 2026-10-07); nothing had reached the brain since 2026-10-07; the Lab stopped checking GM/NU paper trades; the trading-os manual was out of date. Details in [[Daily desk 2026-10-21]].
+- **[9:25 PM] Probability board refreshed by hand.** 22 markets, now including PEPE, BONK, WIF and PENGU, with no data errors. Decent signals: GOOGL prior-day-low sweep (58.8% of 102), MSFT prior-day-low sweep (61.3% of 93, **fired on the 10-21 close**), MSFT breakout (65.5% of 55), and, after fees, ADA oversold (70% of 40), PEPE oversold (78.9% of 38) and BONK oversold (75% of 40). The nightly task still needs re-enabling (see [[Pending scheduled-task changes]]).
+- **[9:30 PM] Lab engine v1.5** (Kayden: "run as much as possible"). An open paper trade now always loads its symbol, so stops, targets and time exits keep being checked after a name leaves the discovered universe (the GM/NU bug). Tested on live data: all 9 open trades updated.
+- **[9:32 PM] `config/rules` created** in the page database. It is the single source of truth for accounts, sizing, limits, real-money strategies, promotion gates and the **kill switch** (off). The tasks start reading it once the [[Pending scheduled-task changes]] are applied.
+- **[9:35 PM] Brain sync root cause.** The vault repo wasn't in the session's authorized repos, so pushes failed with 403 and the Lab skipped them silently. Fixed for this session with push access; the fix for the scheduled tasks is staged in [[Pending scheduled-task changes]].
+- **[9:40 PM] New notes:** [[ZERO trading agent]] (system map), [[Strategy scorecard]] plus 9 strategy cards, [[Playbook]] (promotion gates), [[Ideas]], [[Handoff to Claude]], [[VS Code agent brief]]. Repo root: `AGENTS.md`, `.github/copilot-instructions.md`, and `trading-os-code/` (copies of all 7 engine scripts).
+- **Blocked:** scheduled-task edits were denied by this session's permission check: board re-enable, kill-switch and vault blocks, Lab gates, watchdog, Scribe and model changes. All are written out in [[Pending scheduled-task changes]].
+- **Security:** `.obsidian/plugins/obsidian-local-rest-api/data.json` (Local REST API key) is tracked in git. Kayden should rotate the key and untrack it on the laptop.
+
+## 2026-10-15 to 10-16 (catch-up: these changes were never logged)
+
+Taken from the live task prompts.
+- **Z.E.R.O replaces the $15 bot** (2026-10-15 4:31 PM): sizing toward his risk rule, sell half at the first target and trail the rest, $5+ goal per trade, the bot's own day-trade caps removed (only the legal PDT limit stays), re-entries allowed.
+- **"Trade crypto"** (2026-10-16 2:32 AM): real crypto through the new task "Z.E.R.O crypto (real money)", copying board paper trades only.
+- **Sizing** (2026-10-16 ~3:00 AM): $25-$30 per position, max 50% of the account per position, put buying power to work on valid setups.
+- **New tasks:** the Z.E.R.O 5-minute scout (alerts plus optional Auto, which is off) and the Z.E.R.O Lab curator "Ultron" (paper research, hourly).
 
 ## 2026-10-04
 

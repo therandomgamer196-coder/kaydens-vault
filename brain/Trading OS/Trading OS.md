@@ -2,7 +2,7 @@
 tags: [trading, index]
 aliases: [Trading OS, trading desk, Robinhood trading OS]
 created: 2026-09-30
-updated: 2026-10-04
+updated: 2026-10-21
 summary: Kayden's trading desk - live Robinhood dashboard, $15 real-money auto-trader, 24/7 crypto liquidity monitor and the research loop.
 ---
 
@@ -26,6 +26,9 @@ Kayden's trading desk. It has four parts:
 | First paper test ($15 Paper Desk) | https://claude.ai/artifact/93XKW9X4EkUSDXE1CL2muM |
 
 ## Notes
+
+> [!info] Current setup (2026-10-21)
+> The $15 bot became **Z.E.R.O** on 2026-10-15/16. Start with [[ZERO trading agent]] (system map and rules), [[Strategy scorecard]], [[Pending scheduled-task changes]] and [[Handoff to Claude]]. Coding agents: [[VS Code agent brief]].
 
 - [[Trading OS page]]: layout, every panel, the database it reads, how to update it safely
 - [[Auto-trader]]: the real-money $15 bot (rules, schedule, alerts, authorization)
