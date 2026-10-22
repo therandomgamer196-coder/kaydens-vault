@@ -2,13 +2,16 @@
 tags: [trading, zero, todo]
 type: note
 created: 2026-10-21
-updated: 2026-10-21
+updated: 2026-10-22
 status: growing
 summary: Scheduled-task changes Claude prepared on 2026-10-21 but could not apply (task edits were blocked by a permission check). Apply them once Kayden approves.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[VS Code agent brief]]"]
 ---
 
 # Pending scheduled-task changes
+
+> [!info] Status 2026-10-22 (Scribe)
+> Applied 2026-10-21 11:31-11:44 PM ET: 1 (board re-enabled), 2 (vault block), 4 (Lab gates), 5 (watchdog), 6 (Scribe, now every 3 hours with the 3D brain), 7 (models). Still open: 3 (kill-switch block), the Lab's robinhood connector, and 8. See [[Trading OS change log]].
 
 Part of [[ZERO trading agent]]. Prepared 2026-10-21 ~9:35 PM ET. Kayden approved the plan ("run as much as possible"), but this session's permission check blocked edits to scheduled tasks. To apply them, tell Claude **"approve scheduled task changes"** in a session that allows it. Each item says exactly what changes.
 

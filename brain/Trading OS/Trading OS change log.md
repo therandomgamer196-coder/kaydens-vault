@@ -2,7 +2,7 @@
 tags: [trading, changelog]
 aliases: [Trading OS changes]
 created: 2026-10-01
-updated: 2026-10-21
+updated: 2026-10-22
 summary: Dated record of every change to the Trading OS page, the auto-trader, the crypto monitor and their scheduled tasks. Newest first.
 ---
 
@@ -23,6 +23,13 @@ Part of [[Trading OS]]. Newest first. Times are Eastern.
 - **[9:40 PM] New notes:** [[ZERO trading agent]] (system map), [[Strategy scorecard]] plus 9 strategy cards, [[Playbook]] (promotion gates), [[Ideas]], [[Handoff to Claude]], [[VS Code agent brief]]. Repo root: `AGENTS.md`, `.github/copilot-instructions.md`, and `trading-os-code/` (copies of all 7 engine scripts).
 - **Blocked:** scheduled-task edits were denied by this session's permission check: board re-enable, kill-switch and vault blocks, Lab gates, watchdog, Scribe and model changes. All are written out in [[Pending scheduled-task changes]].
 - **Security:** `.obsidian/plugins/obsidian-local-rest-api/data.json` (Local REST API key) is tracked in git. Kayden should rotate the key and untrack it on the laptop.
+- **[11:31-11:44 PM] Pending task changes applied** (from [[Pending scheduled-task changes]]; Kayden approved the plan with "run as much as possible"; who applied them is not recorded in the task data). Seen by the Scribe in the task list:
+  - Probability board refresh re-enabled (8:20 PM ET nightly), model now Sonnet.
+  - Vault-access block (add_repo + clone) added to the Lab (Ultron) and Cloud Jarvis; Lab also got the promotion-gates block.
+  - Models moved to Sonnet: paper crypto monitor, Trinity paper trader, Cloud Jarvis, board refresh. Real-money tasks and the Lab stay on Opus.
+  - New task **Z.E.R.O watchdog** (every 4 hours at :44, Haiku, read-only plus alerts/log).
+  - New task **Z.E.R.O Scribe** (every 3 hours at :41 ET, Sonnet): vault notes plus the Jarvis Brain 3D page.
+  - **Still not applied:** the kill-switch block in the trading tasks (item 3) and removing the robinhood connector from the Lab.
 
 ## 2026-10-15 to 10-16 (catch-up: these changes were never logged)
 
