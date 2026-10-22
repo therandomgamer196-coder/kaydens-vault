@@ -3,13 +3,37 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-22
 updated: 2026-10-22
-summary: Quiet overnight - no real trades; Lab closed 4 paper trades (3 winners); several hourly tasks hit the usage limit and the Lab still can't push to the brain.
+summary: Quiet overnight - no real trades; Lab closed 4 paper trades (3 winners), missed one run at 3:30 AM (permission check) and still can't push to the brain; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]"]
 ---
 
 # Daily desk 2026-10-22
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 05:42 ET
+
+**Real trades (••3001)**
+- No real entries or exits since 2:42 AM ET. Real crypto: 0 open, $17.00 crypto buying power, capital $34.79 (4:53 AM check). Real 5m: none (Auto OFF).
+- Open: USO 4h trend, 0.108906 sh @ 160.14, stop 156.93, first target 163.34 (bot/state as of 3:51 PM ET 10-21). The 4:46 AM watchdog confirmed the USO ledger matches the broker.
+
+**Board**: decent list unchanged (MSFT prior-day-low sweep). No board crypto paper trades open.
+
+**5-minute scout** (2:48, 3:48, 4:48 AM): 47 markets, 4 proven setups, none firing; 4 Robinhood alerts (ASST, NTSK, MSTR, PLTR); Auto OFF.
+
+**Crypto monitor** (2:45 AM): ETH top-ranked (4h down); DOGE 1h RSI 27 (oversold); 6 new sweeps, no setups; coin check all OK; 0 paper trades.
+
+**Lab (Ultron)**: generation 1054 (5:33 AM), 4 champions pass out-of-sample (was 5), 5 paper trades open (APLD, GM, MARA, NU, SMTC), no new or closed paper trades. Forward record still 5 trades, 60% winners, +0.95% per trade (n=5, far below the 30-trade gate). No proposals. 5 flaws flagged.
+
+**Research** (idea only)
+- [U20261022T0330] Digital products (trading-journal templates) on Gumroad/Etsy: fees take about 13-21% of small sales and the typical shop earns little.
+- [U20261022T0432] Turn-of-the-month dips: RSI(2) dips held into the month turn made +0.93% per 2 days vs +0.32% (n=1,055 vs 2,792), but 3 of 27 months carry it; without them +0.38%. Lucky-cluster risk.
+- [U20261022T0533] IBS dip-buys: +0.82% per trade on 4,962 stock signals, but a random hold of the same length on the same stocks made +0.68%; at next-open entry the edge is -0.13%. 16 variants tested. Likely no real edge.
+
+**Problems seen**
+- Lab 3:30 AM run failed: the permission check blocked running the Lab engine (code loaded from the database), so the 5 paper trades were not checked that hour. The 4:32 and 5:33 AM runs worked.
+- Brain sync: the Lab's 3:30, 4:32 and 5:33 AM runs again could not push to the vault (add_repo not available, push 403). Their research is in the database only. Already in [[Handoff to Claude]].
+- Scribe (this run): the 3D brain was again not rebuilt because `graphify-out/build_brain_data.py` is still not in the vault. See [[Handoff to Claude]].
 
 ## 02:42 ET
 
