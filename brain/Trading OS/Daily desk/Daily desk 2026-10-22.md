@@ -3,13 +3,41 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-22
 updated: 2026-10-22
-summary: Quiet morning - no real trades; crypto setups skipped (fees, missed window); Lab gen 1072 with 5 paper trades open and 3 research notes; Lab still can't push to the brain; 3D brain builder still missing.
+summary: No real trades; USO runner up then back near entry; Lab paper SMTC and MARA stopped out (forward record now 7 trades, −0.67%/trade); Lab found a gap-through stop flaw; Lab and 3D brain sync still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]"]
 ---
 
 # Daily desk 2026-10-22
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 11:41 ET
+
+**Real trades (••3001)**
+- No real entries or exits since 8:42 AM ET. Real crypto: 0 open, $17.00 crypto buying power (10:54 AM check). Real 5m: none (Auto OFF).
+- Open: USO 4h trend, 0.108906 sh @ 160.14, stop 156.93, first target 163.34. 9:53 AM callout: up +$0.21 (+1.2%); by 10:52 AM back to bid 160.84 (+$0.08), trend intact. Account $34.52, $17.00 buying power idle. Circuit breaker: 0 losses today.
+
+**Board** (decent list = MSFT prior-day-low sweep): MSFT swept 525.02 this morning but had not reclaimed it (bid 524.44 at 10:52 AM), so no entry. GOOGL still below its 330.38 trigger. No QQQ/SPY 15m gaps; GLD in a 4h downtrend.
+
+**Paper crypto**: 0 paper trades open, no board hits. 10:46 AM: 24h drops on WIF −6.1%, AVAX −6.0%, PEPE −5.5%, SUI −5.4%; BTC and AVAX swept their 1h swing lows and closed back above (10:00 AM). SOL top-ranked, 4h trend down.
+
+**5-minute scout**: 48 markets. 9:50 AM: 3 proven (BHVN, MSTR, PLTR); ASST and NTSK dropped. 10:49 AM: 5 proven, none firing; Robinhood alerts now BHVN above 16.54, MXL 5m EMA21 cross, VIAV below 35.11 (BHVN below 14.58 removed); 5 active. Auto OFF.
+
+**Lab (Ultron)**: generation 1090, 6 champions pass out-of-sample, 3 paper trades open (APLD, GM, NU).
+- 9:43 AM paper closes, both stops: SMTC −4.66% and MARA −4.79% after costs.
+- Forward record now 7 trades, −0.67% per trade (was +0.95% on 5). Still far too few to judge; the gate is 30+. No proposals. 5 flaws flagged.
+
+**Research** (idea only)
+- [U20261022T1346] Gap-through stop flaw: SMTC opened near 130.98, below its 134.34 paper stop, but the Lab booked the exit at the stop (−4.66% instead of about −7%). With gap-aware fills, the 19 leaderboard strategies lose 0.08% per trade on average, and tight 0.5×ATR stops lose 16% of their edge. Proposal for Kayden: fill stops at the lower of the open and the stop in the Lab engine (Ultron can't edit `lab_code`).
+- [U20261022T1431] Correlation screen: the 73-stock universe is only about 8 independent bets; 28 names move with semiconductors and all four champions then (SMTC, IREN, TTMI, COHU) sit in that cluster. The RSI(2) dip edge vanishes without its 5 busiest selloff days. Next: one open paper trade per cluster; count cluster-days toward the 30-trade gate. Source: [Meucci, effective number of bets](https://www.bayes.citystgeorges.ac.uk/__data/assets/pdf_file/0003/213699/Meucci-ReDefining-and-Managing-Diversification.pdf).
+- [U20261022T1131] Faceless YouTube as income: finance pays about $23 per 1,000 views (estimate), but only 8.65% of channels posting 12-51 videos a year reach 1,000 subs, and templated AI videos are demonetized. Sources: [vidIQ monetization guide](https://vidiq.com/blog/post/monetize-youtube-guide/), [vidIQ research](https://vidiq.com/research/youtube-uploads-1000-subscribers/).
+
+**Problems seen**
+- Brain sync: the Lab's 9:46, 10:31 and 11:31 AM runs again could not reach the vault (add_repo not offered to the task; clone blocked or push 403). Their research and Ideas lines are in the page database only.
+- 3D brain: still not rebuilt; `graphify-out/build_brain_data.py` is still missing (only `build_brain_map.py` is there). The 8:54 AM watchdog flagged the 3D brain as stale. See [[Handoff to Claude]].
+- No scheduled-task, rule or config changes since 8:42 AM.
+
+Not financial advice.
 
 ## 08:42 ET
 

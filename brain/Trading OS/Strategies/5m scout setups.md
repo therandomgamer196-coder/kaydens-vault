@@ -3,7 +3,7 @@ tags: [trading, strategy]
 type: strategy
 mode: alerts
 created: 2026-10-21
-updated: 2026-10-21
+updated: 2026-10-22
 summary: The 5-minute engine finds setups that win on unseen data (70/30 split). Auto trading is OFF, so it only create
 related: ["[[Strategy scorecard]]", "[[ZERO trading agent]]"]
 ---
@@ -20,7 +20,7 @@ The 5-minute engine finds setups that win on unseen data (70/30 split). Auto tra
 
 ## Live record
 <!-- live:start -->
-As of 2026-10-21: 0 real trades. Alert: PLTR RSI(2) dip fired 2026-10-21 1:48 PM (40% of 10 unseen).
+As of 2026-10-22 11:41 ET: 0 real trades (Auto OFF). 5 proven setups at 10:49 AM, none firing; 5 Robinhood alerts (incl. BHVN, MXL, VIAV).
 <!-- live:end -->
 
 ## Notes
