@@ -3,13 +3,43 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-27
 updated: 2026-10-27
-summary: Trading OS back after a usage-limit outage (Oct 22 afternoon to Oct 27 midday); USO runner found sold manually Oct 23 (+$0.63); new USO 4h trend entry $4.80; account down to $9.61; Lab forward record 10 trades, −1.08%/trade; Lab found an entry-lag flaw; several tasks still failing on usage limits.
+summary: Trading OS back after a usage-limit outage (Oct 22 to Oct 27 midday); USO runner sold by hand Oct 23 (+$0.63); new USO 4h trend $4.80 held; account $9.61; Trinity NQ paper +2R; Lab forward 10 trades −1.08%/trade, entry-lag flaw; board still stale; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-22]]"]
 ---
 
 # Daily desk 2026-10-27
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 17:42 ET
+
+**Real trades (bot account ••3001)**
+- No buys or sells since 2:42 PM. Open: **USO 0.029406 sh @ 163.23** (4h trend), held at the 3:50 PM check (bid 163.34, about +$0.00), stop 159.97, first target 166.49. Trend intact.
+- Account $9.61, buying power $4.36. Circuit breaker: 0 losses today. Realized bot P&L since start: +$0.39 on $15 start cash.
+- Real crypto (2:53, 3:54, 4:53 PM): no board setup, 0 open, $4.36 crypto buying power, no orders. Real 5m: none (Auto OFF).
+
+**Board**: no stock board triggers (MSFT low 528.33 stayed above 525.02; GOOGL below 330.38), QQQ FVG window closed, SPY gap paper only, GLD stand aside. Probability board still dated **Wed Oct 21** (decent: MSFT prior-day-low sweep); next refresh try 8:20 PM tonight.
+
+**Trinity paper (4:26 PM)**: **NQ long 29573.25 at 10:25 AM**, stop 29494.25 (79 pts): hit 1R 10:33, **2R 11:01 (+$316 on one micro)**, 3R 11:44. ES: short bias, no full setup by noon. Paper only.
+
+**Paper crypto**: no setups, no board hits, 0 paper trades open. Info sweeps (closed back below): WIF 1h high 0.18033 (3 PM), SOL 1h high 101.14 (4 PM). XRP top-ranked at 4:45 PM, 4h mixed.
+
+**5-minute scout (4:48 PM)**: 48 markets, **4 proven setups** (was 3), 0 firing. New Robinhood alert: MXL price crosses 5m EMA21 (4 managed alerts). Auto OFF.
+
+**Lab (Ultron)**: gen 1126, 10 champions pass out-of-sample, 4 paper trades open (CIFR ×2, AAOI, AEHR). New paper buy 3:32 PM: **CIFR 8.425** (RSI(2) < 15; stop 6.72409, target 12.9608, max 2 days). No closes. Forward record unchanged: **10 trades, 50% winners, −1.08%/trade**. No proposals.
+
+**Research** (all idea only)
+- [U20261027T1730] **Gap-and-hold after earnings doesn't pay.** On 543 Lab-stock gap-ups (4%+, 2× volume) over 3 years, buying the next open gave a 10-day median of +0.77% vs +0.75% for random holds; papers say large-cap drift died around 2006. 24 variants tested. Sources: [Martineau 2022](https://ideas.repec.org/a/now/jnlcfr/104.00000122.html), [UCLA Anderson Review](https://anderson-review.ucla.edu/is-post-earnings-announcement-drift-a-thing-again/).
+- [U20261027T1632] **Crypto trend breakouts survive the 0.95% fee.** On 18 costed Donchian variants (BTC/ETH/SOL, out-of-sample 2023–2026) the average trade stayed positive in 17, but every version trailed buy-and-hold (BTC +42% vs +385%) and the top 3 trades made 51–100% of gains, so it fails the lucky-cluster gate. Worth a separate paper signal. Sources: [Concretum](https://concretumgroup.com/catching-crypto-trends-a-tactical-approach-for-bitcoin-and-altcoins/), [CXO Advisory](https://www.cxoadvisory.com/technical-trading/crypto-asset-trend-following-strategies/), [arXiv 2009.12155](https://ar5iv.labs.arxiv.org/html/2009.12155).
+- [U20261027T1532] **Etsy print-on-demand (income idea).** About $1,868 of sales per active seller per year on average (Lab's arithmetic from the [Etsy 2025 10-K](https://www.sec.gov/Archives/edgar/data/1370637/000137063726000019/etsy-20251231.htm); a mean, not profit). Fees ≈10% before ads; AI designs allowed only if original and disclosed ([Etsy fees policy](https://www.etsy.com/legal/fees/)). Evidence on new-shop earnings is thin.
+
+**Problems seen**
+- Watchdog (4:45 PM): Probability board stale since Oct 21 (last nightly refresh failed on usage limit); Jarvis Brain 3D meta stale since Oct 22; Daily Market Brief (8 AM) and Watchlist curator (Oct 26) failed on usage limits. Watchlist curator ran OK today at 4:59 PM.
+- Lab brain sync failed at 3:33, 4:32 and 5:32 PM (push 403; add_repo not offered to that task). Its research is in the page database and summarized above.
+- 3D brain still not rebuilt: `graphify-out/build_brain_data.py` is missing from the vault.
+- No scheduled-task, rule or config changes in the last 3 hours.
+
+Not financial advice.
 
 ## 14:42 ET
 

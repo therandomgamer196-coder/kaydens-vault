@@ -20,7 +20,7 @@ The 5-minute engine finds setups that win on unseen data (70/30 split). Auto tra
 
 ## Live record
 <!-- live:start -->
-As of 2026-10-27 14:42 ET: 0 real trades (Auto OFF). 3 proven setups at 1:48 PM, none firing; Robinhood alerts now include SOFI below 14.4, USO above 166.38, MSTR above 142.
+As of 2026-10-27 17:42 ET: 0 real trades (Auto OFF). 4 proven setups at 4:48 PM, none firing; 4 managed Robinhood alerts (MXL price crosses 5m EMA21 added).
 <!-- live:end -->
 
 ## Notes
