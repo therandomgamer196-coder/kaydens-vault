@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-28
 updated: 2026-10-28
-summary: USO 4h trend sold half at 166.69 (+$0.05) and the runner now trails at 166.09 under a 169.35 high; account about $9.73; no board or crypto setups, SDGR 5m dip fired (alerts only, Auto off); Lab gens 1168-1252 with no new paper trades (forward 10 trades, −1.08%/trade); research found the Lab's champion gate passes random entries 23% of the time and long-only VWAP trend loses after costs; Lab brain push and 3D brain builder still failing.
+summary: USO 4h trend sold half at 166.69 (+$0.05) and the runner trails at 166.09 under a 169.35 high, held overnight; account about $9.73; no board or crypto setups; SDGR, AXGN and ABSI 5m setups fired (alerts only, Auto off); Lab gens 1168-1270 with no new paper trades (forward 10 trades, −1.08%/trade); research found the champion gate passes random entries 23% of the time, long-only VWAP trend and pre-FOMC drift lose after costs; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-27]]"]
 ---
 
 # Daily desk 2026-10-28
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 17:41 ET
+
+**Real trades**: none opened or closed since 14:41 ET. The **USO 4h trend** runner (0.014703 sh, entry 163.23, half sold earlier at 166.69 for +$0.05) is held overnight: last bid 167.83 at the 3:51 PM run (+$0.07 open), trailing stop still **166.09** under the 169.35 high, 4h trend intact. Circuit breaker off (0 losses, +$0.05 today). See [[USO 4h trend]].
+
+**Open positions** (bot account ••3001, about **$9.73**): USO runner ≈$2.47; cash and buying power $6.81; a $0.46 SOL dust position left alone (not in the ledger). No open real crypto or real 5m trades. Realized bot P&L since start: +$0.44 on $15.
+
+**Setups that fired**
+- Probability board: nothing "Decent odds" (last refresh Oct 27 close; next 8:20 PM tonight); no live board triggers (GOOGL low 322.66 vs 316.60, MSFT 530.11 vs 543.45). No QQQ gap; GLD in a downtrend.
+- 5-minute scout: **AXGN 5m RSI(2) dip in an uptrend** fired at 3:47 PM (buy near 48.89, stop 47.79; won 37.5% of 8 unseen trades) and **ABSI N-bar breakout on volume** fired on the 3:55 PM candle (buy near 11.89, stop 11.76; won 44.4% of 9 unseen trades). Small samples, both under 50% winners. Auto is OFF, so alerts only, no order. Robinhood alert added: ABSI above 11.89 (9 managed). Proven setups now 9 of 48 markets.
+- Crypto: info sweep only, SUI took its 1h swing high 0.947 (wick 0.96) at 3:00 PM and closed back below; ADA top-ranked (4h down); no setups, no board hits, 0 paper trades open. Real crypto checks (2:52, 3:53, 4:54 PM): no board setup, no orders.
+- Trinity paper (4:26 PM): no setup today (NQ had a long bias but no full setup by noon; ES no overnight inversion).
+
+**Lab (Ultron)**: generations 1258, 1264 and 1270; **12 champions** pass out-of-sample; 4 paper trades still open (AAOI, AEHR, CIFR ×2), none opened or closed; 140-144 markets tested (120 discovered at $2B+ cap, 1M+ volume). Forward record still **10 trades, 50% winners, −1.08% per trade**. No proposals.
+
+**Research** (idea only)
+- [U20261028T1532] **Finviz "oversold in uptrend" rebuilt on Yahoo.** RSI(14) under 30 above a rising 200-day, Lab's 120 stocks, 2016-2026: +1.29% per 5-day hold vs +0.61% for any uptrend day (n=308, t≈1.5, not significant). 2016-20 lost on 10-day holds, and dropping the 5 best stocks turns the edge negative; survivorship inflates it. Today's only candidate: UMC. Fails gate 2. Sources: [QuantifiedStrategies RSI test](https://www.quantifiedstrategies.com/what-is-the-best-rsi-oversold-level-we-tested-1-through-50/), [ConnorsRSI guidebook](https://c.mql5.com/forextsd/forum/119/connorsrsi-pullbacks-guidebook.pdf).
+- [U20261028T1629] **Digital templates on Etsy/Gumroad (income idea).** Fees take about 16% (Etsy) to 24% (Gumroad) of a $7 sale; one analysis puts Gumroad's median creator at ≈$72/month with 44% of products earning $0. Etsy requires AI disclosure and bans prompt bundles. Thin, survivor-biased evidence; estimate. Suggested test: one AI-disclosed calculator, stop after 60 days with no sale. Sources: [Etsy House Rules](https://etsy.com/legal/creativity), [ecomm.design Gumroad review](https://ecomm.design/gumroad-review/), [selfemployed.com](https://www.selfemployed.com/news/etsy-seller-ai-disclosure-fees-2026/).
+- [U20261028T1732] **Pre-FOMC drift is gone.** 86 Fed days 2016-Oct 2026, 0.05% slippage: SPY −0.07%/trade (38% winners), and 58% of random day samples beat it; QQQ +0.10% but negative without its top 5 days. Fed-day open-to-close longs did worse than normal days (SPY −0.23% vs −0.07%). 6 variants, daily bars only. Fails gate 2. Sources: [Lucca & Moench (NY Fed)](https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr512.pdf), [Kurov, Wolfe & Gilbert 2021](https://ideas.repec.org/a/eee/finlet/v40y2021ics1544612320315956.html).
+
+**Problems seen**
+- Brain sync: the Lab's 3:32, 4:29 and 5:34 PM runs got a 403 on push again (add_repo isn't offered to that task). Its research and Ideas lines live only in the page database; summarized above.
+- 3D brain: still not rebuilt. `graphify-out/build_brain_data.py` is missing from the vault, so Jarvis Brain 3D stays at its 2026-10-22 build; the watchdog flagged it at 4:46 PM (~161 hours stale, limit 8). Open item in [[Handoff to Claude]].
+- No Trading OS rule, config or scheduled-task changes in the last 3 hours.
+
+Not financial advice.
 
 ## 14:41 ET
 
