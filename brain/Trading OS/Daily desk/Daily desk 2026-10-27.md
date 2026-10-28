@@ -3,13 +3,41 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-27
 updated: 2026-10-27
-summary: Trading OS back after a usage-limit outage (Oct 22 to Oct 27 midday); USO runner sold by hand Oct 23 (+$0.63); new USO 4h trend $4.80 held; account $9.61; Trinity NQ paper +2R; Lab forward 10 trades −1.08%/trade, entry-lag flaw; Probability board refreshed 8:21 PM with no decent setups; Lab brain push and 3D brain builder still failing.
+summary: Trading OS back after a usage-limit outage (Oct 22 to Oct 27 midday); USO runner sold by hand Oct 23 (+$0.63); new USO 4h trend $4.80 held overnight; account $9.61; Trinity NQ paper +2R; Lab forward 10 trades −1.08%/trade; research found the champion gate passes random entries as often as real ones; board refreshed 8:21 PM with no decent setups; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-22]]"]
 ---
 
 # Daily desk 2026-10-27
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 23:42 ET
+
+**Real trades (bot account ••3001)**
+- No buys or sells since 8:42 PM (market closed). Open: **USO 0.029406 sh @ 163.23** (4h trend), last checked 3:50 PM at bid 163.34 (about +$0.00), stop 159.97, first target 166.49.
+- Account $9.61, buying power $4.36. Circuit breaker: 0 losses today. Realized bot P&L since start: +$0.39 on $15 start cash.
+- Real crypto (8:53, 9:53, 10:52 PM): no board setup, 0 open, $4.36 crypto buying power, no orders (untracked SOL dust left alone). Real 5m: none (Auto OFF).
+
+**Board**: Probability board (8:21 PM refresh, bar date Tue Oct 27) has no decent setups; nothing fired.
+
+**Paper crypto (8:44, 9:45, 10:45 PM)**: no setups or board hits; 0 paper trades open. Info sweeps only: XRP and SUI 1h (8:44 PM), ADA 1h high 0.20688 swept and closed back below (10:00 PM). BTC top-ranked at 80,821, 4h mixed.
+
+**5-minute scout (8:48 PM to 10:48 PM)**: 4 proven setups at 8:48, then 3 (SOFI, USO, MSTR) at 9:47 PM; none firing. MXL EMA21 Robinhood alert removed (no longer wanted); 3 alerts active: SOFI below 14.4, USO above 166.38, MSTR above 142. Auto OFF.
+
+**Lab (Ultron)**: generations 1150, 1156 and 1162; 7 to 11 champions pass out-of-sample; 4 paper trades open, none opened or closed; 104-112 markets tested. Forward record still **10 trades, −1.08% per trade**. No proposals.
+
+**Research** (idea only)
+- [U20261027T2133] **The champion gate can't tell signal from luck.** On 30,000 random Lab genomes, stock strategies with random entries passed the champion gate about as often as real signals (23.5% vs 21.6%), and 0 of 9 champions clear t > 3. On stocks the gate mostly rewards "was long in a bull market"; picking champions by out-of-sample results leaks the test set, so gate 3 is weaker than it looks. One seed, one ~3-year window. Sources: [SSRN 2460551](https://papers.ssrn.com/abstract=2460551), [NBER w20592](https://www.nber.org/papers/w20592), [CXO summary](https://cxoadvisory.com/big-ideas/sharper-sharpe-ratio).
+- [U20261027T2231] **Kelly sizing.** Raw Kelly says bet 1.9x to 14.6x the account on 12 champions, a sign the edges are overstated; after a multiple-testing haircut and on the forward record (n=10, −1.08%/trade) Kelly is 0. Keep fixed tiny size until gates 2-4 pass; later size from the forward record only, shrunk, capped at quarter Kelly. Sources: [MacLean, Thorp & Ziemba](https://www.stat.berkeley.edu/~aldous/157/Papers/Good_Bad_Kelly.pdf), [Baker & McHale 2013](https://ideas.repec.org/a/inm/ordeca/v10y2013i3p189-199.html).
+- [U20261027T2331] **Turn-of-the-month on SPY.** +0.21%/trade net out-of-sample (2016-2026, n=129, t=1.25), only about +0.06% better than a random 4-day hold; 50% of gains came from 5 trades; nothing in small caps (IWM). The date is known ahead, so it avoids the entry-lag flaw, but the edge is about 1 cent a trade at real size. Sources: [McConnell & Xu 2008 (CFA)](https://rpc.cfainstitute.org/research/financial-analysts-journal/2008/equity-returns-at-the-turn-of-the-month), [Quantpedia](https://quantpedia.com/strategies/turn-of-the-month-in-equity-indexes).
+
+**Problems seen**
+- Brain sync: the Lab's 9:33, 10:31 and 11:32 PM runs still got a 403 on push (add_repo isn't offered to that task). Its research, Ideas and Lab journal lines for today live only in the page database; the research is summarized above.
+- 3D brain: not rebuilt again. `graphify-out/build_brain_data.py` is still missing from the vault, so Jarvis Brain 3D stays at its 2026-10-22 build (the watchdog flagged it at 8:45 PM). Open item in [[Handoff to Claude]].
+- Daily Market Brief last failed on the usage limit (8:00 AM today); next try 7:52 AM.
+- No Trading OS rule, config or trading-task changes in the last 3 hours. The separate Punch In daily sync task was edited at 10:36 PM (not a trading task).
+
+Not financial advice.
 
 ## 20:42 ET
 
