@@ -3,13 +3,41 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-28
 updated: 2026-10-28
-summary: Quiet night; no real trades; USO 4h trend still open at 163.23; account about $9.70; no board, crypto or 5m setups; Lab gens 1168-1198 with no new paper trades (forward 10 trades, −1.08%/trade); research found the Lab champion fails a 10-year test, overnight holds carry most of the edge, and hourly stop checks fatten the loss tail; Lab brain push and 3D brain builder still failing.
+summary: Quiet morning so far; no real trades; USO 4h trend still open at 163.23; account about $9.70; no board, crypto or 5m setups; Lab gens 1168-1216 with no new paper trades (forward 10 trades, −1.08%/trade); research found risk sizing cuts drawdown but not return, intraday momentum is gone, and the gap-up screen edge is mostly survivorship; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-27]]"]
 ---
 
 # Daily desk 2026-10-28
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 08:42 ET
+
+**Real trades (bot account ••3001)**
+- No buys or sells since 5:42 AM (market opens 9:30). Open: **USO 0.029406 sh @ 163.23** (4h trend), last checked 3:50 PM Oct 27 at bid 163.34 (about +$0.00), stop 159.97, first target 166.49.
+- Account about $9.61-9.71, buying power $4.36. Circuit breaker: 0 losses. Realized bot P&L since start: +$0.39 on $15 start cash.
+- Real crypto (5:53, 6:57, 7:53 AM): no board setup, 0 open, $4.36 crypto buying power, no orders. Real 5m: none (Auto OFF).
+
+**Board**: no change since the 8:21 PM refresh; no decent setups, nothing fired.
+
+**Paper crypto (5:45, 7:45 AM)**: no setups or board hits, 0 paper trades open. 5:45: BONK top-ranked (4h mixed), **PENGU +5.1%** in 24h, 1h sweeps on SUI, DOGE and AVAX. 7:45: XRP top-ranked (4h up), no new sweeps.
+
+**5-minute scout (5:48 to 7:50 AM)**: 48 markets, 3 proven setups (SOFI, USO, MSTR), none firing; 3 Robinhood alerts unchanged. Auto OFF.
+
+**Lab (Ultron)**: generations 1204, 1210 and 1216; out-of-sample champions 10, 10 then 12; 4 paper trades still open (AAOI 76.81, AEHR 63.53, CIFR 8.36 and 8.43), none opened or closed. Forward record still **10 trades, 50% winners, −1.08% per trade**; 5 flaws flagged; 73-74 markets tested. No proposals.
+
+**Research** (idea only)
+- [U20261028T0629] **Risk or volatility sizing makes the Lab safer, not better.** On the Lab's RSI-dip trades (43 stocks, 2023–26 out-of-sample, n=8,597), sizing by stop risk or inverse volatility cut max drawdown about 25% and the worst trade about 33%, but return per dollar fell from +0.42% to +0.21–0.22% and Sharpe from 1.17 to 0.92. Random entries beat the signal again (+0.52%, Sharpe 1.60); 2016–23 lost money in every version; 57% of test gains came from 5 days. 6 variants. Verdict: keep flat sizing, use a risk cap only as a safety limit. Sources: [NBER w22208](https://www.nber.org/papers/22208), [Alpha Architect](https://alphaarchitect.com/does-portfolio-timing-based-on-volatility-signals-outperform-buy-and-hold/), [LBS paper](https://lbsresearch.london.edu/id/eprint/3716).
+- [U20261028T0731] **Intraday momentum is gone.** Gao, Han, Li & Zhou (2018) found SPY's first half-hour predicted its last half-hour. Re-tested on 2 years of hourly bars: correlation −0.008 on SPY/QQQ/IWM/DIA (n=1,584) and 0.006 on 41 Lab stocks; long-only after costs every variant lost (−0.07% to −0.09%/trade). 8 variants. Fails gate 2; drop it. Sources: [WashU](https://profiles.wustl.edu/en/publications/market-intraday-momentum/), [Alpha Architect](https://alphaarchitect.com/2014/08/attention-prop-traders-the-first-half-hour-of-trading-predicts-the-last-half-hour/), [CXO](https://cxoadvisory.com/calendar-effects/first-and-last-half-hours-of-trading-linked).
+- [U20261028T0833] **Finviz gap-up screen rebuilt on Yahoo data.** Gap ≥4%, 2x volume, close above the open, 10 years, 0.05% costs, 24 variants. On the Lab's 42 stocks a 10-day hold made +5.95%/trade (n=413) vs +1.76% random, in both halves, but the list is this year's winners (survivorship), April 2026 tops most variants, and the median is only +1.65%. On 40 steady large caps, 5- and 10-day holds were at or below random; only a 20-day hold beat random (+1.2%/trade, n=169). Sources: [Lerman, Livnat & Mendenhall 2007](https://archive.nyu.edu/handle/2451/27578), [post-earnings drift summary](https://en.wikipedia.org/wiki/Post%E2%80%93earnings-announcement_drift).
+
+**Problems seen**
+- Brain sync: the Lab's 6:29, 7:31 and 8:33 AM runs got a 403 on push again (add_repo isn't offered to that task). Its research and Ideas lines live only in the page database; the research is summarized above.
+- 3D brain: not rebuilt. `graphify-out/build_brain_data.py` is still missing; the only other builder, `build_brain_map.py`, rewrites `.obsidian/graph.json`, so the Scribe won't run it. Jarvis Brain 3D stays at its 2026-10-22 build. Open item in [[Handoff to Claude]].
+- Fixed: the Daily Market Brief ran fine at 7:53 AM (last failure was the usage limit on Oct 27).
+- No Trading OS rule, config or trading-task changes in the last 3 hours (config/rules matches its snapshot; kill switch off). The separate Punch In daily sync task (not a trading task) was edited at 7:24 AM; it is disabled and on hold because the laptop isn't connected.
+
+Not financial advice.
 
 ## 05:42 ET
 
