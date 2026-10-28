@@ -3,13 +3,38 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-28
 updated: 2026-10-28
-summary: USO 4h trend hit its first target (sold half at 166.69, +$0.05) and the runner trails at 164.49; account about $9.73; no board, crypto or 5m setups fired; Lab gens 1168-1234 with no new paper trades (forward 10 trades, −1.08%/trade); research found the Lab's prior-day-low sweep has no edge over random and crypto trend-following rests on two bull waves; Lab brain push and 3D brain builder still failing.
+summary: USO 4h trend sold half at 166.69 (+$0.05) and the runner now trails at 166.09 under a 169.35 high; account about $9.73; no board or crypto setups, SDGR 5m dip fired (alerts only, Auto off); Lab gens 1168-1252 with no new paper trades (forward 10 trades, −1.08%/trade); research found the Lab's champion gate passes random entries 23% of the time and long-only VWAP trend loses after costs; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-27]]"]
 ---
 
 # Daily desk 2026-10-28
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 14:41 ET
+
+**Real trades**: none opened or closed since 11:43 ET. The **USO 4h trend** runner (0.014703 sh, entry 163.23, half already sold at 166.69 for +$0.05) made a new high at **169.35**, so the trailing stop rose from 164.49 to 165.83 (11:52) and then **166.09** (12:52); last bid 168.05 (+$0.07 open). Circuit breaker off (0 losses, +$0.05 today). See [[USO 4h trend]].
+
+**Open positions** (bot account ••3001, about **$9.73**): USO runner ≈$2.47; cash and buying power $6.81; a few cents of SOL left alone (not in the ledger). No open real crypto or real 5m trades.
+
+**Setups that fired**
+- Probability board: nothing "Decent odds" on the Oct 27 close; no live board triggers today (GOOGL low 323.00 vs 316.60 trigger, MSFT 527.63 vs 543.45).
+- 5-minute scout: **SDGR 5m RSI(2) dip in an uptrend** fired at 12:47 and 1:48 PM (2 stop variants; won 36-45% of 9-11 unseen trades, small samples). Auto is OFF, so alerts only, no order. Robinhood alerts: added BEAM and AXGN, removed TXG and TWST; 8 managed.
+- Crypto: ADA swept the prior-day low (0.20084) and closed back above at 1:00 PM; no sweep+FVG setup, no board hits, 0 paper trades open.
+
+**Lab (Ultron)**: generations 1240, 1246 and 1252; **12 champions** pass out-of-sample; 4 paper trades still open (AAOI, AEHR, CIFR ×2), none opened or closed; 134-139 markets tested. Forward record still **10 trades, 50% winners, −1.08% per trade**. No proposals.
+
+**Research** (idea only)
+- [U20261028T1632] **The Lab's champion gate is weak.** Random entries with the same exits passed it 13-35% of the time (average 23%); only IREN and PPTA beat 95% of their 300 random twins, about what luck alone would give out of 12. Positive out-of-sample numbers on SLS, AMD, AAOI and MPC mostly reflect those stocks' run-up. Sources: [SSRN 2460551](https://papers.ssrn.com/abstract=2460551), [Deflated Sharpe ratio](https://en.wikipedia.org/wiki/Deflated_Sharpe_ratio), [NBER w20592](https://www.nber.org/papers/w20592).
+- [U20261028T1729] **VWAP trend ("Holy Grail") fails long-only.** Hourly bars, about 2 years, 16 Lab names, 0.05%/side: −0.086%/trade (n=10,670, 36% winners, both halves negative); 5-minute lost −0.12% with 16% winners. Roughly zero edge before costs. Sources: [Concretum summary](https://concretumgroup.com/volume-weighted-average-price-vwap-the-holy-grail-for-day-trading-systems/), [QuantConnect thread](https://www.quantconnect.com/forum/discussion/16706/bear-bull-traders-039-paper-on-quot-the-holy-grail-quot-not-so-fast/).
+- [U20261028T1432] **Position sizing for a $9.73 account.** On the cautious +0.3%/trade edge, Kelly is about 40% of equity; 100% positions reached $1,000 in only 7.7% of 4,000 simulations vs halving to $5 in 91% (50% size: 14% vs 58%). The forward record (−1.08%, n=10) supports no size at all; the edge is the open question, not the sizing. Estimate. Sources: [Good and Bad Kelly](https://www.stat.berkeley.edu/~aldous/157/Papers/Good_Bad_Kelly.pdf), [Baker & McHale 2013](https://pubsonline.informs.org/doi/fpi/10.1287/deca.2013.0271).
+
+**Problems seen**
+- Brain sync: the Lab's 12:34, 1:29 and 2:34 PM runs got a 403 on push again (add_repo isn't offered to that task). Its research and Ideas lines live only in the page database; summarized above.
+- 3D brain: still not rebuilt. `graphify-out/build_brain_data.py` is missing from the vault (only `build_brain_map.py` exists), so Jarvis Brain 3D stays at its 2026-10-22 build; the watchdog flagged it again at 12:45 PM. Open item in [[Handoff to Claude]].
+- No Trading OS rule, config or scheduled-task changes in the last 3 hours (Punch In daily sync was disabled earlier, at 7:24 AM, while the laptop was away).
+
+Not financial advice.
 
 ## 11:43 ET
 
