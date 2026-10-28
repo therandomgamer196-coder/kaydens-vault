@@ -3,13 +3,42 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-28
 updated: 2026-10-28
-summary: Quiet morning so far; no real trades; USO 4h trend still open at 163.23; account about $9.70; no board, crypto or 5m setups; Lab gens 1168-1216 with no new paper trades (forward 10 trades, −1.08%/trade); research found risk sizing cuts drawdown but not return, intraday momentum is gone, and the gap-up screen edge is mostly survivorship; Lab brain push and 3D brain builder still failing.
+summary: USO 4h trend hit its first target (sold half at 166.69, +$0.05) and the runner trails at 164.49; account about $9.73; no board, crypto or 5m setups fired; Lab gens 1168-1234 with no new paper trades (forward 10 trades, −1.08%/trade); research found the Lab's prior-day-low sweep has no edge over random and crypto trend-following rests on two bull waves; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-27]]"]
 ---
 
 # Daily desk 2026-10-28
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 11:43 ET
+
+**Real trades (bot account ••3001)**
+- **USO hit its first target.** 9:59 AM: sold half (0.014703 sh) at **166.69**, **+$0.05**; stop moved to breakeven 163.23 and the target alert was swapped for a stop alert. 10:52 AM: runner bid 167.75 (new high), trailing stop raised to **164.49**, runner about +$0.07 open ("We hit big" callout).
+- Open: **USO runner 0.014703 sh @ 163.23** (4h trend), stop 164.49 (now locks in a small gain), no target, trails by 3.26.
+- Account $9.73, buying power $6.81. Circuit breaker: 0 losses, +$0.05 today. Realized bot P&L since start: **+$0.44** on $15 start cash. Sample is tiny; this is not evidence of an edge.
+- Real crypto (9:03, 9:57, 10:54 AM): no board setup, 0 open, no orders; crypto buying power now $6.81 after the USO sale. Real 5m: none (Auto OFF).
+
+**Board**: Probability board (8:21 PM refresh, bar date Tue Oct 27) still has no decent setups. Bot saw no live board triggers (GOOGL low 323.17 vs trigger 316.60; MSFT 528.03 vs 543.45); no QQQ/SPY 15m gaps; GLD in a downtrend.
+
+**Paper crypto (8:48, 9:51, 10:47 AM)**: no setups or board hits, 0 paper trades open. Info sweeps of 1h lows that closed back above: WIF 0.17989, BTC 80,493.60, SOL 100.90. Top-ranked: XRP, then PEPE (4h up).
+
+**5-minute scout (8:48 to 10:48 AM)**: 48 markets; proven setups jumped from 3 to 9 at 9:56, then 8 at 10:48; none firing. Robinhood alerts now 8 active (added COIN, USO, MSTR price-above and a TWST RSI(2) < 20 alert; removed SOFI, TWST EMA and USO/MSTR/COIN price-below). Auto OFF.
+
+**Lab (Ultron)**: generations 1222, 1228 and 1234; **12 champions** pass out-of-sample (up from 4-5 overnight); market universe grew to 127 (103 discovered: market cap $2B+, volume 1M+). 4 paper trades open (AAOI, AEHR, CIFR ×2), none opened or closed. Forward record still **10 trades, 50% winners, −1.08% per trade**. No proposals.
+
+**Research** (idea only)
+- [U20261028T1540] **The Lab's favorite signal has no edge.** Six of the 12 champions use the prior-day low sweep (one-day Turtle Soup). Over 10 years on 34 large caps it never beat random entries (2-day hold +0.05% vs +0.06%, n=16,266); on the six champion stocks the gain is their 2022–26 run, and 2016–21 lost (−0.41% vs −0.15% random). 24 variants. Proposed fix: score every genome against its own market's random-entry baseline. Sources: [LuxAlgo](https://www.luxalgo.com/library/concept/turtle-soup/), [The Right Trader](https://therighttrader.com/learn/trading-strategies/turtle-soup).
+- [U20261028T1041] **Crypto trend-following after the 1.9% round trip.** A 55-day-high breakout beat random out-of-sample (+8.3%/trade, n=121, t=2.08) but only from the 2023 and 2024 bull waves; 2025 lost −8.3% and 2026 −0.9%, and without the top 5 trades it trails random. Fails gate 5; 7 variants. Sources: [Rozario et al. 2020](https://ar5iv.labs.arxiv.org/html/2009.12155), [Man Group 2024](https://www.man.com/insights/in-crypto-we-trend).
+- [U20261028T0938] **Affiliate content site (income idea).** About $10–20/month to run (estimate); TradingView pays $10–40 per first monthly sub; search traffic usually takes 6–18 months; Google's scaled-content-abuse policy and FTC disclosure rules apply. The income survey is self-reported and survivor-biased, so evidence is thin. Sources: [TradingView partner rules](https://se.tradingview.com/partner-rules), [PPC Land](https://ppc.land/scaled-content-abuse/).
+
+**Problems seen**
+- Brain sync: the Lab's 9:38, 10:41 and 11:40 AM runs got a 403 on push (add_repo isn't offered to that task). Its research and Ideas lines live only in the page database; summarized above.
+- 3D brain: not rebuilt this run either. `graphify-out/build_brain_data.py` is still missing, so Jarvis Brain 3D stays at its 2026-10-22 build. Watchdog flagged it again at 8:55 AM. Open item in [[Handoff to Claude]].
+- Punch In daily sync (not Trading OS) is disabled and suspended because the laptop was absent (changed 7:24 AM).
+- No Trading OS rule, config or scheduled-task changes in the last 3 hours. Daily Market Brief ran fine at 7:53 AM.
+
+Not financial advice.
 
 ## 08:42 ET
 
