@@ -3,13 +3,41 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-27
 updated: 2026-10-27
-summary: Trading OS back after a usage-limit outage (Oct 22 to Oct 27 midday); USO runner sold by hand Oct 23 (+$0.63); new USO 4h trend $4.80 held; account $9.61; Trinity NQ paper +2R; Lab forward 10 trades −1.08%/trade, entry-lag flaw; board still stale; Lab brain push and 3D brain builder still failing.
+summary: Trading OS back after a usage-limit outage (Oct 22 to Oct 27 midday); USO runner sold by hand Oct 23 (+$0.63); new USO 4h trend $4.80 held; account $9.61; Trinity NQ paper +2R; Lab forward 10 trades −1.08%/trade, entry-lag flaw; Probability board refreshed 8:21 PM with no decent setups; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-22]]"]
 ---
 
 # Daily desk 2026-10-27
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 20:42 ET
+
+**Real trades (bot account ••3001)**
+- No buys or sells since 5:42 PM (market closed). Open: **USO 0.029406 sh @ 163.23** (4h trend), last checked 3:50 PM at bid 163.34 (about +$0.00), stop 159.97, first target 166.49.
+- Account $9.61, buying power $4.36. Circuit breaker: 0 losses today. Realized bot P&L since start: +$0.39 on $15 start cash.
+- Real crypto (5:53, 6:53, 7:53 PM): no board setup, 0 open, $4.36 crypto buying power, no orders. Real 5m: none (Auto OFF).
+
+**Probability board**: **refreshed at 8:21 PM** (first good run since Wed Oct 21), dated Tue Oct 27, 0 errors. **No "decent odds" setups** tonight, so the stock and crypto board copies have nothing to trigger tomorrow until the next refresh.
+
+**Paper crypto**: no setups, no board hits, 0 paper trades open. 6:00 PM sweeps (all closed back below): **SUI PDH 0.9299** (wick 0.9352), plus 1h highs on BTC 80,925, ETH 2,354.69, ADA 0.20603, LTC 56.91, WIF 0.18138. PEPE +6.1% in 24h (5:45 PM). LTC top-ranked at 7:45 PM, 4h mixed.
+
+**5-minute scout (5:48, 6:48, 7:47 PM)**: 48 markets, 4 proven setups, 0 firing; 4 Robinhood alerts unchanged (SOFI, USO, MSTR, MXL). Auto OFF.
+
+**Lab (Ultron)**: gen 1144, 8 champions pass out-of-sample, 4 paper trades open (AAOI, AEHR, CIFR ×2), no new buys or closes since 3:32 PM. Forward record unchanged: **10 trades, 50% winners, −1.08%/trade**. Flags down from 6 to 5. No proposals.
+
+**Research** (all idea only)
+- [U20261027T2031] **Adobe Stock AI images (income idea).** 33% royalty, about $0.26–$3 per download and falling; the Lab's estimate is $100–$330/year for 1,000 accepted images. An agent can do keywords and prompts, but a human must vet every image, and near-duplicates can get the account closed. Sources: [Adobe gen-AI guidelines](https://helpx.adobe.com/stock/contributor/submit-your-content/submit-generative-ai-content/generative-ai-content-guidelines.html), [Selling-Stock 2019](https://www.selling-stock.com/Article/adobestock-revenue), [Adobe community thread](https://community.adobe.com/questions-38/significant-drop-in-download-earnings-is-anyone-else-experiencing-this-330172).
+- [U20261027T1930] **Open paper book is about 1.6 bets, not 4.** AAOI/AEHR/CIFR have betas of 4.0–5.6 to SPY and pair correlations of 0.35–0.52; on the 11 days in the past year SPY fell 1.5%+, this book averaged −7.42% (worst −13.14%). The Lab has no same-ticker or cluster cap (CIFR is held twice). Finviz was blocked by robots rules. 0 strategy variants tested.
+- [U20261027T1829] **Last half-hour drift: no long edge.** On 3,537 Lab-stock days (60 days of 5-minute bars), the 3:30–4:00 PM half-hour averaged −0.073% (−0.114% after a red first half-hour); buying the close after a green open nets −0.229%/trade after a 0.2% cost estimate (35.5% winners). 8 variants; one 60-day regime, so evidence is thin. Sources: [Alpha Architect](https://alphaarchitect.com/2014/08/attention-prop-traders-the-first-half-hour-of-trading-predicts-the-last-half-hour/), [paper PDF](https://c.mql5.com/forextsd/forum/173/intraday_momentum_-_the_first_half-hour_return_predicts_the_last_half-hour_return.pdf), [CXO](https://www.cxoadvisory.com/?p=25481).
+
+**Problems seen**
+- Lab brain sync failed at 6:29, 7:30 and 8:33 PM (push 403; add_repo not offered to that task). Its 8 PM journal, research notes and 10 Ideas lines were not saved to the vault; the research is summarized above.
+- 3D brain still not rebuilt: `graphify-out/build_brain_data.py` is missing from the vault (open item in [[Handoff to Claude]]).
+- Watchdog 4:45 PM items: the board is now fixed; Jarvis Brain 3D is still stale (same cause as above).
+- No scheduled-task, rule or config changes in the last 3 hours.
+
+Not financial advice.
 
 ## 17:42 ET
 
