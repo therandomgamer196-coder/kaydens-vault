@@ -3,13 +3,34 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-28
 updated: 2026-10-28
-summary: USO 4h trend sold half at 166.69 (+$0.05) and the runner trails at 166.09 under a 169.35 high, held overnight; account about $9.73; no board or crypto setups; SDGR, AXGN and ABSI 5m setups fired (alerts only, Auto off); Lab gens 1168-1288 with no new paper trades (champions down to 7 at gen 1288) (forward 10 trades, −1.08%/trade); research found the champion gate passes random entries 23% of the time, long-only VWAP trend and pre-FOMC drift lose after costs, IBS index-ETF reversion looks best so far but has gap risk (idea only); Lab brain push and 3D brain builder still failing.
+summary: USO 4h trend sold half at 166.69 (+$0.05) and the runner trails at 166.09 under a 169.35 high, held overnight; account about $9.73; no board or crypto setups; SDGR, AXGN and ABSI 5m setups fired (alerts only, Auto off); Lab gens 1168-1306 with no new paper trades (9 champions at gen 1306) (forward 10 trades, −1.08%/trade); research found the champion gate passes random entries 23% of the time, long-only VWAP trend and pre-FOMC drift lose after costs, IBS index-ETF reversion looks best so far but has gap risk, KDP income looked at (idea only); Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-27]]"]
 ---
 
 # Daily desk 2026-10-28
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 23:43 ET
+
+- Real trades: none opened or closed since 20:42. Account ••3001 about $9.70-9.73, $6.81 buying power (crypto checks at 8:52, 9:53 and 10:52 PM).
+- Open positions: USO 4h trend runner, 0.014703 sh from 163.23, half already sold (+$0.05), trailing stop 166.09 under the 169.35 high, held overnight. No real crypto or real 5m trades open.
+- Probability board: no change since the 8:21 PM refresh (no decent setups).
+- Crypto (8:45, 9:44, 10:44 PM): no setups or board hits, 0 paper trades. SOL swept its 1h swing low 99.70 (wick 99.64) and closed back above (sell-side liquidity taken). ADA −5.1% in 24h. PEPE now top-ranked (4h up). Real crypto idle.
+- 5m scout (8:47, 9:47, 10:47 PM): 48 markets, 9 proven, ABSI 24/48-bar breakout from the 3:55 PM close still listed (buy near 11.89, stop 11.76, won 44.4% of 9 unseen trades, small n); 9 Robinhood alerts unchanged; Auto OFF, alerts only.
+- Lab (Ultron): gens 1294, 1300 and 1306; champions 7 → 6 → 9; 4 paper trades open, none opened or closed; 99-106 markets tested. Forward record still **10 trades, −1.08% per trade**. 5 flaws flagged, no proposals.
+
+**Research** (idea only)
+- [U20261028T2131] **Long-only VWAP trend on SPY/QQQ has no edge after costs.** 36 variants; best costless variant +0.02%/trade (t=0.9) and every costed one lost (−0.02% to −0.14%). The paper's 671% needs the short side and fails replication. Sources: [Concretum](https://concretumgroup.com/volume-weighted-average-price-vwap-the-holy-grail-for-day-trading-systems/), [QuantConnect thread](https://www.quantconnect.com/forum/discussion/16706/bear-bull-traders-039-paper-on-quot-the-holy-grail-quot-not-so-fast/).
+- [U20261028T2232] **IBS < 0.2, stocks vs ETFs.** Hold until the close tops yesterday's high (max 5 days), 0.10% round trip, 2016-2026: index ETFs +0.40%/trade vs +0.12% random (68% wins), megacaps +0.36% vs +0.14%; both halves positive. Single stocks carry −35% to −70% worst trades; 1-day holds barely clear costs. 6 variants. Sources: [arXiv 2306.12434](https://arxiv.org/html/2306.12434v1), [Quantified Strategies](https://quantifiedstrategies.substack.com/p/ibs-internal-bar-strength-trading-088).
+- [U20261028T2329] **KDP books (income idea).** $1.79 per $2.99 ebook, $1.99 per $9.99 paperback after Amazon's cut; about 44% of surveyed authors make ≤$100/month (self-selected n=1,346); AI content must be disclosed, 3 titles a day cap. Sources: [KDP earn](https://kdp.amazon.com/earn), [Written Word Media 2025 survey](https://www.writtenwordmedia.com/2025-author-survey/).
+
+**Problems seen**
+- Brain sync: the Lab's 9:31, 10:35 and 11:29 PM runs got a 403 on push (add_repo isn't available to that task). Its journal, research notes and Ideas lines live only in the page database; the research is summarized above.
+- 3D brain: not rebuilt. `graphify-out/build_brain_data.py` is still missing from the vault, so Jarvis Brain 3D stays at its 2026-10-22 build. Watchdog flagged it again at 8:46 PM. Open item in [[Handoff to Claude]].
+- No Trading OS rule, config or scheduled-task changes in the last 3 hours.
+
+Not financial advice.
 
 ## 20:42 ET
 
