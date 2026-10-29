@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-29
 updated: 2026-10-29
-summary: Overnight, no real trades; USO 4h trend runner held (trail 166.09 under a 169.35 high); account about $9.73; no board or real crypto setups; LTC prior-day-low sweep, AVAX and LTC paper setups skipped; ABSI 5m breakout still listed from the Oct 28 3:55 PM candle (alerts only, Auto off); Lab gens 1312-1342, no new paper trades, forward 10 trades at −1.08%/trade; research (idea only): next-open fills halve Lab edge, overnight drift, turn-of-month and intraday momentum too thin, 52-week-high screen only lowers volatility, Lab book is ~1.65 independent bets; Lab brain push and 3D brain builder still failing.
+summary: Overnight into the morning, no real trades; USO 4h trend runner held (trail 166.09 under a 169.35 high); account about $9.73; no board or real crypto setups; LTC prior-day-low sweep, PEPE 1h low and SOL 1h high sweeps, AVAX and LTC paper setups skipped; ABSI 5m breakout still listed from the Oct 28 3:55 PM candle (alerts only, Auto off); Lab gens 1312-1360, no new paper trades, forward 10 trades at −1.08%/trade; research (idea only): next-open fills halve Lab edge, overnight drift, turn-of-month, intraday momentum and crypto trend-following too thin after costs, sector rotation only cuts drawdown, idle-cash yield not worth it yet; Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-28]]"]
 ---
 
 # Daily desk 2026-10-29
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 08:54 ET
+
+**Real trades**: none opened or closed since 5:42 AM.
+- Stocks (bot account ••3001, about $9.73): **USO 4h trend runner** still open, 0.014703 shares from 163.23; half sold at 166.69 (+$0.05) on Oct 28; trailing stop 166.09 under the 169.35 high; last bid 167.83 (3:51 PM run). Market opens 9:30 AM; the stock bot's first run is 9:50. $6.81 free.
+- Real crypto (6:54, 7:57 AM): no board setup, 0 open, $6.81 buying power, account about $9.71, no orders. Real 5m: none (Auto OFF).
+
+**Board**: no refresh since 8:21 PM (no decent setups).
+
+**Paper crypto (7:46 AM)**: AVAX top-ranked (4h down). Two info-only 1h sweeps: **PEPE** swept its 1h swing low 0.00000478 (wick 0.00000477) and closed back above; **SOL** swept its 1h swing high 100.69 (wick 100.71) and closed back below. No setups, no board hits, 0 paper trades open.
+
+**5-minute scout (6:48, 7:54 AM)**: 48 markets, 9 proven setups. **ABSI** 24/48-bar breakout on volume still listed from the Oct 28 3:55 PM candle: buy near 11.89, stop 11.76 (−1.13%), half at 12.48. It won 44.4% of 9 unseen trades, a small sample. Alerts only; 9 Robinhood alerts unchanged.
+
+**Lab (Ultron)**: generations 1348, 1354 and 1360; 7 to 10 champions pass out-of-sample; 4 paper trades open (AAOI, AEHR, CIFR ×2), none opened or closed; 73-75 markets tested. Forward record still **10 trades, 50% winners, −1.08% per trade**. No proposals.
+
+**Research** (idea only)
+- [U20261029T0845] **Sector rotation matched SPY but didn't beat it.** Holding the top 3 of 9 sector ETFs by 12-month return made 15.1%/yr vs 15.6% for SPY out-of-sample (2016 to Sep 2026), Sharpe 1.06 vs 1.05, with a smaller drawdown (−15.9% vs −23.9%). It lagged SPY in 8 of 11 years; 2022 and 2026 made all the excess, so it's a lucky cluster, and it sat inside the range of random 3-sector picks. 7 variants tested. Verdict: a drawdown dial, not an edge. Sources: [Quantpedia](https://quantpedia.com/strategies/sector-momentum-rotational-system), [Quantified Strategies](https://quantifiedstrategies.substack.com/p/dual-momentum-investing-with-gary).
+- [U20261029T0734] **Crypto trend-following dies at our fees.** A Feb 2026 arXiv paper shows Sharpe 2.41, but it shorts futures and assumes 4 bps fees; Z.E.R.O pays 95 bps. Long-only on 10 Coinbase coins (Sep 2022 to Oct 2026, 0.95% each way), 7 of 8 variants lost 0.8-1.2%/trade out-of-sample. The one winner (60-day flip, +3.95%/trade, n=182, t≈1.5) came from the Oct-Nov 2024 rally alone. Fails gates 3 and 5. Source: [arXiv 2602.11708](https://arxiv.org/pdf/2602.11708).
+- [U20261029T0632] **Idle-cash yield isn't worth it yet.** Robinhood's 3.6% cash sweep needs Gold ($5/mo), which costs $60/yr against about $0.25 of interest at $9.73; it breaks even only above about $1,667 idle (estimate). Staked SOL nets about 4.3% but unbonding can lock coins for weeks and break the bots' stop exits, so never stake what the bots trade. Sources: [Robinhood cash program](https://robinhood.com/us/en/support/articles/cash-program-interest-rate/), [Robinhood staking](https://robinhood.com/us/en/support/articles/crypto-staking/), [Streamflow](https://streamflow.finance/blog/state-of-solana-staking).
+
+**Problems seen**
+- Brain sync: the Lab's 6:32, 7:34 and 8:45 AM runs got a 403 on push again (add_repo isn't offered to that task). Their research and Ideas lines are only in the page database; summarized above.
+- 3D brain: `graphify-out/build_brain_data.py` is still missing (only `build_brain_map.py` exists, and that one writes into `.obsidian/`, which the Scribe must not touch), so Jarvis Brain 3D stays at its 2026-10-22 build. The watchdog flagged it again at 8:48 AM (~177 hours stale). add_repo wasn't offered to the Scribe this run either, though git access worked. Open item in [[Handoff to Claude]].
+- No Trading OS rule, config or scheduled-task changes in the last 3 hours (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 05:42 ET
 
