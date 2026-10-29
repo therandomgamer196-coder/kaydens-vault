@@ -3,13 +3,32 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-10-28
 updated: 2026-10-28
-summary: USO 4h trend sold half at 166.69 (+$0.05) and the runner trails at 166.09 under a 169.35 high, held overnight; account about $9.73; no board or crypto setups; SDGR, AXGN and ABSI 5m setups fired (alerts only, Auto off); Lab gens 1168-1270 with no new paper trades (forward 10 trades, −1.08%/trade); research found the champion gate passes random entries 23% of the time, long-only VWAP trend and pre-FOMC drift lose after costs; Lab brain push and 3D brain builder still failing.
+summary: USO 4h trend sold half at 166.69 (+$0.05) and the runner trails at 166.09 under a 169.35 high, held overnight; account about $9.73; no board or crypto setups; SDGR, AXGN and ABSI 5m setups fired (alerts only, Auto off); Lab gens 1168-1288 with no new paper trades (champions down to 7 at gen 1288) (forward 10 trades, −1.08%/trade); research found the champion gate passes random entries 23% of the time, long-only VWAP trend and pre-FOMC drift lose after costs, IBS index-ETF reversion looks best so far but has gap risk (idea only); Lab brain push and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-27]]"]
 ---
 
 # Daily desk 2026-10-28
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 20:42 ET
+
+- Real trades: none opened or closed since 17:41. Account ••3001 about $9.73, $6.81 buying power (last snapshot 3:52 PM).
+- Open positions: USO 4h trend runner, 0.014703 sh from 163.23, half already sold, trailing stop 166.09 under the 169.35 high, held overnight. No real crypto or real 5m trades open.
+- Probability board: refreshed 8:21 PM, no decent setups fired (0 errors).
+- Crypto: no setups or board hits; XRP top-ranked (4h up); 0 paper trades; real crypto idle.
+- 5m scout: 9 proven, ABSI 24/48-bar breakout still listed as firing on the 3:55 PM candle (won 44.4% of 9 unseen trades, small n); alerts only, Auto off, market closed.
+- Lab: gens 1276-1288. Champions fell from 12 to 7 and the tested universe shrank from 144 to 118 markets at gen 1288. 4 paper trades open, none new or closed; forward record 10 trades, −1.08%/trade. No proposals.
+- Research (idea only, Lab research collection):
+  - U20261028T1834: IBS mean reversion on SPY/QQQ/IWM/DIA, +0.29%/trade after costs (n=2,588, 66% wins, 72 variants tested); no stop, worst trade −21%.
+  - U20261028T1930: disaster stops don't cap IBS gap risk (−5% stop still lost −12.1% on a gap; edge drops to +0.25%).
+  - U20261028T2030: inverse-volatility sizing on IBS halves the worst hit and cuts drawdown 15% → 10%, Sharpe flat.
+- Problems:
+  - The Lab's vault push failed 3 times (6:35, 7:30, 8:30 PM): add_repo wasn't available and push got a 403. Its IBS research is in the database but not in the Lab notes.
+  - The 3D brain was not rebuilt: `graphify-out/build_brain_data.py` is still missing (Jarvis Brain 3D stays at its 2026-10-22 build). See [[Handoff to Claude]].
+- No rule, config or scheduled-task changes in the last 3 hours.
+
+Not financial advice.
 
 ## 17:41 ET
 
