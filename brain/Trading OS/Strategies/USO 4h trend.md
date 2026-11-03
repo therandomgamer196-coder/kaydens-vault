@@ -3,7 +3,7 @@ tags: [trading, strategy]
 type: strategy
 mode: real
 created: 2026-10-21
-updated: 2026-10-28
+updated: 2026-11-03
 summary: Buy USO when the 4-hour 20 EMA is above the 50 EMA and the ask is above the 20 EMA. Stop −2%, first target +2%
 related: ["[[Strategy scorecard]]", "[[ZERO trading agent]]"]
 ---
@@ -20,7 +20,7 @@ Buy USO when the 4-hour 20 EMA is above the 50 EMA and the ask is above the 20 E
 
 ## Live record
 <!-- live:start -->
-As of 2026-10-28 14:41 ET: 5 trades since 2026-09-30: 4 closed (2 wins: +$0.45 on 2026-10-16, +$0.63 on 2026-10-23 (runner sold by hand); −$0.15 stop; −$0.04 manual exit), net +$0.90 (stocks have no commission). 1 open since 2026-10-27 ($4.80 at 163.23): half sold 2026-10-28 at 166.69 (+$0.05), runner 0.014703 sh trailing at 166.09 (high 169.35). Net realized incl. the half: +$0.95. Last trade 2026-10-28.
+As of 2026-11-03 14:45 ET: 6 real trades since 2026-09-30, all closed. 3 won: +$0.45 (2026-10-16), +$0.63 (2026-10-23, runner sold by hand) and +$0.08 (2026-10-29, trailing stop). 3 lost: −$0.04 (manual exit), −$0.15 (stop) and −$0.20 (2026-11-03, stop hit at 157.11 after a $4.84 buy at 164.02 on 2026-10-29). Net +$0.78 after costs (stocks have no commission). 0 open. Last trade 2026-11-03.
 <!-- live:end -->
 
 ## Notes

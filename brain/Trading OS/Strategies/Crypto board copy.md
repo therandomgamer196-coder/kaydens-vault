@@ -3,7 +3,7 @@ tags: [trading, strategy]
 type: strategy
 mode: real
 created: 2026-10-21
-updated: 2026-10-21
+updated: 2026-11-03
 summary: The real crypto trader copies paper BOARD trades opened by the crypto monitor in the last 75 minutes. First-ta
 related: ["[[Strategy scorecard]]", "[[ZERO trading agent]]"]
 ---
@@ -20,7 +20,7 @@ Board 2026-10-21 (after fees): PEPE oversold 78.9% of 38, BONK oversold 75.0% of
 
 ## Live record
 <!-- live:start -->
-As of 2026-10-21: 0 real trades (the board was stale from Oct 3 to Oct 21, so no board paper trades opened).
+As of 2026-11-03 14:45 ET: 0 real trades. The ADA oversold board setup (70% of 40) fired on 2026-11-03, but both $4.77 buy attempts (12:53 PM and 1:54 PM ET) were denied by the session permission check, so nothing was bought. Net $0.00.
 <!-- live:end -->
 
 ## Notes
