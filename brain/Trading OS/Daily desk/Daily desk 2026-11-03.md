@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-03
 updated: 2026-11-03
-summary: Quiet evening; no new real trades (account ~$9.55, nothing open); Probability board refreshed at 8:21 PM with no decent setups; Lab gens 1402-1432 opened HUT/BE/NVTS paper trades and stopped NBIX (−2.03%), forward record 15 trades at −4.08%/trade; research (idea only) on overnight edge, gap chasing, sample size, trend filter and correlation; earlier: USO stop −$0.20, ADA real buys denied by permission check.
+summary: Late evening quiet; no real trades (nothing open, $9.13 buying power); no board setups, ADA paper board trade still open; LTC/LINK/SOL/DOGE 1h RSI oversold alerts; Lab gens 1438-1450 no new paper trades, forward 15 trades at −4.08%/trade; research (idea only) on 3:50 PM entries, volume filters and IBS; earlier: USO stop −$0.20, ADA real buys denied by permission check; Lab vault pushes and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-29]]"]
 ---
 
 # Daily desk 2026-11-03
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 23:41 ET
+
+**Real trades (account ••3001):** none opened or closed since 8:41 PM. No open positions. Buying power $9.13, account value $9.55. Realized bot P&L since 2026-09-30 is still +$0.27.
+
+**Board and crypto**
+- Probability board (refreshed 8:21 PM): no decent setups.
+- The real crypto trader checked at 8:52, 9:52 and 10:52 PM. The only board trade is the paper ADA from 12:50 PM, which is older than its 75-minute entry window, so nothing was bought. 0 real crypto trades.
+- Paper: 1 open trade, the ADA board long (entry 0.1895725, stop 0.1769255).
+- 10:45 PM: LTC (27), LINK (25), SOL (29) and DOGE (30) hit 1h RSI oversold, the Tier-1 dip rule. These are alerts only, with no board setup behind them. PEPE was top-ranked at 10:44 PM.
+
+**5m scout:** 4 proven setups (GLXY, HUT, RIOT opening-range breakouts; SMCI prior-low sweep), none firing. The 4 Robinhood alerts didn't change. Auto is OFF.
+
+**Lab (paper):** gens 1438-1450 ran with 9-11 champions passing out-of-sample. No new paper trades and no closes. 7 are open: IREN, CIFR, RIOT, APLD, HUT, BE, NVTS. Forward record is unchanged at **15 trades, 33.3% winners, −4.08% per trade**. No proposals.
+
+**Research (all idea only)**
+- U20261103T2129, 3:50 PM entry: buying at 3:50 PM is a clean stand-in for the close (median 0.25% off). But over the last 60 days the 1-day RSI(2) dip bounce lost at every entry time: −0.42% per trade (n=1,250, per-day t −1.5).
+- U20261104T0332, volume filter: high-volume dips were best in training (+1.38%, n=180) but worst on unseen data (−1.32%, n=51), so volume doesn't sort the bounces. The steadier finding is the exit: holding until the close is above the 5-day average beat a 1-day hold, +0.81% vs −0.08% per trade (n=1,372).
+- U20261104T0432, IBS dip-buy: +0.62% per trade on unseen stock data at the close with a 200-day filter (n=1,012, 59% win). That falls to +0.35% at the next open and about +0.05% without its 3 best days, so it could be luck. Crypto lost in all 8 variants after fees.
+
+**Problems seen**
+1. Lab vault pushes failed in all 4 runs (8:29, 9:36, 10:32 and 11:32 PM): add_repo isn't available and git returns 403. Research is saved only in the page database.
+2. `graphify-out/build_brain_data.py` is still missing from the vault, so the Jarvis Brain 3D page can't be rebuilt (last built 2026-10-22).
+3. Still open from earlier: the Daily Market Brief failed this morning (usage limit), and real crypto buys were denied by the session permission check.
+
+Not financial advice.
 
 ## 20:41 ET
 
