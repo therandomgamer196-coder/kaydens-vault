@@ -3,13 +3,38 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-04
 updated: 2026-11-04
-summary: Quiet night; no real trades (nothing open, $9.13 buying power); ADA paper board trade still open; meme coins up 5-11% in 24h; 5m scout 4 proven, none firing; Lab gens 1456-1486 no new paper trades, forward 15 trades at −4.08%/trade; 6 research notes (idea only); Lab vault pushes and 3D brain builder still failing.
+summary: No real trades (nothing open, $9.13 buying power); ADA paper board trade still open; 5m scout 4 proven, none firing; Lab gens 1456-1504 no new paper trades, forward 15 trades at −4.08%/trade; 9 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-03]]"]
 ---
 
 # Daily desk 2026-11-04
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 08:42 ET
+
+Covers 5:42 AM to 8:42 AM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power $9.13 (account value $9.55). The real crypto trader ran at 5:52, 6:53 and 7:53 AM: no fresh board setup, 0 real crypto trades. The stock auto-trader starts at 9:50 AM.
+
+**Board and crypto:** no decent setups on the Probability board (last refresh 2026-11-03 8:21 PM). The paper BOARD long ADA from 12:50 PM yesterday is still open. Crypto scans at 5:45 and 7:45 AM: SOL then WIF top-ranked (4h mixed), prior-day-high sweeps on ETH, SUI and SOL (SOL swept 93.84 and closed back below), no new setups or board hits.
+
+**5m scout:** 4 proven setups, none firing, at 5:48, 6:48 and 7:48 AM. 4 Robinhood alerts kept. Auto is OFF.
+
+**Lab (paper):** gens 1492, 1498 and 1504: 8-10 champions pass out-of-sample, testing 68 markets (40 discovered). 7 paper trades open, 0 new, 0 closed. Forward record unchanged: **15 trades, 33.3% winners, −4.08% per trade**, below the 30-trade gate. No proposals.
+
+**Research (all idea only)**
+- U20261104T1332, discovery screen check: Yahoo "movers" names (mcap ≥$2B, vol ≥1M) gave bigger RSI(2) dip payoffs than a fixed mega-cap list (+0.92% vs +0.55%/trade over 4,546 trades since 2022), but in the last 90 days they lost −2.72%/trade (n=105) while the mega-caps broke even. Finviz is still blocked for fetching. Sources: [Barber & Odean 2008](https://ideas.repec.org/a/oup/rfinst/v21y2008i2p785-818.html), [CXO Advisory](https://www.cxoadvisory.com/?p=354).
+- U20261104T1232, VWAP flip (long only, 5-minute bars, 60 days): lost after costs, QQQ/SPY −0.45%/day, 36 stocks −0.36%/day (n=2,160 stock-days); the "VWAP reclaim" entry did worse than a random entry time. The cited long/short study needs shorting, which Z.E.R.O doesn't do. Source: [Concretum Group](https://concretumgroup.com/volume-weighted-average-price-vwap-the-holy-grail-for-day-trading-systems/).
+- U20261104T1132, position sizing for RSI(2) dips ($1,000 paper, 45 stocks, 6 variants): fewer, bigger positions made it worse on unseen 2026 data (1 slot −67%, 3 slots −45%, 10 slots −4.7%). Sizing to 1% risk at a 2×ATR stop cut the worst day from −10.8% to −2.8%, but sizing can't fix a negative edge. Sources: [NBER w22208](https://www.nber.org/papers/w22208), [Algomatic Trading](https://algomatictrading.substack.com/p/why-volatility-adjusted-sizing-matters).
+
+**Problems seen**
+1. Lab vault pushes failed 3 more times (6:34, 7:32, 8:32 AM): git returned 403 because add_repo isn't available to that task. Its research and ideas are only in the page database. This Scribe run also had no add_repo tool.
+2. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the Jarvis Brain 3D page wasn't rebuilt (stale since 2026-10-22). The Watchdog flagged it again at 7:45 AM.
+3. Fixed: the Daily Market Brief ran fine at 7:53 AM today after yesterday's usage-limit failure.
+4. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 05:41 ET
 
