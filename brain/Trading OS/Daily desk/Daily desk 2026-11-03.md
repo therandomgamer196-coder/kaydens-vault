@@ -3,13 +3,52 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-03
 updated: 2026-11-03
-summary: System back after a silent stretch (no agent logs from 2026-10-29 ~3 PM to 2026-11-03 12:30 PM ET, several tasks failing on usage limits); USO 4h trend trade from Oct 29 stopped out today at 157.11 (−$0.20); account about $9.55, no open real positions; ADA board oversold setup fired but both real buys were denied by the session permission check; Lab gens 1384-1396 opened 5 paper trades with 9-16% entry slippage, forward record 14 trades at −4.22%/trade; research (idea only): gap-chase guard, Connors RSI(2) retest, digital-product income odds.
+summary: Quiet evening; no new real trades (account ~$9.55, nothing open); Probability board refreshed at 8:21 PM with no decent setups; Lab gens 1402-1432 opened HUT/BE/NVTS paper trades and stopped NBIX (−2.03%), forward record 15 trades at −4.08%/trade; research (idea only) on overnight edge, gap chasing, sample size, trend filter and correlation; earlier: USO stop −$0.20, ADA real buys denied by permission check.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-10-29]]"]
 ---
 
 # Daily desk 2026-11-03
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 20:41 ET
+
+Covers 2:45 PM to 8:41 PM ET (the 5:41 PM Scribe run never committed, so this section catches up on it).
+
+**Real trades (account ••3001, "MCP", limited margin)**
+- No new real trades. The 2:50 PM and 3:50 PM auto-trader runs found no entries: USO is under its 4h 20 EMA (158.20 vs 159.40), GLD is in a downtrend, QQQ/SPY had no 15m gaps, and there were no board triggers.
+- Open positions: none. Buying power $9.13, account value $9.55. Realized bot P&L since 2026-09-30: +$0.27 on a $15 start. Circuit breaker: 1 loss today, not tripped.
+- Real crypto: 0 trades open. Every hourly check (2:53 PM to 7:53 PM) skipped because the ADA board paper trade from 12:50 PM was outside the 75-minute copy window.
+
+**Board, crypto and 5m**
+- The Probability board refreshed tonight at 8:21 PM, for the first time since 2026-10-28. No setups qualify as "decent odds" today.
+- Paper ADA board long (opened 12:50 PM) is still open. No paper crypto opens or closes.
+- Sweeps: BTC 1h high (2:45 PM, info only), LINK 1h low (4:00 PM), AVAX 1h low (6:00 PM), PENGU 1h high (7:00 PM). The LINK and AVAX sweep + FVG setups were skipped because they lose money after the 0.95% fee each way.
+- 5m scout: 3-4 proven setups each hour (GLXY, HUT, RIOT, SMCI; IOVA dropped at 2:47 PM), none firing. There are 4 managed Robinhood alerts. Auto is OFF.
+- Trinity (4:26 PM): no setup today. NQ had a long bias and ES a short bias, but neither formed a full setup by noon.
+
+**Lab (paper)**
+- Gens 1402-1432: 9-11 champions pass out-of-sample, testing 123-145 markets.
+- Paper buys at 3:30 PM: HUT 63.08, BE 213.8, NVTS 8.635. The NBIX paper trade stopped at 164.85 (−2.03% after costs, 4:30 PM).
+- Seven paper trades are open, all entered today in AI-datacenter and bitcoin-miner names.
+- Forward record: **15 trades, 33.3% winners, −4.08% per trade**. No proposals.
+
+**Research (all idea only)**
+- U20261103T1532, where the edge lives: on 117 stocks, nearly all gains came overnight (+0.10% per stock-day on unseen data, versus +0.00% intraday). The intraday session after an RSI(2) dip loses −0.13% net (t −2.5).
+- U20261103T1630, why forward paper is losing: entries that chased more than 2% above the signal close averaged −8.3% (n=9). Entries near the signal made +2.2% (n=6).
+- U20261103T1732, how many trades prove an edge: a +1.31% edge with about 9% swing per trade needs roughly 140-200 trades. After 30 trades, a strategy with no edge still passes the "positive" gate about half the time.
+- U20261103T1832, trend filter for RSI(2) dips: requiring the 50-day SMA above the 200-day lifts unseen-data results from +0.69% to +0.99% per trade (n=1,000). Crypto dips lose after fees in every variant. Finviz is still blocked by robots.txt.
+- U20261103T1929, Apify Store income: the median Actor has 7 users and the top 1% take 58% of demand. An EDGAR insider-buy Actor is roughly a $0-$50/month bet (estimate).
+- U20261103T2029, correlation: the 7 open paper trades behave like about 1.5 independent bets (average correlation 0.63, 0.76 among the miners). 77% of these signals fire together on cluster days. The idea is to cap correlated open trades at 2.
+
+**Problems seen**
+1. Lab vault pushes are still failing (add_repo isn't available, git 403) at 3:32 PM, 4:30 PM, 6:34 PM, 7:29 PM and 8:29 PM. That research is only in the page database.
+2. The Scribe run at 5:41 PM made no commit (the Watchdog flagged it as pending).
+3. The 3D brain builder `graphify-out/build_brain_data.py` is still missing, so the Jarvis Brain 3D page is stale. It was last built 2026-10-22.
+4. Lab paper entries still chase gaps (all 7 open trades entered 9-16% above their signal close). The 7 open trades are also highly correlated.
+5. The Daily Market Brief failed this morning on a usage limit. No scheduled-task or rules changes were seen.
+
+Not financial advice.
 
 ## 14:45 ET
 
