@@ -3,13 +3,38 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-04
 updated: 2026-11-04
-summary: No real trades (nothing open, $9.13 buying power); ADA paper board trade still open; 5m scout 4 proven, none firing; Lab gens 1456-1504 no new paper trades, forward 15 trades at −4.08%/trade; 9 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
+summary: No real trades (nothing open, $9.13 buying power); MSFT breakout triggered but ran past its chase limit; ADA paper board trade still open; 5m scout 3-4 proven, none firing; Lab gens 1456-1522, 3 paper stops (HUT, IREN, BE), forward 18 trades at −4.83%/trade; 12 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-03]]"]
 ---
 
 # Daily desk 2026-11-04
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 11:41 ET
+
+Covers 8:42 AM to 11:41 AM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power $9.13, account value $9.56 (includes 0.00446 SOL that isn't in the bot ledger). Circuit breaker not tripped. The stock auto-trader ran at 9:51 and 10:51 AM: MSFT's 20-day breakout in an uptrend (66.7% of 54 past signals) triggered at 9:51 but ran past its 549.85 chase limit (bid 549.97, then 552.35 at 10:51), so it was not taken. GOOGL's low 283.51 stayed above the 278.80 sweep level, USO 153.46 is under its 4h 20 EMA, GLD is in a downtrend, and there were no QQQ/SPY 15m gaps. The real crypto trader ran at 8:53, 9:53 and 10:53 AM: no fresh board setup, 0 real crypto trades.
+
+**Board and crypto:** no decent setups on the Probability board (last refresh 2026-11-03 8:21 PM). The paper BOARD long ADA (oversold bounce, 70% of 40) from 12:50 PM yesterday is still open: entry 0.189573, stop 0.176926, target 0.202220. Crypto scans at 8:45, 9:44 and 10:44 AM: WIF top-ranked (4h mixed); 24h moves up in ETH (+6.1%), SUI (+5.3%) and AVAX (+5.1%); LTC swept its 1h swing high 56.1580 and closed back below; no new setups or board hits.
+
+**5m scout:** 4 proven setups at 8:47 and 9:49 AM, 3 at 10:48 AM, none firing. Robinhood alerts were rotated: at 9:49 it removed the old HUT, SMCI, GLXY and RIOT levels and added RIOT<15.16, SMCI<30.94, MSTR<138.55 and BRKR RSI(2)<10; at 10:48 it added RIOT>16.18 and MSTR>141.67 and removed RIOT<15.16, MSTR<138.55 and BRKR. 3 alerts active. Auto is OFF.
+
+**Lab (paper):** gens 1510, 1516 and 1522: 8-10 champions pass out-of-sample, testing 95-118 markets (up to 92 discovered). Three paper RSI(2) dip trades hit their stops: HUT −8.29% (9:30), IREN −8.33% (10:30) and BE −9.17% (11:30) after costs. 4 paper trades still open (RIOT, CIFR, APLD, NVTS). Forward record: **18 trades, 27.8% winners, −4.83% per trade** (was 15 trades at −4.08%), still below the 30-trade gate. No proposals.
+
+**Research (all idea only)**
+- U20261104T1632, equity-curve filter: trading the RSI(2) dip only while its recent trades are winning doesn't rescue it. On unseen Nov 2025-Nov 2026 data the plain setup lost −0.15%/trade (n=3,569); a last-20-trades filter moved it to −0.03% (t −0.23), and per-stock filters made it worse (−0.36%). The first version leaked the future and showed a fake +1.61%/trade. 6 variants. Sources: [StrategyQuant](https://strategyquant.com/ja/blog/better-results-with-equity-control/), [NexusFi](https://nexusfi.com/a/risk-management/equity-curve-trading).
+- U20261104T1532, hidden concentration flaw: the Lab's paper book is mostly one bet. 8 trades from Nov 2 are BTC-miner/AI-datacenter names that move together (average correlation 0.80, about 1.2 independent bets). Counted as one basket per signal day, the dip made +1.30%/day over 3 years but only +0.44% on unseen 2026 data (n=77, t 0.43). Sources: [CryptoSlate](https://cryptoslate.com/bitcoin-miners-are-no-longer-pure-crypto-proxies-and-are-morphing-into-high-performance-computing-hubs/), [Cointelegraph](https://cointelegraph.com/news/bitcoin-mining-stocks-outperform-btc-as-investors-bet-on-ai-pivots).
+- U20261104T1432, IBS dip on QQQ: buy the next open after IBS<0.10, sell after IBS>0.90. +0.84%/trade after costs over 10 years (n=154, 71% win), +0.61% on unseen 2023-26 data (n=52, t 1.8); SPY +0.59%. 11 variants tested, so luck is possible; it needs 30 forward paper trades (about 2 years at 15 a year). Crypto can't use it because of the 1.9% round-trip fee. Sources: [WealthLab](https://wealth-lab.com/blog/build-a-profitable-mean-reversion-strategy-using-the-ibs-indicator), [Quantified Strategies](https://quantifiedstrategies.substack.com/p/the-classical-mean-reversion-strategy).
+
+**Problems seen**
+1. Lab vault pushes failed 3 more times (9:32, 10:32, 11:32 AM): git returned 403 because add_repo isn't available to that task. Its research and ideas are only in the page database. This Scribe run also had no add_repo tool.
+2. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the Jarvis Brain 3D page wasn't rebuilt (stale since 2026-10-22).
+3. The Lab's paper dip book keeps losing (3 more stops, forward −4.83%/trade on 18). The flaw note above points to one correlated miner cluster as the cause.
+4. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 08:42 ET
 
