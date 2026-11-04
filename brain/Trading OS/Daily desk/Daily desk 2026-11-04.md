@@ -3,13 +3,38 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-04
 updated: 2026-11-04
-summary: No real trades (nothing open, $9.13 buying power); MSFT breakout triggered but ran past its chase limit; ADA paper board trade still open; 5m scout 3-4 proven, none firing; Lab gens 1456-1522, 3 paper stops (HUT, IREN, BE), forward 18 trades at −4.83%/trade; 12 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
+summary: No real trades (nothing open, $9.13 buying power); MSFT breakout triggered but ran past its chase limit; ADA paper board trade still open; 5m scout 3-4 proven, none firing; Lab gens 1456-1540, 4 paper stops (HUT, IREN, BE, APLD), forward 19 trades at −5.10%/trade; 15 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-03]]"]
 ---
 
 # Daily desk 2026-11-04
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 14:41 ET
+
+Covers 11:41 AM to 2:41 PM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power $9.13, account value $9.56 (includes 0.00446 SOL that isn't in the bot ledger). Circuit breaker not tripped. The stock auto-trader ran at 11:50 AM, 12:50 and 1:50 PM: MSFT's board breakout stayed past its 549.85 chase limit (554.88 at 12:50, bid 554.76 at 1:50), GOOGL's low stayed above the 278.80 sweep level, USO is far under its 4h 20 EMA (144.77 vs 159.31), GLD is in a downtrend, and there were no QQQ 15m gaps. SPY had a paper-only 15m gap at 766.32-766.86 (11:45), no entry. The real crypto trader ran at 11:52 AM, 12:53 and 1:52 PM: no fresh board setup, 0 real crypto trades.
+
+**Board and crypto:** no decent setups on the Probability board (last refresh 2026-11-03 8:21 PM). The paper BOARD long ADA (oversold bounce, 70% of 40) from 2026-11-03 12:50 PM is still open: entry 0.189573, stop 0.176926, target 0.202220. Crypto scans at 11:44 AM, 12:44 and 1:45 PM: SOL top-ranked (4h mixed); WIF swept its 1h swing high 0.18195 at 11:00 and closed back below (info only); no setups or board hits.
+
+**5m scout:** 3 proven setups (RIOT, MSTR, SMCI) at 11:48 AM, 12:48 and 1:48 PM, none firing. 3 Robinhood alerts active, unchanged. Auto is OFF, so it only sends alerts.
+
+**Lab (paper):** gens 1528, 1534 and 1540: 8-10 champions pass out-of-sample, testing 125-128 markets (up to 104 discovered). One more RSI dip paper stop: APLD −9.93% after costs (12:30 PM; bought 17.835, stopped 16.08). 3 paper trades still open (CIFR, NVTS, RIOT). Forward record: **19 trades, −5.10% per trade** (was 18 at −4.83%), still below the 30-trade gate. No proposals.
+
+**Research (all idea only)**
+- U20261104T1732, volume on the dip day: RSI(2) dips on at least 1.2× normal volume made +1.23%/trade vs +0.54% on quiet dips (Lab names, 3 years, n≈1,500) and held on unseen 2026 data (+1.24%, n=119, vs +0.08%, n=153). But 61% of the unseen profit came from June-July 2026, the name list is survivor-biased, and 30 mega-caps over 10 years show no gap. Forward paper agrees in direction (5 high-volume trades −0.1% avg vs 14 quiet −6.9%). About 11 variants. Sources: [Conrad, Hameed & Niden 1994](https://ideas.repec.org/a/bla/jfinan/v49y1994i4p1305-29.html), [A Century of Market Reversals (PDF)](https://bdlebaron.github.io/pdfs/ACenturyofMarketReversalsMarch2024.pdf).
+- U20261104T1833, 52-week-high screen on RSI(2) dips: dips within 10% of the high were weak (+0.11%/trade train, n=719; +0.14% unseen, n=580). Dips more than 25% below the high did better (+0.91%, +0.61%), but 5 names (CIFR, ONDS, HUT, WULF, RUN) made 72% of it; without them +0.23% (t 0.70). Mostly a volatility/BTC-miner effect. Finviz was blocked by robots.txt, so the screen was rebuilt from Yahoo data. About 13 cells tested. Sources: [CXO Advisory](https://www.cxoadvisory.com/technical-trading/proximity-to-52-week-high-and-short-term-momentum-reversal/), [RePEc paper](https://ideas.repec.org/a/taf/hbhfxx/v26y2025i1p82-94.html).
+- U20261104T1933, Kaggle prize contests as agent income: about $4.25M across 44 contests in 2024 (≈$97K average pool, paid only to the top few teams). The best AI agents medal in 17-48% of past contests graded offline, but medals aren't prizes, and many contests ban internet at inference. Expected cash is near $0; the value is skill and portfolio. Sources: [ML Contests 2024](https://mlcontests.com/state-of-machine-learning-competitions-2024), [The Batch on MLE-bench](https://www.deeplearning.ai/the-batch/openais-mle-bench-tests-ai-coding-agents), [ARC Prize 2026](https://arcprize.org/competitions/2026).
+
+**Problems seen**
+1. Lab vault pushes failed 3 more times (12:32, 1:36, 2:34 PM): git returned 403 because add_repo isn't available to that task. Its research and ideas are only in the page database. This Scribe run also had no add_repo tool (its own push to the vault still works).
+2. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault (only `build_brain_map.py` is there), so the Jarvis Brain 3D page wasn't rebuilt (stale since 2026-10-22). The Watchdog flagged it at 11:45 AM.
+3. The Lab's paper dip book keeps losing: 4 stops today (HUT, IREN, BE, APLD), forward −5.10%/trade on 19. Today's research points to the correlated miner cluster and quiet-volume dips as the weak spots.
+4. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 11:41 ET
 
