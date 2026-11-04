@@ -3,13 +3,38 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-04
 updated: 2026-11-04
-summary: Overnight quiet; no real trades (nothing open, $9.13 buying power); ADA paper board trade still open; 5m scout 4 proven, none firing; Lab gens 1456-1468 no new paper trades, forward 15 trades at −4.08%/trade; research (idea only) on stop overshoot, crypto trend following and insider buys; Lab vault pushes and 3D brain builder still failing.
+summary: Quiet night; no real trades (nothing open, $9.13 buying power); ADA paper board trade still open; meme coins up 5-11% in 24h; 5m scout 4 proven, none firing; Lab gens 1456-1486 no new paper trades, forward 15 trades at −4.08%/trade; 6 research notes (idea only); Lab vault pushes and 3D brain builder still failing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-03]]"]
 ---
 
 # Daily desk 2026-11-04
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 05:41 ET
+
+Covers 2:42 AM to 5:41 AM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power $9.13. The real crypto trader ran at 2:53, 3:52 and 4:53 AM: no fresh board setup, 0 real crypto trades.
+
+**Board and crypto:** no decent setups on the Probability board (last refresh 2026-11-03 8:21 PM). The paper BOARD long ADA from 12:50 PM yesterday is still open (entry 0.189573, stop 0.176926, target 0.202220). The crypto monitor's 2:44 AM scan: SOL top-ranked (4h down), prior-day-high sweeps on PEPE, PENGU and BTC, no new setups or board hits. Meme coins ran in 24h: BONK +10.6%, PEPE +7.1%, PENGU +6.6%, WIF +5.5%. Coin check all OK (BONK cleared).
+
+**5m scout:** 4 proven setups, none firing, at 2:49, 3:48 and 4:48 AM. 4 Robinhood alerts kept. Auto is OFF.
+
+**Lab (paper):** gens 1474, 1480 and 1486: 10-12 champions pass out-of-sample, testing 69 markets (41 discovered). 7 paper trades open (APLD, BE, CIFR, HUT, IREN, NVTS, RIOT), 0 new, 0 closed. Forward record unchanged: **15 trades, 33.3% winners, −4.08% per trade**, below the 30-trade gate. No proposals.
+
+**Research (all idea only)**
+- U20261104T1031, late entries: forward paper trades bought more than 3% above the signal close went 0 for 9 (avg −8.3%); the 6 bought within ~1% averaged +2.2%. Most losers came from the Oct 19-26 sell-off, so this may be one bad cluster. In a 3-year backtest, gap-ups over 3% lost −0.32%/trade (n=355) while next-day-close entries made +0.88% (n=3,854). Sources: [Backtrex RSI-2](https://backtrex.com/en/backtests/connors-rsi-2-nasdaq-100), [LuxAlgo RSI-2](https://www.luxalgo.com/library/concept/rsi-2/).
+- U20261104T0933, turn-of-the-month (buy the 2nd-last close, sell the 3rd trading day): SPY made +0.13% to +0.28%/trade after costs, but t stayed below 2 in every period. On our 44 stocks it lost to random 4-day holds in training (+0.33% vs +0.41%), and crypto loses after the 0.95% fee. Sources: [CXO Advisory](https://www.cxoadvisory.com/calendar-effects/the-turn-of-the-month-effect/), [Xu & McConnell (Atlanta Fed)](https://ideas.repec.org/p/fip/fedawp/2000-11.html).
+- U20261104T0832, selling n8n automation templates (income idea): about 2.4K creators, paid listings need 3 approved free ones first, reported prices $20-300 per workflow, and the n8n affiliate pays 30% for 12 months. Estimate $0-100/month. Sources: [n8n creators](https://n8n-pulse.gui.do/creators), [n8n community thread](https://community.n8n.io/t/where-can-i-sell-my-n8n-workflow-i-am-looking-for-marketplaces-not-the-creator-hub/212963).
+
+**Problems seen**
+1. Lab vault pushes failed 3 more times (3:32, 4:33, 5:33 AM): git returned 403 because add_repo isn't available to that task. This Scribe run also had no add_repo tool.
+2. The 3D brain builder `graphify-out/build_brain_data.py` is still missing, so the Jarvis Brain 3D page wasn't rebuilt (stale since 2026-10-22). The Watchdog flagged it again at 3:45 AM.
+3. The Daily Market Brief's last run (2026-11-03) failed on the usage limit. Next run 7:52 AM today.
+4. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 02:42 ET
 
