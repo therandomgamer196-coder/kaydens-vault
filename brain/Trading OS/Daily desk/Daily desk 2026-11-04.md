@@ -3,13 +3,37 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-04
 updated: 2026-11-04
-summary: No real trades (nothing open, $9.13 buying power); MSFT breakout triggered but ran past its chase limit; ADA paper board trade still open; 5m scout down to 1 proven (MSTR), none firing; Trinity no trade; Lab gens 1456-1558, 4 paper stops (HUT, IREN, BE, APLD), forward 19 trades at −5.10%/trade; 18 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
+summary: No real trades (nothing open, $9.13 buying power); MSFT breakout ran past its chase limit; GOOGL prior-day low sweep went decent on the 8:20 PM board (58.6% of 99); ADA paper board trade still open; 5m scout 1 proven (MSTR), none firing; Trinity no trade; Lab gens 1456-1576, 4 paper stops (HUT, IREN, BE, APLD), forward 19 trades at −5.10%/trade; 21 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-03]]"]
 ---
 
 # Daily desk 2026-11-04
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 20:41 ET
+
+Covers 5:41 PM to 8:41 PM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power $9.13, account value $9.55 (includes 0.00446 SOL that isn't in the bot ledger). Realized bot P&L since 2026-09-30: +$0.27. The stock market was closed for this window. The real crypto trader ran at 5:53, 6:53 and 7:53 PM: no fresh board setup, 0 real crypto trades.
+
+**Board and crypto:** the nightly Probability board refresh (8:20 PM) has 1 decent setup: **GOOGL prior-day low sweep**, which won 58.6% of 99 past signals (+8.5 pts vs any day). Plan: entry 280.03, stop 270.20, target 289.86. The stock auto-trader will check its live trigger from 9:50 AM tomorrow. Paper BOARD long ADA from 2026-11-03 12:50 PM is still open (entry 0.189573). Crypto monitor at 5:45, 6:45 and 7:45 PM: ETH top-ranked (4h up), no new sweeps, setups or board hits.
+
+**5m scout:** 1 proven setup (MSTR opening-range breakout), none firing, at 5:48, 6:47 and 7:48 PM. 1 Robinhood alert active (MSTR above 141.665). Auto is OFF.
+
+**Lab (paper):** gens 1564, 1570 and 1576: 5-8 champions pass out-of-sample, testing 115-133 markets. 3 paper trades open (CIFR, NVTS, RIOT), 0 new, 0 closed. Forward record: **19 trades, 26.3% winners, −5.10% per trade** (net −$7.26), below the 30-trade gate. No proposals.
+
+**Research (all idea only)**
+- U20261105T0132, VWAP trend (long while above VWAP): the Zarattini-Aziz paper claims +671% on QQQ 2018-23, but a long-only 5-minute replay on 20 Lab names over the last 60 days lost money in all 4 variants (QQQ/SPY −0.13 to −0.22%/day after costs). ~10 cells. Sources: [Concretum summary](https://concretumgroup.com/volume-weighted-average-price-vwap-the-holy-grail-for-day-trading-systems/), [RePEc](https://ideas.repec.org/p/chf/rpseri/rp2498.html).
+- U20261105T0029, sizing RSI(2) dips by 1/ATR%: cut per-trade swings 33-41% and the worst drawdown 43-47%, but did not change the edge (unseen −0.07% vs +0.06%/trade, both about 0). 5 variants. Sources: [Quantpedia](https://quantpedia.com/the-impact-of-volatility-targeting-on-equities-bonds-commodities-and-currencies), [Harvey et al. PDF](https://people.duke.edu/~charvey/Research/Published_Papers/P135_The_impact_of.pdf).
+- U20261104T2332, backtest vs reality: the Lab scores RSI(2) dips at the signal-day close, but paper trades buy the next session (8.9-15.8% entry slippage on the 3 open trades). Entering at the next open cut the edge from +0.37% to +0.21%/trade in training and from +0.24% to −0.03% on unseen data. ~22 cells. This likely explains much of the −5.10%/trade paper record.
+
+**Problems seen**
+1. Lab vault pushes failed 3 more times (6:34, 7:29, 8:33 PM): git returned 403 because add_repo isn't available to that task. Its research, ideas and tonight's Lab journal are only in the page database.
+2. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the Jarvis Brain 3D page is still not rebuilt (stale since 2026-10-22). The Watchdog flagged it again at 7:46 PM. add_repo was also unavailable to this Scribe run.
+3. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 17:41 ET
 
