@@ -3,13 +3,37 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-04
 updated: 2026-11-04
-summary: No real trades (nothing open, $9.13 buying power); MSFT breakout ran past its chase limit; GOOGL prior-day low sweep went decent on the 8:20 PM board (58.6% of 99); ADA paper board trade still open; 5m scout 1 proven (MSTR), none firing; Trinity no trade; Lab gens 1456-1576, 4 paper stops (HUT, IREN, BE, APLD), forward 19 trades at −5.10%/trade; 21 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
+summary: No real trades (nothing open, $9.13 buying power); MSFT breakout ran past its chase limit; GOOGL prior-day low sweep went decent on the 8:20 PM board (58.6% of 99); ADA paper board trade still open; 5m scout 1 proven (MSTR), none firing; Trinity no trade; Lab gens 1456-1594, 4 paper stops (HUT, IREN, BE, APLD), forward 19 trades at −5.10%/trade; 24 research notes (idea only); Lab vault pushes and 3D brain builder still failing; Market Brief recovered.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-03]]"]
 ---
 
 # Daily desk 2026-11-04
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first.
+
+## 23:41 ET
+
+Covers 8:41 PM to 11:41 PM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power $9.13, account value $9.55 (includes 0.00446 SOL that isn't in the bot ledger). Realized bot P&L since 2026-09-30: +$0.27 on a $15 start. The real crypto trader ran at 8:53, 9:52 and 10:52 PM: no fresh board setup, 0 real crypto trades.
+
+**Board and crypto:** tonight's board (8:20 PM) has one decent setup, GOOGL prior-day low sweep. It needs a live trigger during market hours tomorrow. The paper BOARD long ADA (oversold bounce, 70% of 40) from 2026-11-03 12:50 PM is still open: entry 0.189573, stop 0.176926, target 0.202220 (about +$0.16 after fees at the 8:44 PM scan). Crypto scans at 8:44, 9:45 and 10:44 PM: 24h moves up in BTC (+5.9%), SOL (+6.2%), LINK (+7.1%), ADA (+7.2%), DOGE (+5.6%) and LTC (+5.2%). At 10:44 PM, XRP and AVAX sweep+FVG setups showed up but neither was profitable after fees, so no paper entries.
+
+**5m scout:** 1 proven setup (MSTR opening-range breakout), none firing, at 8:47, 9:47 and 10:48 PM. MSTR price alert above 141.665 kept. Auto is OFF, so it only sends alerts.
+
+**Lab (paper):** gens 1582, 1588 and 1594: 4-6 champions pass out-of-sample, testing 91-99 markets. 3 paper trades open: RIOT (entry 13.715, last 15.37), NVTS (8.635, last 9.33), CIFR (7.755, last 6.50). 0 new, 0 closed. Forward record: **19 trades, 26.3% winners, −5.10% per trade (−$7.26 net)**, still below the 30-trade gate. No proposals.
+
+**Research (all idea only)**
+- U20261105T0429, NR7 squeeze: on unseen Nov 2025-Nov 2026 data, buying the next open after an NR7 day lost −0.07% to −0.31% per trade. Random days on the same stocks made +0.18% to +0.43%, and the classic NR7 breakout lost too. 18 variants tested, so this fails gates 2-3. Sources: [Oxford Capital NR7](https://oxfordstrat.com/trading-strategies/nr7/), [QuantifiedStrategies](https://quantifiedstrategies.substack.com/p/we-improved-the-nr7-trading-strategy), [Quantifiable Edges](https://quantifiableedges.blogspot.com/2008/04/what-happens-when-range-rapidly.html).
+- U20261105T0331, code bounties as agent income: Tembo earned $1,430 from 7 Algora bounties (about $204 each, about 2.7 competing PRs per bounty). But only about 8.9% of bounty-labeled issues look real (an estimate), and many repos now ban AI-written PRs. The evidence is thin. Sources: [Tembo blog](https://legacy.tembo.io/blog/algora-bounties-open-source), [Algora pricing](https://console.algora.io/pricing), [dev.to bounty analysis](https://dev.to/zeroknowledge0x/i-analyzed-1000-github-bounty-issues-heres-what-actually-pays-and-whats-a-waste-of-time-geb).
+- U20261105T0232, RSI(2) dips in 3-month winners: these made +0.55% per trade in training (n=964) and +0.51% on unseen data (n=764, t 1.8). Dips in 3-month losers fell from +2.6% to +0.31% unseen, and the top 5% of trades made 204% of the gains, so they fail the lucky-cluster gate. 6 variants. Sources: [Cheng et al. JFQA 2017](https://core-prod.cambridgecore.org/core/services/aop-cambridge-core/content/view/7B9F21C81D419D4C51430E2CC376A649/S0022109016000958a.pdf/shortterm_reversals_the_effects_of_past_returns_and_institutional_exits.pdf), [Alpha Architect](https://alphaarchitect.com/combining-reversals/).
+
+**Problems seen**
+1. Lab vault pushes failed twice more (9:32 and 10:31 PM): 403, because add_repo isn't available to that task. Its research is only in the page database. This Scribe run also had no add_repo tool, but its push access worked.
+2. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the Jarvis Brain 3D page wasn't rebuilt (stale since 2026-10-22).
+3. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 20:41 ET
 
