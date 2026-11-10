@@ -3,13 +3,41 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-10
 updated: 2026-11-10
-summary: No real trades; bot account value fell to $0.50 ($0.13 buying power), so the ADA oversold board setup that fired at 12:48 PM was skipped. Lab paper closed CIFR, RIOT, NVTS on stops; forward record 22 trades at −5.95%/trade. 5m scout now 4 proven setups (AAON, ONDS, ONON, MSTR), none firing. 3 research notes (sizing, VWAP, ATR screen; idea only). Six scheduled tasks failed on usage limits since 2026-11-09.
+summary: No real trades; bot account value $0.50 ($0.13 buying power), so the ADA oversold board setup at 12:48 PM was skipped. Trinity paper NQ short lost 1R (−$149/micro). Lab paper closed CIFR, RIOT, NVTS on stops; forward record 22 trades at −5.95%/trade; 7 champions now pass out-of-sample. 5m scout 4 proven setups (AAON, ONDS, ONON, MSTR), none firing. 6 research notes (idea only). Several tasks failed on usage limits; board stale since Nov 4.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-05]]"]
 ---
 
 # Daily desk 2026-11-10
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day on file: [[Daily desk 2026-11-05]] (no Scribe runs landed 2026-11-06 to 11-09).
+
+## 17:41 ET
+
+Covers 2:43 PM to 5:41 PM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power still **$0.13**, account value **$0.50**. The stock bot (2:51, 3:51 PM) and real crypto trader (2:52, 3:52, 4:53 PM) placed no orders: "Bot account unfunded". Circuit breaker off (0 losses today).
+
+**Board and crypto:** no new board setups fired. The ADA board signal re-fired at 3:44 PM but ADA already has its open paper trade (entry 0.17188, stop 0.159849, target 0.183911, opened 12:48 PM). Nearest stock setups at 3:51 PM: MSFT 534.73 under its 543.45 breakout; GOOGL low 285.68 above its 277.20 sweep level; GLD 369.78 under 384.58; USO 141.43 under its 20 EMA 150.74. SPY gap 746.50–746.94 noted at 2:51 PM (paper only). Crypto scans: XRP then PEPE top-ranked; no new events. `edge/_meta` still dated Wed Nov 4 (decent: GOOGL prior-day low sweep).
+
+**5m scout:** 4 proven setups (AAON, ONDS, ONON, MSTR), none firing at 2:48, 3:48 or 4:48 PM. 4 Robinhood alerts unchanged. Auto OFF.
+
+**Trinity (paper):** NQ **short** at 27784.75 (9:47 AM), stop 27859.25 (74.5 pts), stopped out for **−1R (−$149 on one micro)** at every target. ES had a short bias but no full setup. See [[Trinity NQ ES]].
+
+**Lab (paper):** gens 1708, 1726, 1744. Champions passing out-of-sample went from 5 to **7**; now testing 113 markets (92 discovered). 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 6 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261110T1730, IBS dip-buy on our 88 stocks: buying the close when IBS < 0.2 and selling the next close made +0.63%/trade after costs on unseen data (n=3,847, win 53%) vs +0.05% for random uptrend days. But by day the evidence is thin (t 2.0 over 242 days; 5 days gave 63% of the profit), and crypto lost −1.5% to −1.9%/trade to fees. 7 cells tested. Sources: [Kinlay](https://jonathankinlay.com/?p=2199), [arXiv 2306.12434](https://arxiv.org/abs/2306.12434).
+- U20261110T1632, intraday momentum (Gao, Han, Li & Zhou 2018) is gone on our ETFs: buying the last half-hour after an up first hour lost −0.027%/trade on SPY (n=404), −0.023% on QQQ (n=387), −0.019% on IWM (n=383) after costs, Dec 2023–Nov 2026. 18 cells. Sources: [JFE paper](https://econpapers.repec.org/RePEc:eee:jfinec:v:129:y:2018:i:2:p:394-414), [CXO Advisory](https://www.cxoadvisory.com/?p=25481).
+- U20261110T1529, domain flipping as agent income: Dynadot's Q2 2026 median sale was $18.87 (88.9% of orders under $50) vs ~$15/yr .com renewals and Afternic's 20% cut; at ~1% yearly sell-through, 100 names need one ~$1,250–1,900 sale just to break even (estimate). Poor fit for a small budget. Sources: [Dynadot Q2 2026](https://www.dynadot.com/resources/quarterly-intelligence-report-q2-2026), [DomainInvesting](https://domaininvesting.com/afternic-godaddy-simplify-commission-structure/).
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.50), so nothing real can trade.
+2. **Watchdog (3:45 PM):** the Probability board is stale since Nov 4 (nightly refresh failed on usage limit), and 4 tasks failed their last run on usage limits: Probability board refresh, Daily Market Brief, Trinity paper trader (it ran fine at 4:26 PM today), Watchlist curator (also ran fine at 4:59 PM).
+3. **Lab vault pushes failed 3 more times** (3:32, 4:33, 5:33 PM): 403 because add_repo isn't available to that task. Its research notes and Ideas.md entries (including the IBS idea) are only in the page database, not in [[Ideas]].
+4. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the Jarvis Brain 3D page couldn't be rebuilt (stale since 2026-10-22).
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 14:43 ET
 
