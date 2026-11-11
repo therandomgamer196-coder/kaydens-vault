@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-11
 updated: 2026-11-11
-summary: Overnight, no real trades (bot account ••3001 at $0.50, $0.13 buying power). ADA paper board long still open; ETH oversold bounce is the only decent board setup; SOL sweep+FVG at 2:45 AM skipped (−0.15R after fees). Lab gens 1870-1960, champions 5 to 3, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 4 proven setups, none firing, Auto OFF. 6 research notes (idea only). Lab vault pushes blocked (403); 3D brain builder still missing; Daily Market Brief failed on usage limit.
+summary: Overnight to 8:41 AM, no real trades (bot account ••3001 at $0.50, $0.13 buying power). ADA paper board long still open; ETH oversold bounce is the only decent board setup; SOL sweep+FVG at 2:45 AM skipped (−0.15R after fees). Lab gens 1870-2014, champions 5 to 3 then back to 5, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 4 proven setups, none firing, Auto OFF. 9 research notes (idea only; newest: backtests fill at the signal close, next-open entry cuts champion expectancy +1.55% to +0.59%). Lab vault pushes blocked (403); 3D brain builder still missing; Daily Market Brief failed on usage limit.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-10]]"]
 ---
 
 # Daily desk 2026-11-11
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day: [[Daily desk 2026-11-10]].
+
+## 08:41 ET
+
+Covers 5:41 AM to 8:41 AM ET.
+
+**Real trades (account ••3001):** none opened or closed. No open real positions (stocks, real crypto or real 5m). The real crypto trader ran at 5:52, 6:52 and 7:53 AM: no fresh board setup (the ADA paper trade is too old to copy), buying power **$0.13**, account value **$0.50**, so no entries are possible. Stock bot starts at 9:50 AM (last note Nov 10, 3:50 PM: unfunded).
+
+**Board and crypto (paper):** the paper BOARD long **ADA** (opened 2026-11-10 12:48 PM at 0.17188, stop 0.159849, target 0.183911, 10-day max; 70% of 40) is still open. Board `edge/_meta` (Tue Nov 10, 8:22 PM) still lists one decent setup: **ETH oversold bounce** (paper only). Crypto scans 5:44 and 7:45 AM: SOL top-ranked (4h down), no setups or board hits. 1h swing-high sweeps that closed back below at 6 AM (SOL 83.96, ADA 0.17664, XRP 1.0638) and 7 AM (PENGU 0.006301); PEPE swept its 1h low 0.00000494 and closed back above at 7 AM; **PEPE −6.2% in 24h**.
+
+**5m scout:** hourly runs 5:48 to 7:50 AM: 48 markets, **4 proven setups, none firing**; 4 Robinhood alerts unchanged. Auto OFF (alerts only).
+
+**Lab (paper):** gens 1978, 1996, 2014. Champions passing out-of-sample **4 → 4 → 5**; 68 markets tested (47 discovered: market cap ≥ $2B, volume ≥ 1M). 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261111T1332 (8:32 AM), execution timing flaw: the Lab backtests buy at the signal-day close, but paper trades fill later (paper entries average +6.44% above the signal close, n=22). Re-testing the 12 fixed-exit champions with a next-open entry cuts unseen-data expectancy from **+1.55% to +0.59%/trade**, and 3 of 12 turn negative. 4 fill rules × 12 strategies tested. Sources: [Concretum](https://concretumgroup.substack.com/p/alpha-expires-while-you-sleep), [NexusFi](https://nexusfi.com/a/automation/backtest-to-live-performance-gap).
+- U20261111T1233 (7:33 AM), pre-holiday effect: the day before a market holiday beat a normal day by +0.18% on ETFs and +0.40% on our stocks on unseen 2019–Nov 2026 data (74 holidays), but it was noise on ETFs in 2006–2018 and recent research finds it gone for large firms. 6 cells tested. Sources: [Ariel 1990](https://econpapers.repec.org/RePEc:bla:jfinan:v:45:y:1990:i:5:p:1611-26), [Ko & Yang, CFR](https://nowpublishers.com/article/Details/CFR-0111).
+- U20261111T1129 (6:29 AM), crypto day-of-week: no weekday survives the 0.95% fee each way. Saturday led in training but faded on unseen data; the best unseen day is about +0.41% gross, **−1.49% net** per round trip. 7 weekdays × 9 coins tested. Sources: [Quantpedia](https://quantpedia.com/are-there-any-simple-calendar-effects-in-bitcoin-market/), [Algieri et al. 2025](https://ideas.repec.org/a/eee/ecofin/v79y2025ics1062940825000816.html).
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.50, $0.13 buying power): no real trades possible.
+2. **Lab vault pushes failed** at 6:29, 7:33 and 8:33 AM (add_repo not available to that task, push gets 403). Its research is only in the page database.
+3. **Watchdog (7:46 AM)** flagged: Jarvis Brain 3D stale since 2026-10-22 because `graphify-out/build_brain_data.py` is missing; Daily Market Brief failed on a usage limit Nov 10 (it ran again at 7:52 AM today and its run succeeded).
+4. The 3D brain builder is still missing from the vault, so the 3D brain could not be rebuilt this run either.
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 05:41 ET
 
