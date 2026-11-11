@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-11
 updated: 2026-11-11
-summary: Overnight to 8:41 AM, no real trades (bot account ••3001 at $0.50, $0.13 buying power). ADA paper board long still open; ETH oversold bounce is the only decent board setup; SOL sweep+FVG at 2:45 AM skipped (−0.15R after fees). Lab gens 1870-2014, champions 5 to 3 then back to 5, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 4 proven setups, none firing, Auto OFF. 9 research notes (idea only; newest: backtests fill at the signal close, next-open entry cuts champion expectancy +1.55% to +0.59%). Lab vault pushes blocked (403); 3D brain builder still missing; Daily Market Brief failed on usage limit.
+summary: To 11:41 AM, no real trades (bot account ••3001 at $0.51, $0.13 buying power). ETH oversold board setup fired (64.5% of 31) and was paper-traded at 8:45 AM but not copied for real (unfunded); ADA paper board long still open. Lab gens to 2068, champions up to 8, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout proven setups rotated (CRWV, LITE, WULF, MSTR alerts), none firing, Auto OFF. 12 research notes (idea only; newest: Lab Finviz parser returns 0 tickers). Lab vault pushes blocked (403); 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-10]]"]
 ---
 
 # Daily desk 2026-11-11
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day: [[Daily desk 2026-11-10]].
+
+## 11:41 ET
+
+Covers 8:41 AM to 11:41 AM ET.
+
+**Real trades (account ••3001):** none opened or closed. No open real positions (stocks, real crypto or real 5m). The stock bot ran at 9:51 and 10:50 AM: unfunded at **$0.13** buying power ($0.51 value incl. 0.00446 SOL), no board triggers or EMA crosses; nearest setups GOOGL prior-day-low sweep (low 289.48 vs 288.01 level) and USO uptrend (price 144.63 under its 20 EMA 149.82). The real crypto trader at 8:52 and 9:53 AM saw the **ETH oversold board setup fire (64.5% of 31, first target +4.8%)** and skipped it: $0.13 is under the $2.00 minimum. 10:52 AM: no fresh board setup.
+
+**Board and crypto (paper):** new paper BOARD long **ETH** (oversold bounce, 64.5% of 31) at 8:45 AM: entry 2049.91, stop 1951.36, target 2148.46, 10-day max. Paper BOARD long **ADA** (from 2026-11-10, entry 0.17188) still open. Crypto scans 9:45 and 10:44 AM: SOL top-ranked (4h down), no setups. ETH swept its 1h low 2,045.12 and closed back above (9 AM); SUI swept its 1h high 0.8364 and closed back below (10 AM).
+
+**5m scout:** hourly runs 8:49 to 10:49 AM, 48 markets, **0 firing**. Proven setups rotated: AAON/ONDS/ONON/MSTR (8:49) → LITE, MIR, MSTR ORB (9:48) → 4 proven (10:49). Robinhood alerts now CRWV>57.98, LITE>657.45, WULF RSI2<20, MSTR>123.63. Auto OFF (alerts only).
+
+**Lab (paper):** gens 2032, 2050, 2068. Champions passing out-of-sample **7 → 7 → 8**; markets tested 94 → 114 (93 discovered: market cap ≥ $2B, volume ≥ 1M). 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261111T1629 (11:32 AM), 52-week-high screen: Finviz loads again (177 names within 5% of a high, cap > $2B, vol > 1M, mostly defensive large caps), but **the Lab's own Finviz parser has been returning 0 tickers**. Near-high stocks lagged the list on unseen Nov 2023–Oct 2026 data (−0.68%/mo top 10, t −0.5). 3 rules × 3 periods. Sources: [George & Hwang 2004](https://typeset.io/pdf/the-52-week-high-and-momentum-investing-4u9j16d52p.pdf), [Alpha Architect](https://alphaarchitect.com/52-week-high-q-factor-investment-model/).
+- U20261111T1532 (10:32 AM), volume on dip days: RSI(2)<10 dips on high relative volume did no better than low-volume dips (+0.04%, t 0.1 on unseen Nov 2023–Nov 2026; 19,571 dips on 85 names). 3 buckets × 2 filters × 2 holds. Sources: [Campbell, Grossman & Wang 1993](https://dash.harvard.edu/bitstream/1/3128710/2/campbell_trading.pdf), [Gervais, Kaniel & Mingelgrin 2001](https://econpapers.repec.org/RePEc:bla:jfinan:v:56:y:2001:i:3:p:877-919).
+- U20261111T1429 (9:29 AM), stops on RSI(2) dips: a 1×ATR stop cut unseen-data expectancy from **+0.91% to +0.38%/trade** and the worst trade was still −38% (gaps); 2–3×ATR stops were neutral; the base dip strategy lost −0.08%/trade in 2016–2022. 7 stop rules × 70 stocks. Sources: [Kaminski & Lo 2014 (MIT)](https://dspace.mit.edu/bitstream/handle/1721.1/114876/Lo_When%20Do%20Stop-Loss.pdf), [StockCharts RSI(2)](https://chartschool.stockcharts.com/table-of-contents/trading-strategies-and-models/trading-strategies/rsi-2).
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.51, $0.13 buying power): the ETH board setup fired twice and could not be copied with real money.
+2. **Lab vault pushes failed** at 9:29, 10:32 and 11:35 AM (add_repo not available to that task, push gets 403). Its research and 3 Ideas are only in the page database.
+3. **Lab Finviz parser broken** (returns 0 tickers on all screens), per the 11:32 AM research note.
+4. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault (`graphify-out/` is empty), so the 3D brain could not be rebuilt this run either.
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 08:41 ET
 
