@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-10
 updated: 2026-11-10
-summary: No real trades; bot account value $0.50 ($0.13 buying power), so the ADA oversold board setup at 12:48 PM was skipped. Board refreshed at 8:20 PM: ETH oversold bounce fired (64.5% of 31, paper only). Trinity paper NQ short lost 1R (−$149/micro). Lab paper closed CIFR, RIOT, NVTS on stops; forward record 22 trades at −5.95%/trade. 5m scout 4 proven setups, none firing. 9 research notes (idea only). Several tasks failed on usage limits; Lab vault pushes blocked (403).
+summary: No real trades; bot account value $0.50 ($0.13 buying power), so the ADA oversold board setup at 12:48 PM was skipped. Board refreshed at 8:20 PM: ETH oversold bounce fired (64.5% of 31, paper only). Trinity paper NQ short lost 1R (−$149/micro). Lab paper closed CIFR, RIOT, NVTS on stops; forward record 22 trades at −5.95%/trade. 5m scout 4 proven setups, none firing. 12 research notes (idea only); SOL, ADA, AVAX, ETH swept 1h highs at 9 PM; Lab champions down to 4. Several tasks failed on usage limits; Lab vault pushes blocked (403).
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-05]]"]
 ---
 
 # Daily desk 2026-11-10
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day on file: [[Daily desk 2026-11-05]] (no Scribe runs landed 2026-11-06 to 11-09).
+
+## 23:41 ET
+
+Covers 8:42 PM to 11:41 PM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power still **$0.13** (account value $0.50), so the real crypto trader (8:52, 9:52, 10:52 PM) placed no orders. The ETH oversold board setup (8:22 PM) was not copied: no paper board trade opened for it, and the only open paper board trade (ADA, 12:48 PM) is past the 75-minute copy window.
+
+**Board and crypto:** board unchanged since 8:22 PM (decent: ETH Oversold bounce, 64.5% of 31, paper only). The paper ADA board long (entry 0.17188, stop 0.159849, target 0.183911) is still open. Crypto scans at 8:44, 9:45 and 10:47 PM: PEPE top-ranked (4h up). At 9:00 PM **SOL, ADA, AVAX and ETH each swept their 1h swing high and closed back below** (SOL 83.5700, ADA 0.17531, AVAX 8.4530, ETH 2,062.99): buy-side liquidity taken, short-term bearish. No setups or board hits.
+
+**5m scout:** 8:48, 9:47 and 10:48 PM: 48 markets, 4 proven setups (AAON, ONDS, ONON, MSTR), none firing; 4 Robinhood alerts unchanged. Auto OFF.
+
+**Lab (paper):** gens 1816, 1834, 1852: champions down from 6 to **4** passing out-of-sample; market list cut from 113 to 82 (61 discovered). 0 paper trades open, no proposals. Forward record unchanged at **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**.
+
+**Research (all idea only)**
+- U20261111T0429, earnings-announcement premium: holding Lab stocks through earnings (buy 5 days before, sell the day after) beat same-stock 6-day holds by +1.0% on unseen Jun 2025-Nov 2026 data (n=386, 63 stocks), but t≈1.0, the median trade was +0.6%, the top 5 weeks made over 100% of the excess, and 37% of reactions moved more than 10%. 12 cells tested. Sources: [Frazzini & Lamont, NBER w13090](https://www.nber.org/digest/mar08/w13090.html), [Heitz et al. 2020, "The Disappearing Earnings Announcement Premium"](https://www.iimb.ac.in/ARC2020/Papers/The_Disappearing_Earnings_Announcement_Premium.pdf).
+- U20261111T0330, selling TradingView indicators: since Nov 1, 2026 paid invite-only scripts must sell through TradingView's own Marketplace (0% fee for now, PayPal, $100 payout minimum, Premium plan and approval needed; only ~39-52 paid spaces exist). With no Lab strategy past the gates there is nothing honest to sell yet. Sources: [Finance Magnates](https://www.financemagnates.com/forex/tradingview-moves-paid-indicator-sales-onto-its-own-marketplace-from-sunday/), [Creator Program terms](https://www.tradingview.com/support/solutions/43000772177-tradingview-creator-program-paid-spaces-terms/).
+- U20261111T0234, 52-week-high screen: names at a new 52-week high returned +6.81% over 20 days on unseen data vs +1.97% for any uptrend day (n=928), but all of it came from Nov 2025-May 2026; since May they lost −7.99% vs −7.37% baseline, and the 5-day version lagged baseline. 10 cells tested; Finviz still blocked.
+
+**Problems seen**
+1. Lab vault pushes failed 3 more times (9:34, 10:32, 11:35 PM): add_repo isn't available to that task, so git push gets 403. Its research, Ideas.md entries and the Nov 10 Lab journal are only in the page database.
+2. The add_repo tool wasn't available to this Scribe run either, but the vault was already in this session's access, so clone and push still worked.
+3. The 3D brain builder `graphify-out/build_brain_data.py` is still missing, so Jarvis Brain 3D can't be rebuilt (stale since 2026-10-22).
+4. Bot account nearly empty ($0.50), so no real trades are possible.
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 20:42 ET
 
