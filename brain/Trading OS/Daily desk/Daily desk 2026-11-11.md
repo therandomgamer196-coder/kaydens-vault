@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-11
 updated: 2026-11-11
-summary: Overnight, no real trades (bot account ••3001 at $0.50, $0.13 buying power). ADA paper board long still open; ETH oversold bounce is the only decent board setup. Lab gens 1870-1906, champions 5 to 4, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 4 proven setups, none firing, Auto OFF. 3 research notes (crypto SMA trend filter, champion gate passes noise, gate 4 too weak; idea only). Lab vault pushes blocked (403); 3D brain builder still missing.
+summary: Overnight, no real trades (bot account ••3001 at $0.50, $0.13 buying power). ADA paper board long still open; ETH oversold bounce is the only decent board setup; SOL sweep+FVG at 2:45 AM skipped (−0.15R after fees). Lab gens 1870-1960, champions 5 to 3, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 4 proven setups, none firing, Auto OFF. 6 research notes (idea only). Lab vault pushes blocked (403); 3D brain builder still missing; Daily Market Brief failed on usage limit.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-10]]"]
 ---
 
 # Daily desk 2026-11-11
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day: [[Daily desk 2026-11-10]].
+
+## 05:41 ET
+
+Covers 2:41 AM to 5:41 AM ET.
+
+**Real trades (account ••3001):** none opened or closed. No open real positions (stocks, real crypto or real 5m). The real crypto trader ran at 2:52, 3:52 and 4:55 AM: no fresh board setup (the paper ADA board trade from 11/10 12:48 PM is past the 75-minute window), buying power **$0.13**, so no entries are possible. Stock bot is outside market hours (last note Nov 10, 3:50 PM: unfunded).
+
+**Board and crypto (paper):** the paper BOARD long **ADA** (opened 2026-11-10 12:48 PM at 0.17188) is still open. Board `edge/_meta` (Tue Nov 10 refresh) still lists one decent setup: **ETH oversold bounce** (paper only, not copied). Crypto scan 2:45 AM: SOL top-ranked (4h down). **SOL swept the 1h swing low 82.4900** at 2:00 AM (wick 82.4000) and closed back above; the SOL sweep + FVG long (entry 82.7000, stop 82.2352, target 83.9600, 2.71R gross) worked out to **−0.15R after fees**, so it was not paper-traded. Coin check all OK.
+
+**5m scout:** hourly runs 2:47 AM to 4:53 AM: 48 markets, **4 proven setups, none firing**; 4 Robinhood alerts unchanged. Auto OFF (alerts only).
+
+**Lab (paper):** gens 1924, 1942, 1960. Champions passing out-of-sample went **4 → 3**; markets tested 72 → 69. 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261111T1030 (5:30 AM), online courses (Udemy) as agent income: instructors keep 37% of organic sales and 97% through their own coupon links; the Udemy Business pool share fell from 25% (2023) to 15% (2026); about 75% of instructors reportedly earn under $1,000/yr (unverified vendor estimate); fully AI-generated courses are not allowed. Sources: [FreshLearn](https://freshlearn.com/blog/udemy-good-for-instructors/), [Kinescope roundup](https://course-creator-earnings.pages.dev/).
+- U20261111T0932 (4:32 AM), 6-month momentum screen (Finviz still blocked from the cloud, rebuilt from Yahoo data on 116 liquid names): top 10 by 6-1 month return beat the list by +4.66%/mo in Nov 2024–Oct 2025 (t 1.2) but **lost on unseen Nov 2025–Nov 2026 data** (−2.52%/mo excess, t −0.8, 38% hit). 1 rule × 3 periods. Sources: [Jegadeesh & Titman 1993](https://doi.org/10.1111/j.1540-6261.1993.tb04702.x), [Alpha Architect](https://alphaarchitect.com/skip-month-mystery/).
+- U20261111T0832 (3:32 AM), overnight vs intraday on the Lab's 52 stocks: Nov 2023–Nov 2025 nearly all the gain came overnight (+0.22%/day, t 4.5), but on unseen Nov 2025–Nov 2026 data overnight fell to +0.07%/day (t 0.8, top 5 days >100% of it) and turns negative after a 0.10% round trip. 21 cells tested. Sources: [Lou, Polk & Skouras (LSE)](https://personal.lse.ac.uk/polk/research/TugOfWar.pdf), [Alpha Architect](https://alphaarchitect.com/2015/02/overnight-momentum-vs-intraday-momentum/).
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.50, $0.13 buying power): no real trades possible.
+2. **Lab vault pushes failed** at 3:34, 4:33 and 5:30 AM (add_repo not available to that task, push gets 403). Its research is only in the page database. This Scribe run also had no add_repo tool.
+3. **Watchdog (3:46 AM)** flagged again: Daily Market Brief failed its last run on a usage limit (Nov 10, 7:53 AM; next run 7:52 AM today), and the Jarvis Brain 3D page is stale since 2026-10-22.
+4. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the 3D brain could not be rebuilt this run either.
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 02:41 ET
 
