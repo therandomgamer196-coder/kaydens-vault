@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-10
 updated: 2026-11-10
-summary: No real trades; bot account value $0.50 ($0.13 buying power), so the ADA oversold board setup at 12:48 PM was skipped. Trinity paper NQ short lost 1R (−$149/micro). Lab paper closed CIFR, RIOT, NVTS on stops; forward record 22 trades at −5.95%/trade; 7 champions now pass out-of-sample. 5m scout 4 proven setups (AAON, ONDS, ONON, MSTR), none firing. 6 research notes (idea only). Several tasks failed on usage limits; board stale since Nov 4.
+summary: No real trades; bot account value $0.50 ($0.13 buying power), so the ADA oversold board setup at 12:48 PM was skipped. Board refreshed at 8:20 PM: ETH oversold bounce fired (64.5% of 31, paper only). Trinity paper NQ short lost 1R (−$149/micro). Lab paper closed CIFR, RIOT, NVTS on stops; forward record 22 trades at −5.95%/trade. 5m scout 4 proven setups, none firing. 9 research notes (idea only). Several tasks failed on usage limits; Lab vault pushes blocked (403).
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-05]]"]
 ---
 
 # Daily desk 2026-11-10
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day on file: [[Daily desk 2026-11-05]] (no Scribe runs landed 2026-11-06 to 11-09).
+
+## 20:42 ET
+
+Covers 5:41 PM to 8:42 PM ET.
+
+**Real trades (account ••3001):** none. No open positions. Buying power still **$0.13** (account value $0.50), so the real crypto trader (6:53, 7:52 PM) placed no orders. Stock bot is off for the night (market closed).
+
+**Board and crypto:** the nightly Probability board refresh ran at 8:20 PM and **succeeded** (first fresh board since Nov 4), so the earlier "board stale" problem is fixed. One decent setup fired on the Nov 10 close: **ETH Oversold bounce, 64.5% of 31 past signals (+13.6 pts vs any day)**, entry 2050.58, stop 1952.03, target 2149.13. Paper only, and the real copy can't run anyway on $0.13. The paper ADA board long from 12:48 PM (entry 0.17188, stop 0.159849, target 0.183911) is still open. Crypto scans at 6:49 and 7:45 PM: PEPE top-ranked (4h up, **+5.6% in 24h**), no new sweeps or setups.
+
+**5m scout:** 5:47, 6:51 and 7:48 PM: 48 markets, 4 proven setups (AAON, ONDS, ONON, MSTR), none firing; 4 Robinhood alerts unchanged. Auto OFF.
+
+**Lab (paper):** gens 1762, 1780, 1798: 5-6 champions pass out-of-sample, 0 paper trades open, testing 113 markets (92 discovered). Forward record unchanged at **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. No proposals.
+
+**Research (all idea only)**
+- U20261110T2030, high-volume days: after an up day on ≥2× normal volume, the next 20 days beat baseline by +4.3% on unseen data (167 signal days, t 2.8), but the holds overlap, the top 5 days gave 58% of the profit, and the 5-day version was noise (+1.0%, t 1.2). 16 cells tested. Source: Gervais, Kaniel & Mingelgrin (2001), high-volume return premium.
+- U20261110T1932, risk throttles: on 1,206 RSI(2)<10 dips in 85 stocks, trading only while the last 20/50/100 trades were net positive cut profit 16-37% and did not shrink the worst drawdown. 6 rules tested. Source: Cederburg, O'Doherty, Wang & Yan (Journal of Financial Economics), volatility-managed portfolios.
+- U20261110T1833, entry chasing: skipping big gap-ups or using a limit at the signal close did not help the dip strategy (+0.32% and +0.30%/trade vs +0.37% for all, n=4,218). Counted by signal day the dip edge is about zero (−0.02%/day, t −0.1, 510 days), and Feb-Nov 2026 lost −0.12%/trade. About 30 variants tested.
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.50 total), so no real trades are possible.
+2. Lab vault pushes failed 3 more times (6:33, 7:32, 8:30 PM): add_repo isn't available to that task, so its research, chat log and tonight's Lab journal are only in the page database. The Scribe's add_repo call is unavailable too, but its clone still works.
+3. Daily Market Brief failed this morning (7:52 AM) on the usage limit (watchdog, 7:46 PM).
+4. The 3D brain builder `graphify-out/build_brain_data.py` is still missing, so the Jarvis Brain 3D page wasn't rebuilt (stale since 2026-10-22).
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 17:41 ET
 
