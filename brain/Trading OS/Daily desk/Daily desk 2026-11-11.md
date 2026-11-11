@@ -3,13 +3,41 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-11
 updated: 2026-11-11
-summary: To 2:41 PM, no real trades (bot account ••3001 at $0.51, $0.13 buying power). ETH oversold board setup fired (64.5% of 31) and was paper-traded at 8:45 AM but not copied for real (unfunded); ADA and ETH paper board longs still open. Lab gens to 2122, champions up to 9, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout proven setups rotated (FRVO, WULF, AAOI alerts), none firing, Auto OFF. 15 research notes (idea only; newest: weekly short-term reversal fails gates 3-5). Lab vault pushes blocked (403); 3D brain builder still missing.
+summary: To 5:41 PM, no real trades (bot account ••3001 at $0.51, $0.13 buying power); USO 4h trend flipped down at 3:50 PM. ETH oversold board setup fired (64.5% of 31) and was paper-traded at 8:45 AM but not copied for real (unfunded); ADA and ETH paper board longs still open. Lab gens to 2176, champions up to 12, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout down to 1 proven setup (CRWV), none firing, Auto OFF. Trinity: no setup. 18 research notes (idea only; newest: dip edge earned overnight). Lab vault pushes blocked (403); 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-10]]"]
 ---
 
 # Daily desk 2026-11-11
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day: [[Daily desk 2026-11-10]].
+
+## 17:41 ET
+
+Covers 2:41 PM to 5:41 PM ET.
+
+**Real trades (account ••3001):** none opened or closed. No open real positions (stocks, real crypto or real 5m). Stock bot runs at 2:50 and 3:50 PM: account unfunded (**$0.51** value incl. 0.00446 SOL, **$0.13** buying power), no board triggers. At 3:50 PM the **USO 4h trend flipped down** (20 EMA 149.02 under the 50 at 149.16): stand aside. Nearest stock setup: GOOGL prior-day-low sweep under 288.01 (day low 289.48, not swept). Real crypto checks at 2:52, 3:52 and 4:53 PM: no fresh board setup, nothing placed.
+
+**Board and crypto (paper):** paper BOARD longs still open: **ADA** (opened 2026-11-10 at 0.17188, stop 0.159849, target 0.183911; 70% of 40) and **ETH** (opened 8:45 AM at 2049.91, stop 1951.36, target 2148.46; 64.5% of 31). Crypto scans 2:45, 3:44 and 4:45 PM: SOL top-ranked (4h down), no sweeps, no setups, no board hits. RSI alert 3:44 PM: **PEPE 1h RSI 27** (oversold; meets the Tier-1 dip rule, but no board setup).
+
+**5m scout:** 2:48 PM 2 proven (CRWV ORB, FRVO prior-low reclaim), AAOI RSI alert removed; 3:48 PM unchanged; 4:48 PM down to **1 proven (CRWV ORB)**, FRVO alert removed, 1 Robinhood alert active (CRWV above 57.98). None firing. Auto OFF (alerts only).
+
+**Trinity (paper):** no setup today; NQ and ES both had a long bias but no full setup by noon.
+
+**Lab (paper):** gens 2140, 2158, 2176. Champions passing out-of-sample went **9 → 10 → 12**; markets tested 119 → 121. 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261111T2232 (5:32 PM), the dip edge lives overnight: on 93 Lab stocks, RSI(2)<25 dips earned +0.79%/trade gross from the overnight gaps vs +0.37% from the trading sessions on unseen Nov 2023–Nov 2026 data; the sessions lost −0.14% in 2016–Oct 2023. Entering at the next open gives up about 0.2 pt. 14 cells tested. Based on Lou, Polk & Skouras (JFE 2019).
+- U20261111T2132 (4:32 PM), concentration sank the paper record: 12 of the 22 Lab paper trades came from 2 entry days (Oct 27, Nov 3), mostly crypto-miner and AI-datacenter names (avg −12.08% and −8.98%). Inverse-ATR sizing cut the worst portfolio day from −13.8% to −6.9% on unseen data at similar Sharpe (0.91 vs 0.90). 4 sizing rules × 2 periods.
+- U20261111T2032 (3:32 PM), chasing kills the paper record: the 14 paper trades that filled more than 5% above the signal close all lost (avg −9.26%); the 6 that filled within 3% won 5 of 6 (avg +2.23%). On 102 stocks, skipping dips that open >0.5 ATR above the signal close lifted next-open expectancy from +0.47% to +0.60%. 9 variants. Small samples; could be luck.
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.51, $0.13 buying power): no real trades possible.
+2. **Lab vault pushes failed** at 3:32, 4:35 and 5:35 PM (add_repo not available to that task, push gets 403). Its research and Ideas are only in the page database.
+3. **Watchdog (3:45 PM)**: 12 tasks healthy, ledger matches broker, kill switch off; one problem: the Jarvis Brain 3D database is stale (built 2026-10-22).
+4. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the 3D brain could not be rebuilt this run either. add_repo was also not available to this Scribe run.
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 14:41 ET
 
