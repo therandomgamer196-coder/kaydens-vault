@@ -3,13 +3,38 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-11
 updated: 2026-11-11
-summary: To 8:41 PM, no real trades (bot account ••3001 at $0.51, $0.13 buying power); USO 4h trend flipped down at 3:50 PM. ETH oversold board setup fired (64.5% of 31) and was paper-traded at 8:45 AM but not copied for real (unfunded); ADA and ETH paper board longs still open; 8:22 PM board refresh found no decent setups. Lab gens to 2230, champions peaked at 12 then 10, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 1 proven setup (CRWV), none firing, Auto OFF. Trinity: no setup. 21 research notes (idea only; newest: turn-of-the-month has no edge). Lab vault pushes blocked (403); 3D brain builder still missing.
+summary: To 11:41 PM, no real trades (bot account ••3001 at $0.51, $0.13 buying power); USO 4h trend flipped down at 3:50 PM. ETH oversold board setup fired (64.5% of 31) and was paper-traded at 8:45 AM but not copied for real (unfunded); ADA and ETH paper board longs still open; 8:22 PM board refresh found no decent setups. Lab gens to 2284, champions peaked at 12 then fell to 7, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 1 proven setup (CRWV), none firing, Auto OFF. Trinity: no setup. 24 research notes (idea only; newest: drawdown throttles cut gains as much as losses). Lab vault pushes blocked (403); 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-10]]"]
 ---
 
 # Daily desk 2026-11-11
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day: [[Daily desk 2026-11-10]].
+
+## 23:41 ET
+
+Covers 8:41 PM to 11:41 PM ET.
+
+**Real trades (account ••3001):** none opened or closed. No open real positions (stocks, real crypto or real 5m). The real crypto trader ran at 8:53, 9:52 and 10:52 PM: no fresh board setup (the ADA and ETH paper board trades are older than 75 minutes), buying power **$0.13**, account value about **$0.50**, so no entries are possible.
+
+**Board and crypto (paper):** paper BOARD longs still open: **ADA** (opened 2026-11-10 12:48 PM at 0.17188, stop 0.159849, target 0.183911; 70% of 40) and **ETH** (opened 2026-11-11 8:45 AM at 2049.91, stop 1951.36, target 2148.46; 64.5% of 31). Board `edge/_meta` (8:22 PM refresh) lists no decent setups. Crypto scans 8:45, 9:44 and 10:45 PM: AVAX top-ranked (4h up), no new setups or board hits. Alerts: **BONK 1h RSI 29** (9:44 PM, oversold) and **BONK −5.3% in 24h** (10:45 PM).
+
+**5m scout:** runs 8:48, 9:48 and 10:47 PM: 48 markets, **1 proven setup (CRWV ORB), none firing**; Robinhood alert CRWV > 57.98 kept. Auto OFF (alerts only).
+
+**Lab (paper):** gens 2248, 2266, 2284. Champions passing out-of-sample **10 → 7**; markets tested 88 → 79. 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261112T0433 (11:33 PM), drawdown throttles: on 56 Lab stocks (RSI(2)<15 dip, 9,726 trades 2017–Nov 2026), halving size in a 10% drawdown cut unseen Nov 2023–Nov 2026 max drawdown from 36.8% to 26.7% but return from +128% to +96%; return per unit of drawdown barely moved (3.49 → 3.59). 4 throttles + baseline.
+- U20261112T0332 (10:32 PM), gap-through stops: the Lab fills stops at the stop price even when a stock opens below it. Filling at the open cut the 7 champions' unseen expectancy from +2.11% to +1.99%/trade; 17 of 91 champion stops (19%) gapped through, by −1.23% on average (worst −4.36%). All 7 still pass. A small leak, not the cause of the paper losses.
+- U20261112T0233 (9:33 PM), IBS dip-buy (close near the day's low): buying at the close when IBS<0.2 beat any day by +0.15 pt (2016–Oct 2023) and +0.26 pt (unseen Nov 2023–Nov 2026) after 0.10% cost, but entering at the next open erases it, 5 days carry about 40% of the unseen gain, and the 1.9% crypto round trip sinks every variant. 5 rules × 3 groups × 2 periods.
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.13 buying power): no real trades possible.
+2. **Lab vault pushes failed** at 9:34, 10:33 and 11:33 PM (add_repo not available to that task, push gets 403). Its research, Ideas and Lab journal updates are only in the page database.
+3. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the 3D brain could not be rebuilt this run either.
+4. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 20:41 ET
 
