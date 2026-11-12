@@ -3,13 +3,39 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-11
 updated: 2026-11-11
-summary: To 5:41 PM, no real trades (bot account ••3001 at $0.51, $0.13 buying power); USO 4h trend flipped down at 3:50 PM. ETH oversold board setup fired (64.5% of 31) and was paper-traded at 8:45 AM but not copied for real (unfunded); ADA and ETH paper board longs still open. Lab gens to 2176, champions up to 12, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout down to 1 proven setup (CRWV), none firing, Auto OFF. Trinity: no setup. 18 research notes (idea only; newest: dip edge earned overnight). Lab vault pushes blocked (403); 3D brain builder still missing.
+summary: To 8:41 PM, no real trades (bot account ••3001 at $0.51, $0.13 buying power); USO 4h trend flipped down at 3:50 PM. ETH oversold board setup fired (64.5% of 31) and was paper-traded at 8:45 AM but not copied for real (unfunded); ADA and ETH paper board longs still open; 8:22 PM board refresh found no decent setups. Lab gens to 2230, champions peaked at 12 then 10, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 1 proven setup (CRWV), none firing, Auto OFF. Trinity: no setup. 21 research notes (idea only; newest: turn-of-the-month has no edge). Lab vault pushes blocked (403); 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-10]]"]
 ---
 
 # Daily desk 2026-11-11
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day: [[Daily desk 2026-11-10]].
+
+## 20:41 ET
+
+Covers 5:41 PM to 8:41 PM ET.
+
+**Real trades (account ••3001):** none opened or closed. No open real positions (stocks, real crypto or real 5m). The real crypto trader ran at 5:52, 6:58 and 7:52 PM: no fresh board setup, buying power **$0.13**, account value about **$0.50**, so no entries are possible. Stock bot is outside market hours (last note 3:50 PM: unfunded; USO 4h trend stand aside).
+
+**Board and crypto (paper):** paper BOARD longs still open: **ADA** (opened 2026-11-10 12:48 PM at 0.17188, stop 0.159849, target 0.183911; 70% of 40) and **ETH** (opened 2026-11-11 8:45 AM at 2,049.91, stop 1,951.36, target 2,148.46; 64.5% of 31). Board refresh at 8:22 PM: **no decent setups today** (`edge/_meta` decent list empty, no errors). Crypto scans: 5:48 PM SOL top-ranked (BTC 1h-high sweep, info only); 6:45 PM PEPE top-ranked, AVAX/XRP/DOGE 1h-low sweeps; 7:45 PM AVAX top-ranked (4h up), 11 new 1h-low sweeps and **10 sweep+FVG setups (AVAX, ETH, SOL, LINK, LTC, ADA, SUI, DOGE, WIF, PENGU), all fail after the 0.95% fee each way** (0.25-0.70R net), so none were paper-traded.
+
+**5m scout:** runs at 5:50, 6:48 and 7:49 PM: 48 markets, **1 proven setup (CRWV opening-range breakout), none firing**; 1 Robinhood alert unchanged (CRWV above 57.98). Auto OFF (alerts only).
+
+**Lab (paper):** gens 2194, 2212, 2230. Champions passing out-of-sample went **12 → 11 → 10**; markets tested 121 → 99. 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261111T2029 (8:29 PM), turn-of-the-month: no reliable edge. Holding SPY/QQQ/Lab stocks from the last trading day to day +3 beat any 4-day hold by only +0.05 to +0.27 pt on unseen Nov 2023–Nov 2026 data (t 0.17–0.26). Crypto looked strong in 2016–Oct 2023 (BTC +1.71 pt, ETH +2.78 pt) then flipped negative (−0.70, −1.41 pt). 10 cells × 2 periods tested.
+- U20261112T0031 (7:31 PM), Medium Partner Program as agent income: Medium bans paywalling mostly AI-written posts and permanently removes offenders; only 6.4% of active writers earned over $100 (Medium, Sept 2020). An agent can research and draft, but Kayden would have to write.
+- U20261111T2333 (6:33 PM), Finviz oversold screens: the Lab's Finviz parser returns 0 names because Finviz now sends JSON (fix: read `"ticker":"X"`). On 94 Lab stocks, RSI(14)<30 beat any-day buying by +0.42 pt in 2016–Nov 2023 but only +0.08 pt on unseen data; RSI<40 above SMA200 flipped from −0.13 to +1.24 pt. No stable edge. 4 variants + baseline.
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.51, $0.13 buying power): no real trades possible.
+2. **Lab vault pushes failed** at 6:33, 7:32 and 8:29 PM (add_repo not available to that task, push gets 403). Its research, Ideas and the 8 PM Lab journal are only in the page database.
+3. **Watchdog (7:45 PM):** all 11 enabled tasks on time, ledger matches broker, kill switch off; flagged the Jarvis Brain 3D page as stale since 2026-10-22.
+4. The 3D brain builder `graphify-out/build_brain_data.py` is still missing from the vault, so the 3D brain could not be rebuilt this run either.
+5. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 17:41 ET
 
