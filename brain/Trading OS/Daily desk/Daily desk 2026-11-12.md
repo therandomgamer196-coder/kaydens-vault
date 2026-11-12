@@ -3,13 +3,44 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-12
 updated: 2026-11-12
-summary: To 2:41 AM, no real trades (bot account ••3001 at $0.50, $0.13 buying power); ADA and ETH paper board longs still open; board has no decent setups. Lab gens to 2338, champions 7 → 10, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 1 proven setup (CRWV), none firing, Auto OFF. 3 research notes (idea only). Lab vault pushes blocked (403); 3D brain builder still missing.
+summary: To 5:41 AM, no real trades (bot account ••3001 at $0.50, $0.13 buying power); ADA and ETH paper board longs still open; board has no decent setups. PEPE and BONK 1h RSI oversold, PEPE −15% in 24h. Lab gens to 2392, champions 10 → 11, no paper trades, forward record 22 trades at -5.95%/trade. 5m scout 1 proven setup (CRWV), none firing, Auto OFF. 6 research notes (idea only), incl. late paper entries explaining the Lab's forward losses. Lab vault pushes blocked (403); 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-11]]"]
 ---
 
 # Daily desk 2026-11-12
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous day: [[Daily desk 2026-11-11]].
+
+## 05:41 ET
+
+Covers 2:41 AM to 5:41 AM ET.
+
+**Real trades (account ••3001):** none opened or closed; no open real positions (stocks, real crypto or real 5m). The real crypto trader ran at 2:52, 3:52 and 4:52 AM: no fresh board setup, buying power **$0.13**, account about **$0.50**, so no entries possible. Stock bot is outside market hours.
+
+**Board and crypto (paper):** the same two paper BOARD longs are open, $7.50 each:
+- **ADA** oversold bounce (70% of 40), opened 2026-11-10 at 0.171880, stop 0.159849, target 0.183911.
+- **ETH** oversold bounce (64.5% of 31), opened 2026-11-11 at 2049.91, stop 1951.36, target 2148.46.
+
+Board `edge/_meta` unchanged (Wed Nov 11, 8:22 PM): **no decent setups**. Crypto scan 2:44 AM: AVAX top-ranked (4h up); 4 new sweeps (LTC, ADA, SUI prior-day lows; BTC 1h low); LTC sweep setup skipped (0.8R after fees); **PEPE 1h RSI 22 and BONK 1h RSI 24 (oversold)**, **PEPE −15.0% in 24h**; ETH board hit skipped (already open); coin check all OK.
+
+**5m scout:** runs at 2:49, 3:49 and 4:47 AM: 48 markets, **1 proven setup (CRWV opening-range breakout), none firing**; 1 Robinhood alert (CRWV > 57.98) unchanged. Auto OFF (alerts only).
+
+**Lab (paper):** gens 2356, 2374, 2392. Champions passing out-of-sample **10 → 10 → 11**; markets tested 69 → 68. 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261112T1032 (5:32 AM), volatility sizing: on 40 Lab stocks (RSI(2)<15 dip, next-open entry, 3-day hold, 0.10% cost), sizing each trade by inverse ATR% cut unseen Nov 2023–Nov 2026 max drawdown from 31.9% to 22.6% but CAGR from 58% to 43% (CAGR/drawdown 1.82 → 1.88); scaling by SPY volatility did worse. 4 rules × 2 periods. Sources: [Alpha Architect summary](https://alphaarchitect.com/does-portfolio-timing-based-on-volatility-signals-outperform-buy-and-hold/), [LBS repository](https://lbsresearch.london.edu/id/eprint/3716).
+- U20261112T0931 (4:31 AM), **late entries explain the Lab's paper losses**: the 22 closed paper trades were bought on average +6.44% above the signal close (median +7.6%) and lost −5.95%/trade; measured from the signal close the same trades made −0.16%/trade. 16 trades entered >3% above the signal lost −9.02% each; the 6 within 3% made +2.23% (small sample, could be luck). The backtest buys at the signal close, paper buys hours later. Sources: [Concretum: execution delays](https://concretumgroup.com/when-execution-delays-erode-short-term-alpha/), [Probability of backtest overfitting](https://www.risk.net/journal-of-computational-finance/2471206/the-probability-of-backtest-overfitting).
+- U20261112T0834 (3:34 AM), falling knives: on 79 stocks, RSI(2)<15 dips where the signal day fell more than 3 ATR earned −0.17%/trade (2016–Oct 2023) and −0.19% (unseen Nov 2023–Nov 2026), below all RSI(2) dips (+0.01%, +0.82%) and any-day holds. Consistent sign but small samples (216/153 trades). 14 cells × 2 periods. Sources: [Savor 2012 (EconPapers)](https://econpapers.repec.org/RePEc:eee:jfinec:v:106:y:2012:i:3:p:635-659), [Penn repository](https://repository.upenn.edu/handle/20.500.14332/34495).
+
+**Problems seen**
+1. **Bot account nearly empty** ($0.50, $0.13 buying power): no real trades possible.
+2. **Lab vault pushes failed** at 3:34, 4:33 and 5:32 AM (add_repo not available to that task, push gets 403). Its research and Ideas are only in the page database.
+3. **Watchdog (3:45 AM)**: all 11 enabled tasks on time, ledger matches broker, kill switch off; flagged the Jarvis Brain 3D page as stale since 2026-10-22.
+4. `graphify-out/build_brain_data.py` is still missing from the vault, so the 3D brain could not be rebuilt this run either.
+5. Lab paper entries fill far above the signal price (see research above): worth a VS Code fix to the Lab entry rule (paper only).
+6. No task settings or rules changed in this window (config/rules matches the snapshot).
+
+Not financial advice.
 
 ## 02:41 ET
 
