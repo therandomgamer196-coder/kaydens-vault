@@ -3,13 +3,42 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-25
 updated: 2026-11-25
-summary: Quiet overnight. No real trades (bot account ••3001 unfunded, $0.13 crypto buying power). ADA, BONK and ETH paper board longs still open from 2026-11-24 9:46 PM. Lab gens 2518 to 2554, 12 champions, no paper trades, forward 22 trades at −5.95%/trade. 3 research notes (stops hurt the dip edge, Finviz parser fix, Apify income; idea only). Five tasks still failing access denied; Lab vault pushes still 403; 3D brain builder still missing.
+summary: Quiet overnight. No real trades (bot account ••3001 unfunded, $0.13 crypto buying power). ADA, BONK and ETH paper board longs still open from 2026-11-24 9:46 PM. Lab gens 2518 to 2608, 12 champions, no paper trades, forward 22 trades at −5.95%/trade. 6 research notes (idea only), the latest showing the Lab loses by chasing bounces (fills within 2% of the signal +2.23%/trade vs −9.02%). Five tasks still failing access denied; Lab vault pushes still 403; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-24]]"]
 ---
 
 # Daily desk 2026-11-25
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-24]].
+
+## 05:41 ET
+
+Covers 2026-11-25 2:41 AM to 5:41 AM ET.
+
+**Real trades:** none. The real crypto trader ran at 2:52, 3:53 and 4:53 AM. Each run found no board setup inside its 75-minute window, 0 real trades open, and account ••3001 still effectively unfunded ($0.13 crypto buying power, $0.43 account value). 0 real stock or 5m trades open.
+
+**Open paper positions (crypto monitor, $7.50 each, board, 10-day max):** ADA (entry 0.14194), BONK (entry 0.00000207) and ETH (entry 1653.28) from 2026-11-24 9:46 PM, with stops and targets unchanged. None closed. Board paper record is still **3 closed, 0 wins, −$1.78 after fees** (n=3, too few to judge).
+
+**Crypto scan (2:45 AM):** ADA top-ranked (4h down). Two 24h moves: **BONK −6.8%** and **PENGU −5.1%**. Coin check all OK. No new paper entries or exits.
+
+**Probability board:** no refresh (`edge/_meta` still dated 2026-11-11).
+
+**5m scout:** ran at 2:47, 3:48 and 4:48 AM. It covered 48 markets with **2 proven setups (CPNG opening-range breakout, AMD RSI(2) dip)**, none firing. The 2 Robinhood alerts are unchanged. Auto is OFF.
+
+**Lab (paper):** gens 2572, 2590 and 2608. **12 champions** pass out-of-sample, 84 markets tested. 0 paper trades open, none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 7 flaws, no proposals.
+
+**Research (all idea only)**
+- U20261125T0830 (3:30 AM), **crypto trend-following after 1.9% fees.** On 10 Coinbase coins, SMA20/50/100 trend rules made +3.3% to +8.6%/trade in 2017–Oct 2023 but −0.57%, +0.07% and +0.01% on unseen Nov 2023–Nov 2026 data. The 10/40-day crossover (from Rozario et al., arXiv 2009.12155) made +3.06%/trade unseen, but −0.91% without its best 3 trades. BTC-only 10/40 made +35% vs +68% for buy-and-hold. 4 rules × 10 coins × 2 periods tested. It fails gates 3–5.
+- U20261125T0933 (4:33 AM), **option-expiration week is our weakest week.** Stivers & Sun (2013) found the OE week strong for S&P 100 stocks. On 60 Lab stocks it averaged +0.06% (2015–Oct 2023) and +0.32% (unseen) vs +0.47% and +1.27% for ordinary weeks, before 0.10% cost. Without its best 3 weeks it was −0.15% and −0.55%. The week after OE was +0.54% and +1.90%. 3 week types × 2 groups × 2 periods tested, so the evidence is thin.
+- U20261125T1031 (5:31 AM), **paper losses come from chasing the bounce.** Of the Lab's 22 forward paper trades, the 6 filled within 2% of the signal close made **+2.23%/trade**. The 16 filled more than 2% above it made **−9.02%/trade** (average fill +6.44% above the signal close). The split holds without the 8-trade Nov 3 cluster (+2.23% vs −9.06%). The threshold was chosen after the fact on n=22, so this could be luck. It points to a limit-entry fix for the Lab engine.
+
+**Problems seen**
+1. **Five tasks still failing with access denied** at their last run: the Z.E.R.O auto-trader (real money), Probability board refresh, Trinity paper trader, Watchlist curator and Daily Market Brief. The watchdog flagged them again at 3:45 AM. Fix: re-approve or reconnect these tasks in claude.ai.
+2. **Bot account unfunded** ($0.13 buying power).
+3. **Lab vault pushes still denied (403)** at 3:30, 4:33 and 5:31 AM (no add_repo in that run). Its research lives only in the page database.
+4. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing (only `build_brain_map.py` exists). The watchdog notes that the Jarvis Brain 3D meta doc was last built 2026-10-22.
+5. **Stale data:** `bot/state` and `edge/_meta` have not been updated since 2026-11-11.
+6. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 02:41 ET
 
