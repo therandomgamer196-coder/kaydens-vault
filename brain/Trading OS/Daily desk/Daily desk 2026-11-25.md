@@ -3,13 +3,47 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-25
 updated: 2026-11-25
-summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs turned green (+1.6% to +1.9%) by 1:45 PM. Lab CLS paper dip recovered to +5.3%; 12 champions; forward 22 trades at −5.95%/trade. 5m scout added RKLB opening-range breakout (2 proven with AMD), none firing. Research found the Lab's out-of-sample score overstates its edge (about +0.43% real vs +2.15% claimed). Probability board, Trinity and Watchlist curator still failing access denied; Market Brief stuck pending; Lab vault pushes refused; 3D brain builder still missing.
+summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs still open; Lab CLS paper dip about +5.1%; 12 champions, forward 22 trades at −5.95%/trade. 5m scout at 3 proven (RKLB, AMD, PINS), none firing. Research: tight stops hurt dip buys; Finviz oversold-in-uptrend screen looks stronger than RSI(2) (small n, idea only). Probability board still failing access denied; Market Brief stuck pending; Lab vault pushes refused; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-24]]"]
 ---
 
 # Daily desk 2026-11-25
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-24]].
+
+## 17:41 ET
+
+Covers 2:42 PM to 5:41 PM ET.
+
+**Real trades:** none. The auto-trader ran at 2:51 and 3:51 PM: bot account ••3001 still unfunded ($0.13 buying power), no open bot trades, no board triggers, all watchlist 4h trends still down. Nearest stock setup: GOOGL prior-day-low sweep needs a reclaim of 285.68 (bid 272.82). The real crypto trader ran at 2:53, 3:53 and 4:52 PM: no board setup inside its 75-minute window, 0 real crypto trades open. 0 real 5m trades open.
+
+**Open paper positions:**
+- Crypto monitor board longs ($7.50 each, 10-day max), all from 9:46 PM 2026-11-24: ADA at 0.14194 (stop 0.130382, target 0.153498), BONK at 0.00000207 (stop 0.00000185315, target 0.00000228685), ETH at 1653.28 (stop 1556.87, target 1749.69). None closed.
+- Lab: CLS RSI(2) dip at 182.65, last 191.95 (about +5.1%), stop 164.35, target 280.23, 2-day max.
+
+**Crypto scan:** BTC top-ranked (4h down at 2:45 and 3:45 PM, mixed at 4:44 PM). AVAX swept its 1h swing high 6.6060 and closed back below at 3:00 PM. No setups, no paper opens or closes.
+
+**Probability board:** no refresh. `edge/_meta` is still dated 2026-11-11, so no board setups fired.
+
+**5m scout:** 48 markets. At 2:48 PM: 3 proven (RKLB, AMD, PINS). At 3:48 PM it added CNXC as a 4th and created a CNXC RSI(2,5m) < 20 alert, then removed both at 4:48 PM. Now 3 proven, 3 Robinhood alerts active (RKLB, AMD, PINS), none firing. Auto is OFF (alerts only).
+
+**Trinity (paper):** no trade today on NQ or ES; both had a short bias but no full setup by noon.
+
+**Lab (paper):** gens 2716, 2722 and 2728. **12 champions** pass out-of-sample, now 124 markets tested (102 discovered). 1 paper trade open (CLS), none opened or closed. Forward record unchanged: **22 trades, −5.95%/trade**. 6 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261125T2030 (3:30 PM), **tight stops don't help dip buys.** On 100 Lab stocks, a 0.75×ATR stop cut win rate to 41–44% and gapped through on about 5% of trades (about 0.5R extra loss) without raising expectancy. Wider or no stops did as well or better (unseen +0.43% to +1.44%/trade). 8 variants × 2 periods.
+- U20261125T2132 (4:32 PM), **Finviz "oversold in uptrend" (RSI(14) < 30 above SMA200).** Rebuilt from Yahoo data because Finviz blocked the fetch (robots.txt). On 98 Lab stocks it made +1.46%/trade (2017–Oct 2023, n=117, 71% win) and +1.75% on unseen Nov 2023–Nov 2026 (n=63, 71% win) after 0.10% cost, vs +0.04% / +0.82% for RSI(2) < 15. Small n; 3 variants × 2 periods.
+- U20261125T2231 (5:31 PM), **Notion Marketplace templates as agent income.** Notion keeps 8% + $0.40 per sale and Stripe selling needs a waitlist that "may take a few months". Median lifetime sales of 365 Gumroad Notion templates was about $520 (estimate, biased sample). Evidence is thin.
+
+**Problems seen**
+1. **Probability board refresh still failing** (access denied at its last run, 2026-11-25 1:20 AM). The board has not updated since 2026-11-11, so real crypto has nothing fresh to copy. Fix: re-approve or reconnect that task in claude.ai.
+2. **Daily Market Brief stuck pending** since 7:53 AM (watchdog, 3:45 PM).
+3. **Bot account unfunded** ($0.13 buying power).
+4. **Lab vault pushes still denied (403)** at 3:30, 4:34 and 5:33 PM (no add_repo in that run). Its research lives only in the page database.
+5. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing (only `build_brain_map.py` exists). The watchdog notes the Jarvis Brain 3D meta doc was last built 2026-10-22.
+6. Trinity ran fine today (4:26 PM), so its earlier access-denied failure looks cleared.
+7. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 14:41 ET
 
