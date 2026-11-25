@@ -3,13 +3,47 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-25
 updated: 2026-11-25
-summary: Quiet overnight. No real trades (bot account ••3001 unfunded, $0.13 crypto buying power). ADA, BONK and ETH paper board longs still open from 2026-11-24 9:46 PM. Lab gens 2518 to 2608, 12 champions, no paper trades, forward 22 trades at −5.95%/trade. 6 research notes (idea only), the latest showing the Lab loses by chasing bounces (fills within 2% of the signal +2.23%/trade vs −9.02%). Five tasks still failing access denied; Lab vault pushes still 403; 3D brain builder still missing.
+summary: Quiet day so far. No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs from 2026-11-24 9:46 PM are slightly red but above their stops. BONK 1h RSI hit 25. Lab gens 2518 to 2662, 12 champions, no paper trades, forward 22 trades at −5.95%/trade. 9 research notes (idea only), the latest on Thanksgiving-Wednesday strength (12 holidays, thin evidence). Four tasks still failing access denied; Lab vault pushes still 403; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-24]]"]
 ---
 
 # Daily desk 2026-11-25
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-24]].
+
+## 08:41 ET
+
+Covers 2026-11-25 5:41 AM to 8:41 AM ET.
+
+**Real trades:** none. The real crypto trader ran at 5:52, 6:52 and 7:53 AM. Each run found no board setup inside its 75-minute window, 0 real trades open, and account ••3001 still effectively unfunded ($0.13 buying power). 0 real stock or 5m trades open.
+
+**Open paper positions (crypto monitor, $7.50 each, board, 10-day max):** ADA, BONK and ETH from 2026-11-24 9:46 PM, all still above their stops at the 7:45 AM scan.
+- ADA: entry 0.14194, bid 0.139636, stop 0.130382, target 0.153498 (≈ −$0.12 before exit fee)
+- BONK: entry 0.00000207, bid 0.00000202, stop 0.00000185315, target 0.00000228685 (≈ −$0.18)
+- ETH: entry 1653.28, bid 1640.78, stop 1556.87, target 1749.69 (≈ −$0.06)
+
+None closed. The board paper record is still **3 closed, 0 wins, −$1.78 after fees** (n=3, too few to judge).
+
+**Crypto scan:** at 5:45 AM, BTC was top-ranked (4h down), with 3 sweeps (SUI previous-day low, XRP and AVAX 1h lows). At 7:45 AM, BONK was top-ranked (4h down). **BONK 1h RSI 25** (oversold). WIF and PENGU swept their previous-day lows and closed back above, and BTC swept its 1h swing low at 58,527.50. There were no setups. The coin check is OK for all meme coins.
+
+**Probability board:** no refresh (`edge/_meta` still dated 2026-11-11).
+
+**5m scout:** ran at 5:48, 6:49 and 7:49 AM. It covered 48 markets with **2 proven setups (CPNG opening-range breakout, AMD RSI(2) dip)**, none firing. The 2 Robinhood alerts are unchanged. Auto is OFF.
+
+**Lab (paper):** gens 2626, 2644 and 2662. **12 champions** pass out-of-sample. The market count fell from 84 to 67 at gen 2662 (46 discovered). 0 paper trades open. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 7 flaws, no proposals.
+
+**Research (all idea only)**
+- U20261125T1132 (6:32 AM), **stock-only dips vs sector-wide dips.** Papers (Hameed & Mian 2015; Da, Liu & Schaumburg 2014) say a stock's own reversals are stronger. On 64 Lab stocks the opposite showed up. RSI(2)<15 dips with a calm sector ETF made −0.28%/trade (n=1,141, 2017–Oct 2023) and +1.01% unseen (n=855). Dips during a sector sell-off made +0.49% and +1.29%, after 0.10% cost. Counted per signal day, the gap mostly closes. 12 cells × 2 periods tested.
+- U20261125T1229 (7:29 AM), **position sizing on a $1k account.** Equal-dollar slots for the RSI(2) dip made +28% (in-sample, max drawdown 60%) and +118% unseen (drawdown 32%). Inverse-volatility and 1%-risk sizing cut both return and drawdown. Only a SPY-volatility brake kept the return (+27%/+109%) while trimming the in-sample drawdown to 49%. 12 cells tested; fails gates 4–5.
+- U20261125T1331 (8:31 AM), **Thanksgiving Wednesday.** Buying the Wednesday open and selling the close made +0.48%/trade (2014–2021, n=266) and +0.46% unseen (2022–2025, n=170) vs about −0.09% for an ordinary day. That is only 12 real holidays, so the evidence is thin. It's relevant today (Wed Nov 25), but paper only.
+
+**Problems seen**
+1. **Tasks still failing with access denied** at their last run: the Z.E.R.O auto-trader (real money), Probability board refresh, Trinity paper trader and Watchlist curator. The watchdog flagged them again at 7:45 AM. The Daily Market Brief fired at 7:53 AM today and is still pending. Fix: re-approve or reconnect these tasks in claude.ai.
+2. **Bot account unfunded** ($0.13 buying power).
+3. **Lab vault pushes still denied (403)** at 6:32, 7:29 and 8:31 AM (no add_repo in that run). Its research lives only in the page database.
+4. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing. The watchdog says Jarvis Brain 3D `brain/meta` was last updated 2026-10-22, 34 days ago.
+5. **Stale data:** `bot/state` and `edge/_meta` have not been updated since 2026-11-11.
+6. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 05:41 ET
 
