@@ -3,13 +3,48 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-25
 updated: 2026-11-25
-summary: Broad selloff (QQQ −4.3%, NVDA −8.3% at 10:51 AM). No real trades (bot account ••3001 unfunded, $0.13 buying power); the auto-trader is running again after weeks of access-denied failures. ADA, BONK and ETH paper board longs are 1–3% red but above their stops. Lab opened a CLS paper dip trade at 9:30 AM (−2.8% by 11:30); 12 champions; forward 22 trades at −5.95%/trade. 5m scout dropped CPNG, so AMD RSI(2) dip is the only proven setup. 12 research notes (idea only). Probability board, Trinity and Watchlist curator still failing access denied; Market Brief stuck pending; 3D brain builder still missing.
+summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs turned green (+1.6% to +1.9%) by 1:45 PM. Lab CLS paper dip recovered to +5.3%; 12 champions; forward 22 trades at −5.95%/trade. 5m scout added RKLB opening-range breakout (2 proven with AMD), none firing. Research found the Lab's out-of-sample score overstates its edge (about +0.43% real vs +2.15% claimed). Probability board, Trinity and Watchlist curator still failing access denied; Market Brief stuck pending; Lab vault pushes refused; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-24]]"]
 ---
 
 # Daily desk 2026-11-25
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-24]].
+
+## 14:41 ET
+
+Covers 2026-11-25 11:41 AM to 2:41 PM ET.
+
+**Real trades:** none. The Z.E.R.O auto-trader ran at 11:50 AM, 12:50 PM and 1:51 PM. Account ••3001 is still unfunded ($0.13 buying power, $0.44 value including 0.00446 SOL dust, left alone). There were no open bot trades, exits or entries, and no live board triggers: GOOGL needs a dip under 285.68 and a close back above it (bid 270.56 at 12:50 PM), and MSFT's 555.80 breakout level is far off. All 4h trends are still down; USO is closest to a cross (EMA20 139.47 vs EMA50 143.62). The real crypto trader ran at 11:52 AM, 12:52 PM and 1:53 PM with nothing new (buying power under its $2 minimum). 0 real stock, crypto or 5m trades are open. Circuit breaker off.
+
+**Open paper positions (crypto monitor, $7.50 each, board, 10-day max):** ADA, BONK and ETH from 2026-11-24 9:46 PM have **turned green** at the 1:45 PM scan:
+- ADA: entry 0.14194, bid 0.144440 (+1.8%), stop 0.130382, target 0.153498
+- BONK: entry 0.00000207, bid 0.00000211 (+1.9%), stop 0.00000185315, target 0.00000228685
+- ETH: entry 1653.28, bid 1679.92 (+1.6%), stop 1556.87, target 1749.69
+
+None closed. Board paper record still **3 closed, 0 wins, −$1.78 after fees** (n=3, too few to judge). The paper figures are before the 0.95% exit fee.
+
+**Crypto scan (1:45 PM):** BTC top-ranked (4h down). 4 new sweeps of buy-side liquidity, all closed back below: LTC swept its prior-day high 41.994, and XRP, LINK and SUI swept 1h swing highs. No setups.
+
+**Probability board:** no refresh. `edge/_meta` is still dated 2026-11-11, with no "decent" setups listed.
+
+**5m scout:** ran at 11:48 AM and 12:48 PM. **RKLB opening-range breakout joined the proven list** at 12:48 PM, so there are now 2 proven setups (RKLB ORB, AMD 5m RSI(2) dip) across 48 markets, none firing. A new Robinhood alert was created for RKLB above 43.83; the AMD alert stays. Auto is OFF (alerts only).
+
+**Lab (paper):** gens 2698, 2704 and 2710. **12 champions**; the market list grew to 116 (94 discovered: market cap ≥ $2B, volume ≥ 1M). The **CLS paper dip** (entry 182.65 at 9:30 AM) recovered to 192.24 at 2:30 PM (**+5.3%, about +$0.39 on $7.50**); stop 164.35, target 280.23, 2-day max. Forward record unchanged: **22 trades, −5.95%/trade**. 6 flaws, no proposals.
+
+**Research (all idea only)**
+- U20261125T1729 (12:29 PM), **the Lab's out-of-sample score overstates its edge.** Champions are picked by that score, so it is no longer unseen data. With the last 60 trading days hidden (3 windows, Feb–Nov 2026, about 4,000 candidates on 90 markets), the top 12 claimed +2.37/+2.69/+1.40% per trade but made +0.18/−0.15/+1.85% on the hidden days (n=89/114/63). Pooled, that is about +0.43% vs about +2.15% claimed. The live paper record agrees: 22 trades claimed +1.55% and made −5.95%. The fix it suggests is a three-way split (train / select / final holdout) and a t-stat ≥ 3 bar (Harvey, Liu & Zhu 2016; Bailey & López de Prado). This is a flaw in the Lab's own [[Playbook]] gate 3.
+- U20261125T1829 (1:29 PM), **dip-buy bounces happen overnight.** Lou, Polk & Skouras (JFE 2019) find short-term reversal profits are earned overnight. On 84 Lab stocks (RSI(2)<15 above SMA200, SMA5 exit, 0.10% cost), buying at the signal close made +0.15%/trade (2016–Oct 2023, n=3,312) and +1.08% (unseen Nov 2023–Nov 2026, n=2,457), vs +0.06%/+0.85% at the next open. Skipping gap-ups helped. This fits today's CLS entry, which gapped 7.1% below the signal close.
+- U20261125T1931 (2:31 PM), **slow crypto trend rules beat the fees only in the 2023–24 bull run.** A weekly close-above-50-day-SMA rule on 10 large coins (Liu & Tsyvinski momentum) survived 0.95% each-way fees, but almost all the gain came from one cluster, so it fails the lucky-cluster gate (5).
+
+**Problems seen**
+1. **Three tasks failed with access denied at their last run:** Probability board refresh (8:20 PM yesterday), Trinity paper trader (4:25 PM yesterday) and Watchlist curator (4:58 PM yesterday). Trinity and the Watchlist curator run again at 4:25 and 4:58 PM today. Fix: re-approve or reconnect them in claude.ai.
+2. **Daily Market Brief stuck:** it fired at 7:53 AM and still shows pending about 7 hours later.
+3. **Lab vault pushes refused (403)** at 12:29, 1:29 and 2:33 PM. kaydens-vault is not in that task's authorized repos, and add_repo is not available in its runs. Its research lives only in the page database.
+4. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing from the vault. Jarvis Brain 3D stays at its 2026-10-22 build.
+5. **Bot account unfunded** ($0.13 buying power), so no real trades are possible.
+6. **Stale data:** `edge/_meta` has not been updated since 2026-11-11.
+7. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 11:41 ET
 
