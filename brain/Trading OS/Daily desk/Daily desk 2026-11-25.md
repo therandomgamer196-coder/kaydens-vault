@@ -3,13 +3,48 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-25
 updated: 2026-11-25
-summary: Quiet day so far. No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs from 2026-11-24 9:46 PM are slightly red but above their stops. BONK 1h RSI hit 25. Lab gens 2518 to 2662, 12 champions, no paper trades, forward 22 trades at −5.95%/trade. 9 research notes (idea only), the latest on Thanksgiving-Wednesday strength (12 holidays, thin evidence). Four tasks still failing access denied; Lab vault pushes still 403; 3D brain builder still missing.
+summary: Broad selloff (QQQ −4.3%, NVDA −8.3% at 10:51 AM). No real trades (bot account ••3001 unfunded, $0.13 buying power); the auto-trader is running again after weeks of access-denied failures. ADA, BONK and ETH paper board longs are 1–3% red but above their stops. Lab opened a CLS paper dip trade at 9:30 AM (−2.8% by 11:30); 12 champions; forward 22 trades at −5.95%/trade. 5m scout dropped CPNG, so AMD RSI(2) dip is the only proven setup. 12 research notes (idea only). Probability board, Trinity and Watchlist curator still failing access denied; Market Brief stuck pending; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-24]]"]
 ---
 
 # Daily desk 2026-11-25
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-24]].
+
+## 11:41 ET
+
+Covers 2026-11-25 8:41 AM to 11:41 AM ET.
+
+**Market:** broad selloff at 10:51 AM: QQQ −4.3%, SPY −2.7%, NVDA −8.3% vs the prior close (from the auto-trader's note).
+
+**Real trades:** none. **The Z.E.R.O auto-trader (real money) is running again**: it wrote `bot/state` at 10:51 AM, its first update since 2026-11-11. It found account ••3001 still unfunded ($0.13 buying power, $0.43 value including 0.00446 SOL dust, left alone), no open bot trades, no exits and no entries. No board trigger was live: GOOGL 265.08 is under its 285.68 sweep level and MSFT 479.52 is under its 555.80 breakout level. The circuit breaker is off (0 losses). The real crypto trader ran every hour with nothing new. 0 real stock, crypto or 5m trades open.
+
+**Open paper positions (crypto monitor, $7.50 each, board, 10-day max):** ADA, BONK and ETH from 2026-11-24 9:46 PM. All are down a little more but still above their stops at the 10:45 AM scan.
+- ADA: entry 0.14194, bid 0.137981 (−2.8%), stop 0.130382, target 0.153498
+- BONK: entry 0.00000207, bid 0.00000200 (−3.4%), stop 0.00000185315, target 0.00000228685
+- ETH: entry 1653.28, bid 1636.65 (−1.0%), stop 1556.87, target 1749.69
+
+None closed. The board paper record is still **3 closed, 0 wins, −$1.78 after fees** (n=3, too few to judge).
+
+**Probability board:** no refresh. `edge/_meta` is still dated 2026-11-11, with no "decent" setups listed.
+
+**5m scout:** ran at 8:47, 9:49 and 10:48 AM. **CPNG's opening-range breakout dropped out of the proven list** at 9:49 AM, so its Robinhood alert was removed. **AMD 5m RSI(2) dip** is now the only proven setup (47–48 markets scanned) and is not firing. 1 Robinhood alert is active. Auto is OFF (alerts only).
+
+**Lab (paper):** gen 2692, **12 champions** pass out-of-sample, now testing 90 markets (68 discovered). **New paper trade: CLS** (RSI(2) < 25 dip; stop 0.75×ATR, target 4×ATR, 2-day max; 38 unseen trades, +1.12% expectancy). It opened at 9:30 AM at 182.65, which is 7.1% *below* the 196.64 signal close because of the gap down. At 11:30 AM it was 177.54 (−2.8%, about −$0.21 on $7.50). Stop 164.35, target 280.23. The forward record is unchanged at **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 6 flaws are flagged (down from 7), with no proposals.
+
+**Research (all idea only)**
+- U20261125T1429 (9:29 AM), **unusual volume doesn't help dip buys.** On 56 Lab stocks, RSI(2)<15 dips above the SMA200 on 2x+ normal volume made −0.35%/trade in-sample (n=215) but +1.46% unseen (n=144). Quiet dips made +0.33%/+0.60%. The ranking flips between periods, so it fails the out-of-sample gate. Studies cited: Conrad, Hameed & Niden 1994 ([RePEc](https://ideas.repec.org/a/bla/jfinan/v49y1994i4p1305-29.html)) and Gervais, Kaniel & Mingelgrin 2001 ([RePEc](https://econpapers.repec.org/RePEc:bla:jfinan:v:56:y:2001:i:3:p:877-919)). The Lab's Finviz discovery still returns 0 names.
+- U20261125T1529 (10:31 AM), **MCP servers as agent income.** Marketplaces let builders keep 70–85%. Apify claims $500K–2M a month in payouts (vendor figures), but 15,930+ servers are listed, and the only first-hand earnings found were $0.21 and zero subscribers. Thin evidence. Sources: [dev.to](https://dev.to/kirothebot/the-state-of-mcp-monetization-in-2026-where-builders-actually-get-paid-34k9) and [Apify](https://apify.com/mcp/developers).
+- U20261125T1631 (11:31 AM), **last-half-hour trades don't survive costs.** SPY/QQQ first-hour momentum (Gao et al. 2018) and stock end-of-day reversal (Baltussen, Da & Soebhag; [paper](https://www3.nd.edu/~zda/EOD.pdf)) both lost on Yahoo hourly bars from Jan 2024 to Nov 2026 (229 usable days). Long-only SPY made −0.12%/−0.14% after 0.10% cost. 8 variants × 2 periods were tested. Verdict: drop end-of-day timing for small accounts.
+
+**Problems seen**
+1. **Three tasks still failing with access denied** at their last run: Probability board refresh, Trinity paper trader and Watchlist curator. The auto-trader has recovered. Fix: re-approve or reconnect these tasks in claude.ai.
+2. **Daily Market Brief stuck:** it fired at 7:53 AM and still shows pending almost 4 hours later.
+3. **Bot account unfunded** ($0.13 buying power), so no real trades are possible.
+4. **Lab vault pushes still missing:** there are no Ultron commits in the vault today. Its research lives only in the page database.
+5. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing (only `build_brain_map.py`, which writes into `.obsidian/`). Jarvis Brain 3D stays at its 2026-10-22 build.
+6. **Stale data:** `edge/_meta` has not been updated since 2026-11-11. `bot/state` is fresh again.
+7. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 08:41 ET
 
