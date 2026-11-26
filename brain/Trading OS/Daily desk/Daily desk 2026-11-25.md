@@ -3,13 +3,44 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-25
 updated: 2026-11-25
-summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs still open; Lab CLS paper dip about +5.1%; 12 champions, forward 22 trades at −5.95%/trade. 5m scout at 3 proven (RKLB, AMD, PINS), none firing. Research: tight stops hurt dip buys; Finviz oversold-in-uptrend screen looks stronger than RSI(2) (small n, idea only). Probability board still failing access denied; Market Brief stuck pending; Lab vault pushes refused; 3D brain builder still missing.
+summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs still open; Lab CLS paper dip about +5.1%; 12 champions, forward 22 trades at −5.95%/trade. Probability board refreshed at 8:20 PM (first since 2026-11-11), nothing decent. 5m scout at 3 proven (RKLB, AMD, PINS), none firing. Research: Lab targets never hit and champions turned since September; VWAP long-only loses after costs (idea only). Market Brief stuck pending; Lab vault pushes refused; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-24]]"]
 ---
 
 # Daily desk 2026-11-25
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-24]].
+
+## 20:41 ET
+
+Covers 5:42 PM to 8:41 PM ET.
+
+**Real trades:** none. The real crypto trader ran at 5:53, 6:52 and 7:52 PM: no board setup inside its 75-minute window, 0 real crypto trades open, bot account ••3001 still unfunded (crypto buying power $0.13). The stock auto-trader is idle after the close. 0 real 5m trades open.
+
+**Open paper positions:**
+- Crypto monitor board longs ($7.50 each, 10-day max), all from 9:46 PM 2026-11-24: ADA at 0.14194 (stop 0.130382, target 0.153498), BONK at 0.00000207 (stop 0.00000185315, target 0.00000228685), ETH at 1653.28 (stop 1556.87, target 1749.69). None closed.
+- Lab: CLS RSI(2) dip at 182.65, last 191.95 (about +5.1%), 2-day max.
+
+**Crypto scan:** BTC top-ranked (4h mixed) at 5:45, 6:45 and 7:45 PM. No new sweeps or setups. LTC +5.4% and WIF +6.8% in 24h (7:44 PM).
+
+**Probability board:** **refreshed tonight at 8:20 PM** (first update since 2026-11-11, 0 data errors). No market has "Decent odds now", so nothing for real crypto to copy.
+
+**5m scout:** ran at 5:47, 6:47 and 7:48 PM. 48 markets, 3 proven setups (RKLB opening-range breakout, AMD and PINS RSI(2) dips), none firing. 3 Robinhood alerts unchanged. Auto is OFF (alerts only).
+
+**Lab (paper):** gens 2734, 2740 and 2746. **12 champions** pass out-of-sample, 121–125 markets tested. 1 paper trade open (CLS), none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. Flaws down from 6 to 5, no proposals.
+
+**Research (all idea only)**
+- U20261125T2332 (6:32 PM), **sizing can't rescue a negative edge.** With the forward record at −5.95%/trade (95% CI −8.8% to −3.1%), Kelly says bet zero. Even the holdout-adjusted edge (+0.43%/trade) would need about 1,000 trades to reach t=2 and makes about $0.03/trade at $7.50. Sources: [Harvey et al.](https://people.duke.edu/~charvey/Research/Published_Papers/P135_The_impact_of.pdf), [arXiv:1701.02814](https://arxiv.org/pdf/1701.02814).
+- U20261126T0029 (7:29 PM), **the "VWAP holy grail" fails long-only with costs.** On 8 liquid names (5-minute bars, Sep 2 to Nov 25 2026), buying above session VWAP lost −0.115%/trade after 0.10% cost (n=1,566, 17% win). The paper's 671% QQQ result used shorts and assumed no slippage. 6 variants × 8 symbols. Source: [Zarattini & Aziz 2023](https://papers.ssrn.com/abstract=4416622).
+- U20261126T0132 (8:32 PM), **Lab targets never hit and the champions turned.** 0 of 22 paper trades reached their 4×ATR target, and 64% were stopped vs 31% in the backtest (p≈0.002). The same 28 champion rules made −0.70%/trade since 2026-09-01 (n=178), so the live loss looks like a regime turn plus about +6.4% entry slippage. Dropping the target changes almost nothing. 4 exit variants × 2 periods.
+
+**Problems seen**
+1. **Bot account unfunded** ($0.13 buying power), so no real trades are possible.
+2. **Daily Market Brief run stuck pending** since 7:53 AM ET (about 13 hours).
+3. **Lab vault pushes still denied (403)** at 6:32, 7:35 and 8:32 PM. Tonight's Lab journal, research note and 3 ideas are only in the page database.
+4. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing from the vault, so the Jarvis Brain 3D page stays at its 2026-10-22 build.
+5. Fixed: the Probability board is updating again (see above). The watchdog's 7:45 PM "board 14 days stale" flag predates the refresh.
+6. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 17:41 ET
 
