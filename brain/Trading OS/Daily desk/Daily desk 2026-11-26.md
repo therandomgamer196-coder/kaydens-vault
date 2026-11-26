@@ -3,13 +3,43 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-26
 updated: 2026-11-26
-summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs and the Lab CLS dip still open. Lab champions rose 7→12; forward record still 22 trades at −5.95%/trade. Research (idea only): tax-loss reversal, 52-week-high screen and overnight drift all fail after costs; earlier, correlated entries caused ~92% of Lab losses. Lab vault pushes still refused; 3D brain builder still missing.
+summary: No real trades (bot account ••3001 unfunded, $0.13 buying power; stock market closed for Thanksgiving). ADA, BONK and ETH paper board longs and the Lab CLS dip still open. Lab champions 12→10; forward record still 22 trades at −5.95%/trade. Research (idea only): slow crypto trend rules fail after fees on unseen data; hourly stop checks erase the RSI(2) dip edge; beehiiv bans fully AI-run newsletters. Lab vault pushes still refused; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-25]]"]
 ---
 
 # Daily desk 2026-11-26
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-25]].
+
+## 08:41 ET
+
+Covers 5:42 to 8:41 AM ET. Thanksgiving: US stock market closed today.
+
+**Real trades:** none. The real crypto trader ran at 5:53, 6:53 and 7:52 AM: no board setup inside its 75-minute window (the ADA, BONK and ETH setups from 2026-11-24 are too old), 0 real crypto trades open, bot account ••3001 effectively unfunded ($0.44 value, $0.13 buying power). Stock auto-trader idle (holiday). 0 real 5m trades open.
+
+**Open paper positions:**
+- Crypto monitor board longs ($7.50 each, 10-day max), all from 9:46 PM 2026-11-24: ADA, BONK and ETH oversold bounces. None closed.
+- Lab: CLS RSI(2) dip at 182.65, last 191.95 (about +5.1%), 2-day max.
+
+**Crypto scan:** 5:45 AM: BTC top-ranked, PENGU +5.8% in 24h. 7:45 AM: SOL top-ranked (4h mixed); SOL and SUI swept their 1h swing lows (70.43, 0.6645) and closed back above; both formed sweep + FVG setups but lose after the 0.95% fee each way (SOL −0.08R, SUI −0.35R), so skipped. SUI +6.2%, ADA +6.8%, DOGE +6.1% in 24h. No board hits.
+
+**Probability board:** no change since the 8:20 PM refresh on 11/25; no market has "Decent odds now".
+
+**5m scout:** ran at 5:48, 6:49 and 7:48 AM. 48 markets, 3 proven setups (RKLB ORB, AMD and PINS 5m RSI(2) dip), none firing. 3 Robinhood alerts unchanged. Auto is OFF (alerts only).
+
+**Lab (paper):** gens 2806, 2812 and 2818. Champions passing out-of-sample **12 → 11 → 10**; 71 markets tested. 1 paper trade open (CLS), none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261126T1132 (6:32 AM), **slow crypto trend rules don't survive the fee on unseen data.** 8 MA/breakout variants on 10 coins made big gains in 2016–2023 but −10.3% to +5.5%/trade on Nov 2023–Nov 2026; the best (50-day breakout) had t = 1.4 and its top 5 trades were 128% of the profit. Fails gates 3 and 5. Sources: [Annals of OR](https://link.springer.com/article/10.1007/s10479-019-03357-1), [Rink 2023](https://link.springer.com/content/pdf/10.1007/s11408-023-00433-2.pdf), [arXiv 2602.11708](https://arxiv.org/pdf/2602.11708).
+- U20261126T1231 (7:31 AM), **hourly stop checks erase the RSI(2) dip edge.** On 30 stocks/ETFs (n = 4,462, Sep 2022–Nov 2026) a resting stop gives +0.054R/trade; an estimated hourly-check fill gives −0.022R/trade. Robinhood bracket orders are whole-share only. 2 exit models. Sources: [Robinhood fractional shares](https://robinhood.com/us/en/support/articles/fractional-shares), [Robinhood stop order](https://robinhood.com/us/en/support/articles/stop-order), [BrokerChooser](https://brokerchooser.com/invest-long-term/risk-management/stop-loss-order-robinhood).
+- U20261126T1331 (8:31 AM), **a beehiiv newsletter can be agent-drafted, not agent-run.** Estimates: $50–150/mo in ads at 1,000 subscribers vs ~$49/mo plan; beehiiv's Jul 2026 rules ban fully AI-built newsletters. Sources: [Sirency](https://www.sirency.com/blog/beehiiv-ad-network-and-boosts), [Roo](https://roo.beehiiv.com/p/how-to-make-money-on-beehiiv).
+
+**Problems seen**
+1. **Bot account unfunded** ($0.13 buying power), so no real trades are possible.
+2. **Lab vault pushes still denied (403)** at 6:34, 7:31 and 8:31 AM (add_repo not available in that task). Its research stays in the page database only.
+3. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing from the vault (only `build_brain_map.py` is there). Watchdog (7:45 AM) flagged the 3D brain as stale since 2026-10-22.
+4. **Daily Market Brief:** watchdog flagged the 11/25 run as abandoned; today's 7:52 AM run was still pending at 8:41 AM.
+5. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 05:41 ET
 
