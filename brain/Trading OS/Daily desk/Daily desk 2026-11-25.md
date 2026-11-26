@@ -3,13 +3,43 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-25
 updated: 2026-11-25
-summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs still open; Lab CLS paper dip about +5.1%; 12 champions, forward 22 trades at −5.95%/trade. Probability board refreshed at 8:20 PM (first since 2026-11-11), nothing decent. 5m scout at 3 proven (RKLB, AMD, PINS), none firing. Research: Lab targets never hit and champions turned since September; VWAP long-only loses after costs (idea only). Market Brief stuck pending; Lab vault pushes refused; 3D brain builder still missing.
+summary: No real trades (bot account ••3001 unfunded, $0.13 buying power). ADA, BONK and ETH paper board longs still open; Lab CLS paper dip about +5.1%; champions down to 10, forward 22 trades at −5.95%/trade. Probability board refreshed at 8:20 PM (first since 2026-11-11), nothing decent. 5m scout at 3 proven (RKLB, AMD, PINS), none firing. Research: VIX>20 doubles RSI(2) dip returns but rests on 5 days; IBS dip and turn-of-month edges faded (idea only). Market Brief run abandoned; Lab vault pushes refused; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-24]]"]
 ---
 
 # Daily desk 2026-11-25
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-24]].
+
+## 23:41 ET
+
+Covers 8:42 PM to 11:41 PM ET.
+
+**Real trades:** none. The real crypto trader ran at 8:53, 9:52 and 10:52 PM: no board setup inside its 75-minute window (the ADA, BONK and ETH setups from 2026-11-24 are too old), 0 real crypto trades open, bot account ••3001 still effectively unfunded (crypto buying power $0.13). The stock auto-trader is idle after the close. 0 real 5m trades open.
+
+**Open paper positions:**
+- Crypto monitor board longs ($7.50 each, 10-day max), all from 9:46 PM 2026-11-24: ADA at 0.14194 (stop 0.130382, target 0.153498), BONK at 0.00000207 (stop 0.00000185315, target 0.00000228685), ETH at 1653.28 (stop 1556.87, target 1749.69). None closed.
+- Lab: CLS RSI(2) dip at 182.65, last 191.95 (about +5.1%).
+
+**Crypto scan:** BTC top-ranked (4h mixed) at 8:45, 9:45 and 10:45 PM. No setups or board hits. 24h moves: PENGU +5.6%, SUI +5.1% (8:45 PM), BONK +5.8%, LINK +5.0% (9:45 PM). LTC swept its 1h swing high 43.65 and closed back below (10:00 PM).
+
+**Probability board:** no change since the 8:20 PM refresh; no market has "Decent odds now".
+
+**5m scout:** ran at 8:47, 9:48 and 10:48 PM. 48 markets, 3 proven setups (RKLB, AMD, PINS), none firing. 3 Robinhood alerts unchanged. Auto is OFF (alerts only).
+
+**Lab (paper):** gens 2752, 2758 and 2764. Champions passing out-of-sample slipped from **12 to 10**; markets tested fell from 113 to 106. 1 paper trade open (CLS), none opened or closed. Forward record unchanged: **22 trades, 22.7% winners, −5.95%/trade (−$9.82)**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261126T0231 (9:31 PM), **IBS dip beats RSI(2), but turned since September.** On 91 Lab stocks, "IBS < 0.2 above SMA200, sell when IBS > 0.8 or 5 days" made +0.85%/trade unseen with a next-open entry after 0.10% cost, vs +0.53% for the RSI(2) < 15 baseline. Since 2026-09-01 it lost −1.04%/trade (n=256). Survivorship bias and correlated trades; 6 variants tested. Source: [Kinlay 2019](https://jonathankinlay.com/?p=2199).
+- U20261126T0329 (10:29 PM), **turn-of-month edge has shrunk.** A 7-day turn-of-month hold on SPY made +0.36%/trade on unseen Nov 2023 to Nov 2026 data (n=37, t=1.0, could be luck), but a mid-month hold of the same length made +0.24%, so the extra edge is about +0.1% (estimate). The pre-holiday day is flat on SPY/QQQ; Thanksgiving has only 26 samples. 9 variants × 3 periods. Sources: [CXO Advisory](https://cxoadvisory.com/calendar-effects/stock-returns-around-christmas), [ASU W. P. Carey](https://knowledge.wpcarey.asu.edu/20190311-dont-bet-holiday-effect-boost-market-returns).
+- U20261126T0430 (11:33 PM), **VIX > 20 roughly doubles RSI(2) dip returns.** On 82 Lab stocks, unseen Nov 2023 to Nov 2026: +1.44%/trade (n=422, 69% win) with VIX > 20 vs +0.61% unfiltered, after 0.10% cost. VIX is 28.3 now, but 82% of the unseen profit came from 5 days (lucky-cluster risk, fails gate 5). 5 variants × 3 periods. Based on Nagel 2012 and Drechsler-Moreira-Savov.
+
+**Problems seen**
+1. **Bot account unfunded** ($0.13 buying power), so no real trades are possible.
+2. **Lab vault pushes still denied (403)** at 9:33, 10:29 and 11:33 PM (add_repo not available in that task). Its research, ideas and journal are only in the page database.
+3. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing from the vault. The only builder there (`build_brain_map.py`) rewrites `.obsidian/graph.json`, so the Scribe does not run it.
+4. **Daily Market Brief:** this morning's run is now marked abandoned (it had been stuck pending since 7:53 AM).
+5. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 20:41 ET
 
