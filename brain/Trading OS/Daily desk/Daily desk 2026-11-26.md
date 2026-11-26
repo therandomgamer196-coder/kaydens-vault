@@ -3,13 +3,44 @@ tags: [trading, daily-desk]
 type: note
 created: 2026-11-26
 updated: 2026-11-26
-summary: No real trades (bot account ••3001 unfunded, $0.13 buying power; stock market closed for Thanksgiving). ADA, BONK and ETH paper board longs and the Lab CLS dip still open. Lab champions 12→10; forward record still 22 trades at −5.95%/trade. Research (idea only): slow crypto trend rules fail after fees on unseen data; hourly stop checks erase the RSI(2) dip edge; beehiiv bans fully AI-run newsletters. Lab vault pushes still refused; 3D brain builder still missing.
+summary: No real trades (bot account ••3001 unfunded, $0.13 buying power; stock market closed for Thanksgiving). ADA, BONK and ETH paper board longs and the Lab CLS dip still open; Lab paper-bought MU on the holiday (no holiday check). Lab champions 12→10→8; forward record still 22 trades at −5.95%/trade. Research (idea only): slow crypto trend rules fail after fees on unseen data; hourly stop checks erase the RSI(2) dip edge; beehiiv bans fully AI-run newsletters. Lab vault pushes still refused; 3D brain builder still missing.
 related: ["[[ZERO trading agent]]", "[[Trading OS change log]]", "[[Daily desk 2026-11-25]]"]
 ---
 
 # Daily desk 2026-11-26
 
 Part of [[ZERO trading agent]]. Written by the Scribe every 3 hours, newest first. Previous desk: [[Daily desk 2026-11-25]].
+
+## 11:41 ET
+
+Covers 8:42 to 11:41 AM ET. Thanksgiving: US stock market closed today.
+
+**Real trades:** none. The real crypto trader ran at 8:53, 9:53 and 10:53 AM: no board setup inside its 75-minute window (the ADA, BONK and ETH setups from 2026-11-24 are too old), 0 real crypto trades open, bot account ••3001 effectively unfunded ($0.13 buying power). Stock auto-trader took holiday snapshots only (9:51, 10:51 AM). 0 real 5m trades open.
+
+**Open paper positions:**
+- Crypto monitor board longs ($7.50 each, 10-day max), all from 2026-11-24: ADA, BONK and ETH oversold bounces. None closed.
+- Lab: CLS RSI(2) dip at 182.65, last 191.95 (about +5.1%). **New:** MU RSI(3) < 35 dip bought at 601.25 at 9:30 AM (stop 549.66, target 876.38, 5-day max). The market was closed, so this entry used a stale price (see research and problems below).
+
+**Crypto scan:** 8:45 AM: SOL top-ranked (4h mixed); SOL +6.2%, XRP +6.5%, PEPE +6.0% in 24h. 9:46 AM: no new sweeps or setups. 10:45 AM: LTC swept its 1h swing high 43.828 (wick 43.896) and DOGE swept its equal 1h highs 0.05716 (wick 0.05724), both closed back below (buy-side liquidity taken, bearish short-term). No setups, no board hits.
+
+**Probability board:** no change since the 8:20 PM refresh on 11/25; no market has "Decent odds now".
+
+**5m scout:** ran at 8:48, 9:48 and 10:49 AM. 48 markets, 3 proven setups (RKLB ORB, AMD and PINS 5m RSI(2) dip), none firing. 3 Robinhood alerts unchanged. Auto is OFF (alerts only).
+
+**Lab (paper):** gens 2824, 2830 and 2836. Champions passing out-of-sample **10 → 9 → 8**; 71 markets tested. 2 paper trades open (CLS, MU), 1 opened, none closed. Forward record unchanged: **22 trades, −5.95%/trade**. 5 flaws flagged, no proposals.
+
+**Research (all idea only)**
+- U20261126T1430 (9:30 AM), **the Lab has no market-holiday check.** It paper-bought MU on Thanksgiving because the entry gate checks only weekday and clock time. On 25 names over 3 years, holiday gaps averaged +0.06% with a mean absolute size of 1.35% (n = 750), similar to normal overnight gaps, so it adds noise rather than bias. Fix: add the NYSE holiday calendar. Sources: [NYSE hours and calendars](https://www.nyse.com/markets/hours-calendars), [NYSE 2026–2028 holiday calendar (Business Wire)](https://www.businesswire.com/news/home/20251223981478/en/NYSE-Group-Announces-2026-2027-and-2028-Holiday-and-Early-Closings-Calendar).
+- U20261126T1531 (10:31 AM), **position sizing can't rescue a thin edge.** The RSI(2) dip setup makes about +0.035R/trade at every volatility level (49 names, unseen Nov 2023–Nov 2026, n = 2,906). Equal-dollar sizing +4.7% with a −56% drawdown; 1%-risk sizing −24.7%; edge-gated half-Kelly sat out 96% of trades (−17% drawdown). 5 sizing rules tested. Sources: [Harvey et al. 2018 (Duke PDF)](https://people.duke.edu/~charvey/Research/Published_Papers/P135_The_impact_of.pdf), [Alpha Architect](https://alphaarchitect.com/volatility-targeting-improves-risk-adjusted-returns/).
+- U20261126T1632 (11:32 AM), **Black Friday half-day is too thin to trade.** Tomorrow NYSE closes at 1:00 PM ET. On 25 names (2002–2025, n = 470) volume runs ~40% of normal and range ~61%; +0.41%/day average but median +0.03%, 50.6% win, t = 1.02, and 3 of 24 years made 92% of the gain. 5 measures tested. Sources: [E*TRADE (Nov 2024)](https://us.etrade.com/knowledge/library/perspectives/daily-insights/thanksgiving-seasonal), [Bloomberg (Nov 2022)](https://www.bloomberg.com/news/articles/2022-11-25/stock-market-has-a-black-friday-tradition-low-trading-volume).
+
+**Problems seen**
+1. **Bot account unfunded** ($0.13 buying power), so no real trades are possible.
+2. **Lab vault pushes still denied (403)** at 9:30, 10:31 and 11:34 AM (add_repo not available in that task). Its research and Ideas updates stay in the page database only.
+3. **Lab traded on a market holiday** (MU paper buy at a stale price). Paper only, but it pollutes the forward record; engine needs an NYSE holiday check.
+4. **3D brain not rebuilt:** `graphify-out/build_brain_data.py` is still missing from the vault (only `build_brain_map.py` is there).
+5. **Daily Market Brief:** today's 7:52 AM run is still marked pending almost 4 hours later.
+6. No rule or task-setting changes: config/rules matches the snapshot, and no task was edited in this window.
 
 ## 08:41 ET
 
